@@ -39,10 +39,11 @@ function Dday() {
   }, []);
 
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <p className="font-['PT_MONO'] text-[44px]">2024.05.31 4PM / 7PM</p>
-      <p className="font-['DotGothic16'] text-[260px]">{countdown}</p>
+    <div className='flex flex-col justify-center items-center px-[103px] xl:px-[75px] lg:px-[70px] md:px-[50px] sm:px-[33.3px] m:px-[22.2px]'>
+      <p className="font-['PT_MONO'] text-[44px] xl:text-[32px] lg:text-[30px] md:text-[20px] sm:text-[14px] m:text-[12px]">2024.05.31 4PM / 7PM</p>
+      <p className="font-['DotGothic16'] text-[260px] xl:text-[190px] lg:text-[180px] md:text-[120px] sm:text-[80px] m:text-[52px]">{countdown}</p>
     </div>
+
   );
 }
 

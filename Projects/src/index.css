@@ -37,18 +37,4 @@
   font-style: normal;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
 
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-main {
-  flex: 1; /* 이를 통해 main 요소가 가능한 모든 공간을 차지하게 함 */
-}
