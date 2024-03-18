@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 
+/* ft-activica-strong폰트 */
+@import url("https://youworkforthem.com/font/T21761/ft-activica");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

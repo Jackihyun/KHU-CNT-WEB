@@ -31,7 +31,7 @@ function Dday() {
       seconds = seconds < 10 ? '0' + seconds : seconds;
 
       // 카운트다운 상태 업데이트
-      setCountdown(`${days}:${hours}:${minutes}:${seconds}`);
+      setCountdown(`${days} ${hours}:${minutes}:${seconds}`);
     }, 1000);
 
     // 컴포넌트가 언마운트 될 때 인터벌 정리
@@ -41,7 +41,7 @@ function Dday() {
   return (
     <div className='flex flex-col justify-center items-center px-[103px] xl:px-[75px] lg:px-[70px] md:px-[50px] sm:px-[33.3px] m:px-[22.2px]'>
       <p className="font-['PT_MONO'] text-[44px] xl:text-[32px] lg:text-[30px] md:text-[20px] sm:text-[14px] m:text-[12px]">2024.05.31 4PM / 7PM</p>
-      <p className="font-['DotGothic16'] text-[260px] xl:text-[190px] lg:text-[180px] md:text-[120px] sm:text-[80px] m:text-[52px]">{countdown}</p>
+      <p className="font-['DotGothic16'] text-nowrap text-[210px] xl:text-[180px] lg:text-[120px] md:text-[80px] sm:text-[70px] m:text-[52px]">D-{countdown}</p>
     </div>
 
   );
