@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Dday from '../components/Dday';
 import Invite from '../components/Invite';
-import Article from '../components/Article';
+import HomeArticle from '../components/HomeArticle';
 
 function HomePage() {
   return (
@@ -14,7 +14,7 @@ function HomePage() {
           <Invite />
         </div>
         <div className='mt-[1994px]'>
-          <Article />
+          <HomeArticle />
         </div>
       </main>
 
