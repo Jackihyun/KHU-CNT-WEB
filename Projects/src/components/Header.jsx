@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="bg-white h-[50px] w-full">
       <nav className="h-full w-full max-w-full pr-[100px] xl:pr-[66.7px] lg:pr-[44.4px] md:pr-[30px] sm:pr-[20px] m:pr-[13.3px] flex justify-end items-center font-[18px]">
-        <div className="h-full flex space-x-[50px] pt-[12.5px] font-pretendard-medium">
+        <div className="h-full flex space-x-[50px] pt-[12.5px] font-['ft-activica-strong']">
           {/* 메뉴 항목들 */}
           {["ABOUT", "DESIGNER", "ARCHIVE", "WHITE PROJ.", "PHOTO"].map((menu) => (
             <a
