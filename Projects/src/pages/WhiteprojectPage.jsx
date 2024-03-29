@@ -1,9 +1,15 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import WhiteArticle from "../components/WhiteArticle";
 
 function WhiteprojectPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
       <Header />
+      <main>
+        <WhiteArticle />
+      </main>
+      <Footer />
     </div>
   );
 }
