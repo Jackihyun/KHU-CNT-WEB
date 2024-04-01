@@ -3,7 +3,7 @@ import ImageBox from "./ImageBox";
 function PhotoArticle() {
   return (
     <div className="flex flex-col justify-center items-center px-[360px]">
-      <p className="font-['ft-activica-strong'] text-[36px] text-center mt-[103px] mb-[57px]">2024 KHU CNT FASHIONSHOW<br /> LAST-ING RE-PLAY
+      <p className="font-['ft-activica-strong'] text-[36px] text-center mb-[57px]">2024 KHU CNT FASHIONSHOW<br />MAKE-ING FILM
       </p>
       <div className="w-[1200px] h-[720px] bg-[#d9d9d9]"></div>
 
