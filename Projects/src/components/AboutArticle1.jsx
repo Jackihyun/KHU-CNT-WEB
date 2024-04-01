@@ -18,24 +18,24 @@ function AboutArticle1() {
   };
 
   return (
-    <div className="flex flex-col justify-center ">
+    <div className="flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center">
-        <p className='text-[36px] font-pretendard-regular'>제 44회 경희대학교 의상학과 졸업패션쇼</p>
-        <img src={LOGO} alt="LOGO" className='w-[1300px] h-[274px]' />
+        <p className='text-[36px] xl:text-[33px] lg:text-[30px] md:text-[27px] sm:text-[24px] m:text-[21px] font-pretendard-regular'>제 44회 경희대학교 의상학과 졸업패션쇼</p>
+        <img src={LOGO} alt="LOGO" className='w-full h-full' />
       </div>
       <div className="flex mt-[118px] mb-[308px]">
-        <img src={POSTER} alt="POSTER" className="w-[585px] h-[839px] mr-[24px]" />
+        <img src={POSTER} alt="POSTER" className="w-[585px] xl:w-[450px] lg:w-[346px] md:w-[266px] sm:w-[205px] m:w-[158px] h-[839px] xl:h-[645px] lg:h-[496px] md:h-[381px] sm:h-[293px] m:h-[225px] mr-[24px] xl:mr-[18px] lg:mr-[14px] md:mr-[11px] sm:mr-[8.5px] m:mr-[6.5px] " />
         <div className="flex flex-col">
-          <p className="text-[24px] font-pretendard-regular w-full h-[839px]">{text[languages]}
+          <p className="text-[24px] xl:text-[21px] lg:text-[18px] md:text-[15px] sm:text-[12px] m:text-[9px] font-pretendard-regular w-full h-[839px]">{text[languages]}
           </p>
           <div className="flex justify-end gap-[15px] mt-[24px]">
-            <button onClick={() => handleLanguageChange('한국어')} className={`w-[40px] h-[40px] font-['PT_MONO'] text-[32px] rounded-full flex items-center justify-center ${languages === '한국어' ? 'bg-[#1A1A1A] text-[#FFF]' : 'bg-[#D9D9D9] text-[#000]'}`}>
+            <button onClick={() => handleLanguageChange('한국어')} className={`w-[40px] h-[40px] font-['PT_MONO'] text-[32px] xl:text-[28px] lg:text-[24px] md:text-[20px] sm:text-[16px] m:text-[12px] rounded-full flex items-center justify-center ${languages === '한국어' ? 'bg-[#1A1A1A] text-[#FFF]' : 'bg-[#D9D9D9] text-[#000]'}`}>
               한
             </button>
-            <button onClick={() => handleLanguageChange('영어')} className={`w-[40px] h-[40px] font-['PT_MONO'] text-[32px] rounded-full flex items-center justify-center ${languages === '영어' ? 'bg-[#1A1A1A] text-[#FFF]' : 'bg-[#D9D9D9] text-[#000]'}`}>
+            <button onClick={() => handleLanguageChange('영어')} className={`w-[40px] h-[40px] font-['PT_MONO'] text-[32px] xl:text-[28px] lg:text-[24px] md:text-[20px] sm:text-[16px] m:text-[12px]rounded-full flex items-center justify-center ${languages === '영어' ? 'bg-[#1A1A1A] text-[#FFF]' : 'bg-[#D9D9D9] text-[#000]'}`}>
               A
             </button>
-            <button onClick={() => handleLanguageChange('중국어')} className={`w-[40px] h-[40px] font-['PT_MONO'] text-[32px] rounded-full flex items-center justify-center ${languages === '중국어' ? 'bg-[#1A1A1A] text-[#FFF]' : 'bg-[#D9D9D9] text-[#000]'}`}>
+            <button onClick={() => handleLanguageChange('중국어')} className={`w-[40px] h-[40px] font-['PT_MONO'] text-[32px] xl:text-[28px] lg:text-[24px] md:text-[20px] sm:text-[16px] m:text-[12px] rounded-full flex items-center justify-center ${languages === '중국어' ? 'bg-[#1A1A1A] text-[#FFF]' : 'bg-[#D9D9D9] text-[#000]'}`}>
               中
             </button>
           </div>

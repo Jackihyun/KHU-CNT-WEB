@@ -1,35 +1,39 @@
-import MenuImage from '../assets/Mask group1.png';
-import MenuImage2 from '../assets/Mask group2.png';
+import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
+import AboutButton from './AboutButton';
 
 function AboutMenu() {
   const [menu, setMenu] = useState('stage');
-  const handleMenu = (Menu) => {
-    setMenu(Menu);
-  };
+
   return (
-    <div className="flex justify-center items-start">
-      <button onClick={() => handleMenu('stage')} className="flex flex-col justify-center">
-        <div className="flex items-center">
-          <img src={menu === 'stage' ? MenuImage : MenuImage2} alt="stage" className="w-[125px] h-[125px] mb-[17px]" />
-          <div className="border-t-2 border-black w-[410px]"></div>
-        </div>
-        <p className="font-['ft-activica-strong'] text-[24px]">STAGE<br /><span className="font-pretendard-regular text-[24px]">스테이지주제</span></p>
-      </button>
-
-      <button onClick={() => handleMenu('thanksto')} className="flex flex-col justify-center">
-        <div className="flex items-center">
-          <img src={menu === 'thanksto' ? MenuImage : MenuImage2} alt="Thanksto" className="w-[125px] h-[125px] mb-[17px]" />
-          <div className="border-t-2 border-black w-[410px]"></div>
-        </div>
-        <p className="font-['ft-activica-strong'] text-[24px]">THANKS TO</p>
-      </button>
-
-      <button onClick={() => handleMenu('partner')} className="flex flex-col justify-center">
-        <img src={menu === 'partner' ? MenuImage : MenuImage2} alt="partner" className="w-[125px] h-[125px] mb-[17px]" />
-        <p className="font-['ft-activica-strong'] text-[24px]">PARTNER</p>
-      </button>
-    </div>
+    <>
+      <div className="flex">
+        <AboutButton
+          link='/about/stage'
+          isActive={menu === 'stage'}
+          handleMenu={() => setMenu('stage')}
+          title='STAGE'
+          content='스테이지 주제'
+        />
+        <div className='h-[1px] border-[#000] basis-full border-t-2 my-auto relative bottom-[60px]' />
+        <AboutButton
+          link='/about/thanksto'
+          isActive={menu === 'thanksto'}
+          handleMenu={() => setMenu('thanksto')}
+          title='THANKS TO'
+          content='지도 및 지원'
+        />
+        <div className='h-[1px] border-[#000] basis-full border-t-2 my-auto relative bottom-[60px]' />
+        <AboutButton
+          link='/about/partner'
+          isActive={menu === 'partner'}
+          handleMenu={() => setMenu('partner')}
+          title='PARTNER'
+          content='협찬사'
+        />
+      </div>
+      <Outlet />
+    </>
   );
 }
 
