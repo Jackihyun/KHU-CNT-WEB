@@ -13,7 +13,7 @@ const AboutButton = ({
   return (
     <Link to={link}>
       <button onClick={handleMenu} className="flex flex-col items-center w-[125px] gap-[17px]">
-        <img src={isActive ? MenuImage : MenuImage2} alt="stage" className='block w-[125px] h-[125px]' />
+        <img src={isActive ? MenuImage : MenuImage2} alt="menu" className='block w-[125px] h-[125px]' />
         <div className='flex flex-col w-[125px]'>
           <p className={`font-['ft-activica-strong'] text-[24px] text-nowrap ${isActive ? 'text-black' : 'text-black/40'}`}>{title}</p>
           {isActive && <span className="font-pretendard-regular text-[24px] text-nowrap">{content}</span>}

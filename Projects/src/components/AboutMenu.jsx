@@ -1,9 +1,14 @@
-import { Outlet } from 'react-router-dom';
-import { useState } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import AboutButton from './AboutButton';
 
 function AboutMenu() {
-  const [menu, setMenu] = useState('stage');
+  const location = useLocation();
+  const [menu, setMenu] = useState(location.pathname.split('/')[2] || 'stage');
+
+  useEffect(() => {
+    setMenu(location.pathname.split('/')[2] || 'stage');
+  }, [location]);
 
   return (
     <>
