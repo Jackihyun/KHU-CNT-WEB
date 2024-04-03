@@ -18,7 +18,7 @@ function Header() {
           {["ABOUT", "DESIGNER", "ARCHIVE", "WHITEPROJ.", "PHOTO"].map((menu) => (
             <Link
               key={menu}
-              to={`/${menu.toLowerCase()}`}
+              to={`/${menu.toLowerCase()}${menu === 'ABOUT' ? "/stage" : ""}`}
               className={`text-black hover:text-[#D9D9D9] transition-colors duration-200 ${activeMenu === menu ? 'border-b-[6px] border-black' : ''
                 }`}
               onClick={() => setActiveMenu(menu)}

@@ -6,6 +6,9 @@ import ArchivePage from './pages/ArchivePage';
 import DesignerPage from './pages/DesignerPage';
 import PhotoPage from './pages/PhotoPage';
 import WhiteprojectPage from './pages/WhiteprojectPage';
+import AboutMenuStage from './components/AboutMenuStage';
+import AboutMenuThanks from './components/AboutMenuThanks';
+import AboutMenuPartner from './components/AboutMenuPartner';
 
 function App() {
   return (
@@ -13,7 +16,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
 
-        <Route path="/about" element={<AboutPage />} />
+        <Route element={<AboutPage />}>
+          <Route path="/about/stage" element={<AboutMenuStage />} />
+          <Route path="/about/thanksto" element={<AboutMenuThanks />} />
+          <Route path="/about/partner" element={<AboutMenuPartner />} />
+        </Route>
 
         <Route path="/archive" element={<ArchivePage />} />
 
