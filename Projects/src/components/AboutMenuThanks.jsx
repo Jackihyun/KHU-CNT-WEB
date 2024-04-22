@@ -97,8 +97,9 @@ function AboutMenuThanks() {
       <div className="flex flex-col justify-center mb-[451px] xl:mb-[347px] lg:mb-[267px] md:mb-[205px] sm:mb-[158px] m:mb-[121px]">
         <p className="font-pretendard-semibold text-[44px] xl:text-[40px] lg:text-[36px] md:text-[32px] sm:text-[28px] m:text-[24px] mb-[50px]">제작 지원</p>
         <div className="flex flex-col gap-[20px] xl:gap-[18px] lg:gap-[16px] md:gap-[14px] sm:gap-[12px] m:gap-[10px]">
-          <div className="flex ">
+          <div className="flex">
             <p className="w-[527px] xl:w-[405px] lg:w-[312px] md:w-[240px] sm:w-[185px] m:w-[142px] font-pretendard-semibold text-[24px] xl:text-[22px] lg:text-[20px] md:text-[18px] sm:text-[16px] m:text-[14px]">웹사이트 개발</p>
+
             <div className="flex flex-col justify-between">
               <div className="flex mb-[10px] xl:mb-[8px] lg:mb-[6px] md:mb-[4px] sm:mb-[2px] m:mb-[1px]">
                 <p className='w-[290px] xl:w-[223px] lg:w-[172px] md:w-[132px] sm:w-[102px] m:w-[78px] font-pretendard-regular text-[24px] xl:text-[22px] lg:text-[20px] md:text-[18px] sm:text-[16px] m:text-[14px]'>박기현 Kihyun Park</p>

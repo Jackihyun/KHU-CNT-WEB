@@ -4,9 +4,9 @@ function Footer() {
 
   return (
     <footer className=" w-full bg-[#1A1A1A] h-[700px] xl:h-[539px] lg:h-[415px] md:h-[320px] sm:h-[246px] m:h-[189px] px-[100px] xl:px-[77px] lg:px-[59.2px] md:px-[45.5px] sm:px-[35px] m:px-[27px] pb-[143px] xl:pb-[110px] lg:pb-[84.6px] md:pb-[65px] sm:pb-[20px] m:pb-[15px] pt-[77px] xl:pt-[59.2px] lg:pt-[45.5px] md:pt-[35px] sm:pt-[27px] m:pt-[21px] flex justify-between items-start ">
-      <div className="logo-container w-[495px] min-w-[100px]"> {/* 로고의 최소 너비 설정 */}
-        <a href="/">
-          <img src={LOGO} alt="footer logo" className="w-full h-auto" /> {/* 너비를 100%로 설정하여 부모 요소에 맞춰 조정 */}
+      <div className="absolute"> {/* 로고의 최소 너비 설정 */}
+        <a href="/" className='w-full h-full'>
+          <img src={LOGO} alt="footer logo" className="m:w-[140px] sm:w-[150px] md:w-[335px] lg:w-[360px] w-[495px] h-auto" /> {/* 너비를 100%로 설정하여 부모 요소에 맞춰 조정 */}
         </a>
       </div>
 
