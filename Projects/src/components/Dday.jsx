@@ -51,7 +51,8 @@ function Dday() {
 
   return (
     <div className='flex flex-col justify-center items-center px-[103px] xl:px-[75px] lg:px-[70px] md:px-[50px] sm:px-[33.3px] m:px-[22.2px]'>
-      <p className="font-['ft-activica-strong'] text-[44px] xl:text-[32px] lg:text-[30px] md:text-[20px] sm:text-[14px] m:text-[12px] text-[#000]">2024.05.31 4PM / 7PM</p>
+      <p className="font-['ft-activica-strong'] text-[40px] xl:text-[32px] lg:text-[30px] md:text-[20px] sm:text-[14px] m:text-[12px] text-[#000]">KHU CNT 44TH FASHION SHOW</p>
+      <p className="font-['ft-activica-strong'] text-[40px] xl:text-[32px] lg:text-[30px] md:text-[20px] sm:text-[14px] m:text-[12px] text-[#000]">2024.05.31 4PM / 7PM</p>
       <p className="font-['ft-activica-strong'] text-nowrap text-[210px] xl:text-[180px] lg:text-[120px] md:text-[80px] sm:text-[70px] m:text-[52px]">D-{countdown}</p>
     </div>
 
