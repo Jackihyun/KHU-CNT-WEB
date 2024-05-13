@@ -15,7 +15,7 @@ function HomePage() {
           <Invite />
         </div>
 
-        <div className='w-full mt-[1994px]'>
+        <div className='w-full'>
           <HomeArticle />
         </div>
 

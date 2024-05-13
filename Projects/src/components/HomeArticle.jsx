@@ -4,6 +4,7 @@ import MainImage from "../assets/image 20.png";
 function Article() {
   return (
     <>
+      <img />
       <div className="w-full flex pl-[100px] xl:pl-[77px] lg:pl-[59.2px] md:pl-[45.5px] sm:pl-[35px] m:pl-[27px]">
         <div className="flex flex-col justify-start items-start w-[60%]">
           <p className="text-[56px] mb-[85px] font-['ft-activica-strong']">Life is more important than fashion<br />THAT'S WHY FASHION IS IMPORTANT</p>
