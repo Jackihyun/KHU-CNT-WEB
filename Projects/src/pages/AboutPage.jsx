@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
       <Header />
-      <main className="mt-[183px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px]">
+      <main className="mt-[65px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px]">
         <AboutArticle1 />
         <AboutMenu />
       </main>
