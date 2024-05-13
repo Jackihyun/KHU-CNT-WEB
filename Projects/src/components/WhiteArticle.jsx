@@ -1,4 +1,5 @@
 import ImageBox from "./ImageBox";
+import WprojPoster from "../assets/WprojPoster.png";
 
 function WhiteArticle() {
   return (
@@ -12,10 +13,10 @@ function WhiteArticle() {
       </div>
 
       {/* 본문 */}
-      <div className="flex justify-center px-[360px] xl:px-[276px] lg:px-[212px] md:px-[163px] sm:px-[125px] m:px-[96px] mb-[333px] xl:mb-[256px] lg:mb-[197px] md:mb-[151px] sm:mb-[116px] m:mb-[90px]">
-        <div className="w-[718px] xl:w-[552px] lg:w-[424px] md:w-[326px] sm:w-[250px] m:w-[192px] h-[872px] xl:h-[670px] lg:h-[515px] md:h-[396px] sm:h-[304px] m:h-[233px] bg-[#D9D9D9] mr-[40px] xl:mr-[31px] lg:mr-[23px] md:mr-[18px] sm:mr-[14px] m:mr-[11px]">
+      <div className="flex justify-center px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px] mb-[333px] xl:mb-[256px] lg:mb-[197px] md:mb-[151px] sm:mb-[116px] m:mb-[90px]">
+        <img src={WprojPoster} alt="whiteprojectposter" className="w-[718px] xl:w-[552px] lg:w-[424px] md:w-[326px] sm:w-[250px] m:w-[192px] h-[872px] xl:h-[670px] lg:h-[515px] md:h-[396px] sm:h-[304px] m:h-[233px] mr-[40px] xl:mr-[31px] lg:mr-[23px] md:mr-[18px] sm:mr-[14px] m:mr-[11px]">
           {/* <ImageBox src="" alt="white1" /> */}
-        </div>
+        </img>
         <div className="w-[440px] xl:w-[338px] lg:w-[260px] md:w-[200px] sm:w-[154px] m:w-[118px] h-[624px] xl:h-[480px] lg:h-[369px] md:h-[284px] sm:h-[218px] m:h-[168px] font-pretendard-regular text-[16px] xl:text-[13px] lg:text-[10.5px] md:text-[8.5px] sm:text-[6.5px] m:text-[4.5px] text-[#000]">
           <p>
             The White Project를 통해 2024년 경희대학교 의상학과 졸업 패션쇼의 과정을 공개한다. 작품들은 컬러와 소재가 배제된 채 광목으로 완성되었다. 색이 입혀지지 않은 작품들은 보는 이로 하여금 완성된 모습을 상상하고, 디자이너들의 고민을 느낄 수 있는 여백을 제공한다. 화이트 프로젝트 컬렉션에는 디자이너의 책임과 옷의 가치를 전달하기 위한 47인의 디자이너의 노력이 담겨있다. LAST-ING을 재해석한 7가지 테마를 감상하며 각자 지속하는 힘에 대해 생각해보는 시작점이 되기를 바란다.
