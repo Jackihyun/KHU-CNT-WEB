@@ -11,7 +11,6 @@ const AboutButton = ({
 }) => {
 
   return (
-    
     <Link to={link}>
       <button onClick={handleMenu} className="flex flex-col items-center w-[125px] gap-[17px]">
         <img src={isActive ? MenuImage : MenuImage2} alt="menu" className='block w-[125px] h-[125px]' />

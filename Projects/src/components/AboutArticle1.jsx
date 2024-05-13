@@ -19,7 +19,6 @@ function AboutArticle1() {
 
   return (
     <div className="flex flex-col justify-center">
-      
       <div className="flex flex-col justify-center items-center">
         <p className='text-[36px] xl:text-[33px] lg:text-[30px] md:text-[27px] sm:text-[24px] m:text-[21px] font-pretendard-regular'>제 44회 경희대학교 의상학과 졸업패션쇼</p>
         <img src={LOGO} alt="LOGO" className='w-full h-full' />
