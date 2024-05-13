@@ -49,7 +49,7 @@ function AboutMenuPartner() {
     <div className="flex flex-col items-start mb-[318px]">
       <p className="font-pretendard-semibold text-[44px] text-black mb-[50px] mt-[167px]">협찬사</p>
 
-      <div className='grid grid-cols-3 sm:grid-cols-2 gap-[25px] w-full'>
+      <div className='grid grid-cols-3 sm:grid-cols-2 m:grid-cols-1 gap-[25px] w-full'>
         {
           partners.map((partner, idx) => (
             <div key={idx} className='flex flex-col justify-center items-start'>

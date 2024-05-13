@@ -32,7 +32,7 @@ function Header() {
           ))}
         </div>
         <div>
-          <p className='font-[ft-activica-strong] text-black border-b border-black text-[24px]'>contact</p>
+          <p className='font-[ft-activica-strong] leading-none text-black border-b-2 border-black text-[24px]'>INVITATION</p>
         </div>
         <button className='hidden m:block sm:block  md:hidden lg:hidden xl:hidden 2xl:hidden' onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
           <div className="relative w-[23px] h-[18px] gap-[4.7px] flex flex-col justify-between items-center">
