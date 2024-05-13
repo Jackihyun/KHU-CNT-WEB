@@ -9,6 +9,7 @@ import WhiteprojectPage from './pages/WhiteprojectPage';
 import AboutMenuStage from './components/AboutMenuStage';
 import AboutMenuThanks from './components/AboutMenuThanks';
 import AboutMenuPartner from './components/AboutMenuPartner';
+import TeamIntro from './pages/TeamIntroPage';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
         <Route path='/photo' element={<PhotoPage />} />
 
         <Route path='/whiteproj.' element={<WhiteprojectPage />} />
+
+        <Route path='/team-intro/:team' element={<TeamIntro />} />
       </Routes>
     </Router >
   );

@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import AboutArticle1 from "../components/AboutArticle1";
 import AboutMenu from "../components/AboutMenu";
 import Footer from "../components/Footer";
+
 function AboutPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
