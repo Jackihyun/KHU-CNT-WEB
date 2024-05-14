@@ -31,7 +31,7 @@ function App() {
 
         <Route path='/whiteproj.' element={<WhiteprojectPage />} />
 
-        <Route path='/team-intro/:team' element={<TeamIntro />} />
+        <Route path='/teams/:teamId' element={<TeamIntro />} />
       </Routes>
     </Router >
   );

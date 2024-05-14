@@ -10,49 +10,49 @@ import { Link } from "react-router-dom";
 function AboutMenuStage() {
   return (
     <div className="flex flex-col mt-[205px] gap-[50px] mb-[347px] ">
-      <Link to="/team-intro/A">
+      <Link to="/teams/A">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px]">TEAM A. ANEMOIA</p>
           <img src={TeamA} alt="teamA" className="w-full h-[300px] bg-[#d1d1d1]" />
         </div>
       </Link>
 
-      <Link to="/team-intro/B">
+      <Link to="/teams/B">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px]">TEAM B. ODYSSEY</p>
           <img src={TeamB} alt="teamB" className="w-full h-[300px] bg-[#d1d1d1]" />
         </div>
       </Link>
 
-      <Link to="/team-intro/C">
+      <Link to="/teams/C">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px]">TEAM C. ANEMOIA</p>
           <img src={TeamC} alt="teamC" className="w-full h-[300px] bg-[#d1d1d1]" />
         </div>
       </Link>
 
-      <Link to="/team-intro/D">
+      <Link to="/teams/D">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px]">TEAM D. ANEMOIA</p>
           <img src={TeamD} alt="teamD" className="w-full h-[300px] bg-[#d1d1d1]" />
         </div>
       </Link >
 
-      <Link to="/team-intro/E">
+      <Link to="/teams/E">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px]">TEAM E. ANEMOIA</p>
           <img src={TeamE} alt="teamE" className="w-full h-[300px] bg-[#d1d1d1]" />
         </div>
       </Link >
 
-      <Link to="/team-intro/F">
+      <Link to="/teams/F">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px]">TEAM F. ANEMOIA</p>
           <img src={TeamF} alt="teamF" className="w-full h-[300px] bg-[#d1d1d1]" />
         </div>
       </Link >
 
-      <Link to="/team-intro/G">
+      <Link to="/teams/G">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px]">TEAM G. ANEMOIA</p>
           <img src={TeamG} alt="teamG" className="w-full h-[300px] bg-[#d1d1d1]" />
