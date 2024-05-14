@@ -11,6 +11,7 @@ import AboutMenuThanks from './components/AboutMenuThanks';
 import AboutMenuPartner from './components/AboutMenuPartner';
 import TeamIntro from './pages/TeamIntroPage';
 
+
 function App() {
   return (
     <Router>
@@ -38,3 +39,4 @@ function App() {
 }
 
 export default App;
+

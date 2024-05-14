@@ -16,7 +16,7 @@ function Header() {
     <header className="bg-white h-[80px] w-full overflow-x-hidden border-t-0 border-b border-x-0 border-[#444444]">
       <nav className="h-full w-full max-w-full flex justify-around items-center text-[24px]">
         <Link to={'/'}>
-          <img src={MainLogo} alt="logo" className="h-[40px] w-[195px]" />
+          <img src={MainLogo} alt="logo" className="h-[40px] w-[195px] cursor-pointer" />
         </Link>
         <div className={`h-full grid grid-flow-col gap-x-[50px] xl:gap-x-[40px] lg:gap-x-[30px] md:gap-x-[20px] items-center font-['ft-activica-strong'] m:hidden sm:hidden transition-all duration-500 ease-in-out ${isMobileMenuOpen ? '' : ''}`}>
           {["ABOUT", "DESIGNER", "ARCHIVE", "WHITEPROJ.", "PHOTO"].map((menu) => (
@@ -32,7 +32,7 @@ function Header() {
           ))}
         </div>
         <div>
-          <p className='font-[ft-activica-strong] leading-none text-black border-b-2 border-black text-[24px]'>INVITATION</p>
+          <p className='font-[ft-activica-strong] leading-none text-black border-b-2 border-black text-[24px] cursor-pointer'>INVITATION</p>
         </div>
         <button className='hidden m:block sm:block  md:hidden lg:hidden xl:hidden 2xl:hidden' onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
           <div className="relative w-[23px] h-[18px] gap-[4.7px] flex flex-col justify-between items-center">
