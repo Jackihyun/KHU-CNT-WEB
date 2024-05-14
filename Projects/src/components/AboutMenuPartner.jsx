@@ -32,7 +32,7 @@ const partners = [
 ]
 
 function AboutMenuPartner() {
-  const [repaint, setRepaint] = useState(0);
+  const [, setRepaint] = useState(0);
 
   useEffect(() => {
     window.document.addEventListener('scroll', () => {

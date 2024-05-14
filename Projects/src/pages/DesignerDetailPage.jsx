@@ -1,10 +1,10 @@
 
-function DesignerDetailPage({englishName, name, contact, image, details, look1Image, look2Image}) {
-  return (
-    <div>
+// function DesignerDetailPage({englishName, name, contact, image, details, look1Image, look2Image}) {
+//   return (
+//     <div>
 
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default DesignerDetailPage;
+// export default DesignerDetailPage;

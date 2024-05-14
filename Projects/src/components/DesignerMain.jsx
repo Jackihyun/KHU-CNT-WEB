@@ -4,7 +4,7 @@ import Gyuri from "../assets/조별이미지/E조/김규리.jpeg";
 import Dayoung from "../assets/조별이미지/C조/김다영.jpg";
 import Migon from "../assets/조별이미지/C조/김미곤.jpg";
 import Minseo from "../assets/조별이미지/B조/김민서.jpg";
-import Minji  from "../assets/조별이미지/A조/김민지.jpg";
+import Minji from "../assets/조별이미지/A조/김민지.jpg";
 import Mincheol from "../assets/조별이미지/D조/김민철.jpg";
 import Soeun from "../assets/조별이미지/C조/김소은.jpg";
 import Eunchae from "../assets/조별이미지/E조/김은채.jpg";
@@ -52,231 +52,276 @@ function DesignerMain() {
     {
       alt: "강민영 디자이너",
       src: Minyoung,
-      name: <p>강민영<br />Minyoung Kang</p>,
+      name: "강민영",
+      ename: "Minyoung Kang",
     },
     {
       alt: "강사우 디자이너",
       src: Sowoo,
-      name: <p>강사우<br />Jiang Siyu</p>,
+      name: "강사우",
+      ename: "Jiang Siyu",
     },
     {
       alt: "김규리 디자이너",
       src: Gyuri,
-      name: <p>김규리<br />Gyuri Kim</p>,
+      name: "김규리",
+      ename: "Gyuri Kim",
     },
     {
       alt: "김다영 디자이너",
       src: Dayoung,
-      name: <p>김다영<br />Dayoung Kim</p>,
+      name: "김다영",
+      ename: "Dayoung Kim"
     },
     {
-      alt : "김미곤 디자이너",
-      src : Migon,
-      name : <p>김미곤<br />Migon Kim</p>,
+      alt: "김미곤 디자이너",
+      src: Migon,
+      name: "김미곤",
+      ename: "Migon Kim"
     },
     {
-      alt : "김민서 디자이너",
-      src : Minseo,
-      name : <p>김민서<br />Minseo Kim</p>,
+      alt: "김민서 디자이너",
+      src: Minseo,
+      name: "김민서",
+      ename: "Minseo Kim"
     },
     {
-      alt :   "김민지 디자이너",
-      src : Minji,
-      name : <p>김민지<br />Minji Kim</p>,
+      alt: "김민지 디자이너",
+      src: Minji,
+      name: "김민지",
+      ename: "Minji Kim"
     },
     {
-      alt : "김민철 디자이너",
-      src : Mincheol,
-      name : <p>김민철<br />Mincheol Kim</p>,
-    }, 
-    {
-      alt : "김소은 디자이너",
-      src : Soeun,
-      name : <p>김소은<br />Soeun Kim</p>,
+      alt: "김민철 디자이너",
+      src: Mincheol,
+      name: "김민철",
+      ename: "Mincheol Kim"
     },
     {
-      alt : "김은채 디자이너",
-      src : Eunchae,
-      name : <p>김은채<br />Eunchae Kim</p>,
+      alt: "김소은 디자이너",
+      src: Soeun,
+      name: "김소은",
+      ename: "Soeun Kim"
     },
     {
-      alt : "김이체 디자이너",
-      src : Iche,
-      name : <p>김이체<br />Iche Kim</p>,
+      alt: "김은채 디자이너",
+      src: Eunchae,
+      name: "김은채",
+      ename: "Eunchae Kim"
     },
     {
-      alt : "김희연 디자이너",
-      src : Heeyeon,
-      name : <p>김희연<br />Heeyeon Kim</p>,
+      alt: "김이체 디자이너",
+      src: Iche,
+      name: "김이체",
+      ename: "Iche Kim"
     },
     {
-      alt : "나민영 디자이너",
-      src : NaMinyoung,
-      name : <p>나민영<br />NaMinyoung</p>,
-    }, 
-    {
-      alt : "민시은 디자이너",
-      src : Sieun,
-      name : <p>민시은<br />Sieun Min</p>,
+      alt: "김희연 디자이너",
+      src: Heeyeon,
+      name: "김희연",
+      ename: "Heeyeon Kim"
     },
     {
-      alt : "박슬빈 디자이너",
-      src : Seulbin,
-      name : <p>박슬빈<br />Seulbin Park</p>,
+      alt: "나민영 디자이너",
+      src: NaMinyoung,
+      name: "나민영",
+      ename: "NaMinyoung"
     },
     {
-      alt : "박정은 디자이너",
-      src : Jeongeun,
-      name : <p>박정은<br />Jeongeun Park</p>,
+      alt: "민시은 디자이너",
+      src: Sieun,
+      name: "민시은",
+      ename: "Sieun Min"
     },
     {
-      alt : "박지민 디자이너",
-      src : Jimin,
-      name : <p>박지민<br />Jimin Park</p>,
+      alt: "박슬빈 디자이너",
+      src: Seulbin,
+      name: "박슬빈",
+      ename: "Seulbin Park"
     },
     {
-      alt : "사한나 디자이너",
-      src : Hanna,
-      name : <p>사한나<br />Hanna Sa</p>,
+      alt: "박정은 디자이너",
+      src: Jeongeun,
+      name: "박정은",
+      ename: "Jeongeun Park"
     },
     {
-      alt : "송겸승 디자이너",
-      src : Gyeomseung,
-      name : <p>송겸승<br />Gyeomseung Song</p>,
+      alt: "박지민 디자이너",
+      src: Jimin,
+      name: "박지민",
+      ename: "Jimin Park"
     },
     {
-      alt : "왕혜영 디자이너",
-      src : Huiying,
-      name : <p>왕혜영<br />Huiying Wang</p>,
+      alt: "사한나 디자이너",
+      src: Hanna,
+      name: "사한나",
+      ename: "Hanna Sa"
     },
     {
-      alt : "우가인 디자이너",
-      src : Gain,
-      name : <p>우가인<br />Gain Woo</p>,
+      alt: "송겸승 디자이너",
+      src: Gyeomseung,
+      name: "송겸승",
+      ename: "Gyeomseung Song"
     },
     {
-      alt : "우수진 디자이너",
-      src : Sujin,
-      name : <p>우수진<br />Sujin Woo</p>,
+      alt: "왕혜영 디자이너",
+      src: Huiying,
+      name: "왕혜영",
+      ename: "Huiying Wang"
     },
     {
-      alt : "원소영 디자이너",
-      src : Hsiaoyun,
-      name : <p>원소영<br />Hsiaoyun Won</p>,
+      alt: "우가인 디자이너",
+      src: Gain,
+      name: "우가인",
+      ename: "Gain Woo"
     },
     {
-      alt : "유가동 디자이너",
-      src : Jiatong,
-      name : <p>유가동<br />Jiatong Yu</p>,
+      alt: "우수진 디자이너",
+      src: Sujin,
+      name: "우수진",
+      ename: "Sujin Woo"
     },
     {
-      alt : "유서안 디자이너",
-      src : Juian,
-      name : <p>유서안<br />Juian Yu</p>,
+      alt: "원소영 디자이너",
+      src: Hsiaoyun,
+      name: "원소영",
+      ename: "Hsiaoyun Won"
     },
     {
-      alt : "유철찬 디자이너",
-      src : Zhecan,
-      name : <p>유철찬<br />Zhecan Yu</p>,
+      alt: "유가동 디자이너",
+      src: Jiatong,
+      name: "유가동",
+      ename: "Jiatong Yu"
     },
     {
-      alt : "이경범 디자이너",
-      src : Gyeongbeom,
-      name : <p>이경범<br />Gyeongbeom Lee</p>,
+      alt: "유서안 디자이너",
+      src: Juian,
+      name: "유서안",
+      ename: "Juian Yu"
     },
     {
-      alt : "이사기 디자이너",
-      src : Siqi,
-      name : <p>이사기<br />Siqi Lee</p>,
-    }, 
-    {
-      alt : "이석준 디자이너",
-      src : Seokjun,
-      name : <p>이석준<br />Seokjun Lee</p>,
+      alt: "유철찬 디자이너",
+      src: Zhecan,
+      name: "유철찬",
+      ename: "Zhecan Yu"
     },
     {
-      alt : "이소망 디자이너",
-      src : Somang,
-      name : <p>이소망<br />Somang Lee</p>,
+      alt: "이경범 디자이너",
+      src: Gyeongbeom,
+      name: "이경범",
+      ename: "Gyeongbeom Lee"
     },
     {
-      alt : "이우기 디자이너",
-      src : Yuqi,
-      name : <p>이우기<br />Yuqi Lee</p>,
+      alt: "이사기 디자이너",
+      src: Siqi,
+      name: "이사기",
+      ename: "Siqi Lee"
     },
     {
-      alt : "이유나 디자이너",
-      src : Yuna,
-      name : <p>이유나<br />Yuna Lee</p>,
+      alt: "이석준 디자이너",
+      src: Seokjun,
+      name: "이석준",
+      ename: "Seokjun Lee"
     },
     {
-      alt : "이자영 디자이너",
-      src : Jayoung,
-      name : <p>이자영<br />Jayoung Lee</p>,
+      alt: "이소망 디자이너",
+      src: Somang,
+      name: "이소망",
+      ename: "Somang Lee"
     },
     {
-      alt : "이지우 디자이너",
-      src : Jiwoo,
-      name : <p>이지우<br />Jiwoo Lee</p>,
+      alt: "이우기 디자이너",
+      src: Yuqi,
+      name: "이우기",
+      ename: "Yuqi Lee"
     },
     {
-      alt : "이현민 디자이너",
-      src : Hyunmin,
-      name : <p>이현민<br />Hyunmin Lee</p>,
+      alt: "이유나 디자이너",
+      src: Yuna,
+      name: "이유나",
+      ename: "Yuna Lee"
     },
     {
-      alt : "임기현 디자이너",
-      src : kihyun,
-      name : <p>임기현<br />Kihyun Lim</p>,
+      alt: "이자영 디자이너",
+      src: Jayoung,
+      name: "이자영",
+      ename: "Jayoung Lee"
     },
     {
-      alt : "장유미 디자이너",
-      src : Youmi,
-      name : <p>장유미<br />Youmi Jang</p>,
+      alt: "이지우 디자이너",
+      src: Jiwoo,
+      name: "이지우",
+      ename: "Jiwoo Lee"
     },
     {
-      alt : "장한빙 디자이너",
-      src : Hanbing,
-      name : <p>장한빙<br />Hanbing Jang</p>,
+      alt: "이현민 디자이너",
+      src: Hyunmin,
+      name: "이현민",
+      ename: "Hyunmin Lee"
     },
     {
-      alt : "조연진 디자이너",
-      src : Yeonjin,
-      name : <p>조연진<br />Yeonjin Cho</p>,
+      alt: "임기현 디자이너",
+      src: kihyun,
+      name: "임기현",
+      ename: "Kihyun Lim"
     },
     {
-      alt : "지서현 디자이너",
-      src : Seohyeon,
-      name : <p>지서현<br />Seohyeon Ji</p>,
+      alt: "장유미 디자이너",
+      src: Youmi,
+      name: "장유미",
+      ename: "Youmi Jang"
     },
     {
-      alt : "하정문 디자이너",
-      src : Jingwen,
-      name : <p>하정문<br />Jingwen Ha</p>,
+      alt: "장한빙 디자이너",
+      src: Hanbing,
+      name: "장한빙",
+      ename: "Hanbing Jang"
     },
     {
-      alt : "한수민 디자이너",
-      src : Phamphuong,
-      name : <p>한수민<br />Phamphuong Han</p>,
+      alt: "조연진 디자이너",
+      src: Yeonjin,
+      name: "조연진",
+      ename: "Yeonjin Cho"
     },
     {
-      alt : "한승헌 디자이너",
-      src : Seungheon,
-      name : <p>한승헌<br />Seungheon Han</p>,
+      alt: "지서현 디자이너",
+      src: Seohyeon,
+      name: "지서현",
+      ename: "Seohyeon Ji"
     },
     {
-      alt : "허귀연 디자이너",
-      src : Guiyan,
-      name : <p>허귀연<br />Guiyan He</p>,
+      alt: "하정문 디자이너",
+      src: Jingwen,
+      name: "하정문",
+      ename: "Jingwen Ha"
     },
     {
-      alt : "홍채희 디자이너",
-      src : Chaehui,
-      name : <p>홍채희<br />Chaehui Hong</p>,
+      alt: "한수민 디자이너",
+      src: Phamphuong,
+      name: "한수민",
+      ename: "Phamphuong Han"
+    },
+    {
+      alt: "한승헌 디자이너",
+      src: Seungheon,
+      name: "한승헌",
+      ename: "Seungheon Han"
+    },
+    {
+      alt: "허귀연 디자이너",
+      src: Guiyan,
+      name: "허귀연",
+      ename: "Guiyan He"
+    },
+    {
+      alt: "홍채희 디자이너",
+      src: Chaehui,
+      name: "홍채희",
+      ename: "Chaehui Hong"
     },
   ]
 
-  const [repaint, setRepaint] = useState(0);
+  const [, setRepaint] = useState(0);
 
   useEffect(() => {
     window.document.addEventListener('scroll', () => {
@@ -291,28 +336,28 @@ function DesignerMain() {
   }, [])
 
   return (
-    <div className="flex flex-col w-full ">
-      <div className="flex flex-col justify-center items-center bg-[#cd6629]">
+    <div className="flex flex-col w-full">
+      <div className="flex flex-col justify-center items-center bg-[#CD6629]">
         <p className="text-[20.3vw]  text-center text-[#fbf9f8] font-['ft-activica-strong']">DESIGERS</p>
-        <p className="w-full  text-[5.6vw] text-center mt-[5%] text-[#fbf9f8] sm:text-sm">
+        <p className="w-full text-[5.6vw] font-['ft-activica-strong'] text-center mt-[5%] text-[#fbf9f8] sm:text-sm">
           제44회 패션쇼, 46인의 디자이너
         </p>
-        <p className="w-full text-[1.5vw] text-center text-[#fbf9f8] mt-[10%] sm:text-sm">
+        <p className="w-full text-[1.5vw] text-center text-[#fbf9f8] mt-[10%] mb-[3%] font-pretendard-regular sm:text-sm">
           추후 본 페이지에서 디자이너 소개 및 작품 페이지를 만나보실 수 있습니다.
         </p>
       </div>
 
-      <div className="bg-white grid grid-cols-3 sm:grid-cols-2 m:grid-cols-1 gap-4 p-4 mt-[65px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px]">
+      <div className="bg-white grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 m:grid-cols-1 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px]">
         {designer.map((designer, idx) => (
-          <div key={idx} className="flex flex-col items-center">
-            <div className="w-full h-[350px] overflow-hidden">
+          <div key={idx} className="flex flex-col items-start">
+            <div className="w-full h-[29vh] overflow-hidden">
               <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
             </div>
-            <p className="text-center mt-2">{designer.name}</p>
-            </div>
+            <p className="font-pretendard-semibold mt-[7%] text-[24px]">{designer.name}</p>
+            <p className="font-pretendard-regular text-[24px]">{designer.ename}</p>
+          </div>
         ))}
       </div>
-      <div className="mb-[20vh] bg-white"></div>
     </div>
   );
 }
