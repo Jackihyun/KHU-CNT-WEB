@@ -10,7 +10,7 @@ import AboutMenuStage from './components/AboutMenuStage';
 import AboutMenuThanks from './components/AboutMenuThanks';
 import AboutMenuPartner from './components/AboutMenuPartner';
 import TeamIntro from './pages/TeamIntroPage';
-
+import Invite from './pages/InvitationPage';
 
 function App() {
   return (
@@ -33,6 +33,8 @@ function App() {
         <Route path='/whiteproj.' element={<WhiteprojectPage />} />
 
         <Route path='/teams/:teamId' element={<TeamIntro />} />
+
+        <Route path='/invite/' element={<Invite />} />
       </Routes>
     </Router >
   );

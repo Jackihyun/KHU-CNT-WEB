@@ -5,7 +5,7 @@ function DesignerPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
       <Header />
-      <main className="mb-[370px]">
+      <main className=" mb-[370px]">
         <DesignerMain />
       </main>
       <Footer />

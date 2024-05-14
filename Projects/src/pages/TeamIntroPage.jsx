@@ -47,7 +47,7 @@ import teamDdesinger6 from "../assets/조별이미지/D조/한수민.jpg";
 // E조 이미지
 import teamEimage from "../assets/조별이미지/E조/E조.jpg";
 import teamEgroupPhoto from "../assets/조별이미지/E조/E조단체사진.jpg";
-import teamEdesinger1 from "../assets/조별이미지/E조/김규리.jpeg";
+import teamEdesinger1 from "../assets/조별이미지/E조/김규리.jpg";
 import teamEdesinger2 from "../assets/조별이미지/E조/김은채.jpg";
 import teamEdesinger3 from "../assets/조별이미지/E조/이자영.jpg";
 import teamEdesinger4 from "../assets/조별이미지/E조/이현민.jpg";
@@ -460,7 +460,7 @@ function TeamIntroPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
       <Header />
-      <img src={team.image} alt="팀이미지" className="w-full h-full" />
+      <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px]" />
       <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px] mt-[50px]">
         <article className="flex flex-col justify-center items-center">
           <p className="font-['ft-activica-strong'] text-[32px]">{team.team}</p>
@@ -481,7 +481,7 @@ function TeamIntroPage() {
         <div className="mt-[150px]">
           <p className="font-['ft-activica-strong'] text-[40px] mb-[39px]">DESINGERS</p>
           <img src={team.groupPhoto} alt="groupphoto" className="mb-[69px]" />
-          <div className="grid grid-cols-3 gap-y-[92px] gap-x-[23px]">
+          <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-y-[92px] gap-x-[23px]">
             {team.desingers.map((desinger, idx) => (
               <div key={idx} className="flex flex-col justify-center items-start">
                 <img src={desinger.photo} alt={desinger.name} className="mb-[29px]" />

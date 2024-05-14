@@ -1,6 +1,6 @@
 import Minyoung from "../assets/조별이미지/B조/강민영.jpg";
 import Sowoo from "../assets/조별이미지/G조/강사우.jpg";
-import Gyuri from "../assets/조별이미지/E조/김규리.jpeg";
+import Gyuri from "../assets/조별이미지/E조/김규리.jpg";
 import Dayoung from "../assets/조별이미지/C조/김다영.jpg";
 import Migon from "../assets/조별이미지/C조/김미곤.jpg";
 import Minseo from "../assets/조별이미지/B조/김민서.jpg";
@@ -336,9 +336,9 @@ function DesignerMain() {
   }, [])
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full h-full">
       <div className="flex flex-col justify-center items-center bg-[#CD6629]">
-        <p className="text-[20.3vw]  text-center text-[#fbf9f8] font-['ft-activica-strong']">DESIGERS</p>
+        <p className="mt-[80px] text-[20.3vw] text-center text-[#fbf9f8] font-['ft-activica-strong']">DESIGERS</p>
         <p className="w-full text-[5.6vw] font-['ft-activica-strong'] text-center mt-[5%] text-[#fbf9f8] sm:text-sm">
           제44회 패션쇼, 46인의 디자이너
         </p>
@@ -350,7 +350,7 @@ function DesignerMain() {
       <div className="bg-white grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 m:grid-cols-1 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px]">
         {designer.map((designer, idx) => (
           <div key={idx} className="flex flex-col items-start">
-            <div className="w-full h-[29vh] overflow-hidden">
+            <div className="w-full overflow-hidden">
               <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
             </div>
             <p className="font-pretendard-semibold mt-[7%] text-[24px]">{designer.name}</p>

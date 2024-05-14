@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import newMainPoster from "../assets/NewMainPoster.png";
+import newMainPoster from "../assets/아카이브포스터.png";
 
 function Archive() {
   const location = useLocation();
@@ -40,7 +40,7 @@ function Archive() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center mt-[5vw] mb-[20vw]">
+      <div className="w-full flex justify-center">
         <div className="max-w-full relative overflow-hidden">
           <a href="/">
             <img

@@ -1,6 +1,4 @@
-import LOGO from '../assets/LOGO.png';
-import AboutPoster from '../assets/AboutPoster.png';
-import { useState } from 'react';
+import AboutPoster from '../assets/어바웃포스터.png';
 
 function AboutArticle1() {
   const text = {
@@ -12,7 +10,7 @@ function AboutArticle1() {
 
   return (
     <div className="flex flex-col justify-center">
-      <img src={AboutPoster} alt='포스터' className='w-full' />
+      <img src={AboutPoster} alt='어바웃포스터' className='w-full' />
       <div className="grid grid-cols-2 mt-[48px] mb-[169px] gap-[45px]">
         <p className='font-pretendard-regular'>{text.한국어}</p>
         <p className='font-pretendard-regular'>{text.영어}</p>

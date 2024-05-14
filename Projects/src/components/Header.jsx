@@ -13,7 +13,7 @@ function Header() {
   }, [location]);
 
   return (
-    <header className="bg-white h-[80px] w-full overflow-x-hidden border-t-0 border-b border-x-0 border-[#444444]">
+    <header className="fixed top-0 left-0 z-50 bg-white bg-opacity-50 h-[80px] w-full overflow-x-hidden border-t-0 border-b border-x-0 border-[#444444]">
       <nav className="h-full w-full max-w-full flex justify-around items-center text-[24px]">
         <Link to={'/'}>
           <img src={MainLogo} alt="logo" className="h-[40px] w-[195px] cursor-pointer" />
@@ -32,7 +32,9 @@ function Header() {
           ))}
         </div>
         <div>
-          <p className='font-[ft-activica-strong] leading-none text-black border-b-2 border-black text-[24px] cursor-pointer'>INVITATION</p>
+          <Link to={'/invite'}>
+            <p className='font-[ft-activica-strong] leading-none text-black border-b-2 border-black text-[24px] cursor-pointer'>INVITATION</p>
+          </Link>
         </div>
         <button className='hidden m:block sm:block  md:hidden lg:hidden xl:hidden 2xl:hidden' onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
           <div className="relative w-[23px] h-[18px] gap-[4.7px] flex flex-col justify-between items-center">

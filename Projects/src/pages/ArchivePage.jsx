@@ -6,7 +6,7 @@ function ArchivePage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
       <Header />
-      <main className="">
+      <main className="pt-[80px]">
         <div>
           <Archive />
         </div>
