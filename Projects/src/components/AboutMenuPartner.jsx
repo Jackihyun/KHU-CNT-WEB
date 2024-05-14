@@ -1,6 +1,7 @@
 import JanSportPhoto from '../assets/JanSportPhoto.png';
 import CarinLogo from '../assets/CarinLogo.png';
 import IlHwaLogo from '../assets/IlHwaLogo.png';
+import VerttyLogo from '../assets/VerttyLogo.png';
 import { useEffect, useState } from 'react';
 
 const partners = [
@@ -18,15 +19,15 @@ const partners = [
   },
   {
     alt: "협찬사3",
-    src: IlHwaLogo,
-    name: <p>일화<br />ILHWA</p>,
-    height: "h-[89.6px]",
+    src: VerttyLogo,
+    name: <p>베르티<br />VERTTY</p>,
+    height: "h-[194px]",
   },
   {
     alt: "협찬사4",
-    src: JanSportPhoto,
-    name: <p>베르티<br />VERTTY</p>,
-    height: "h-[194px]",
+    src: IlHwaLogo,
+    name: <p>일화<br />ILHWA</p>,
+    height: "h-[89.6px]",
   },
 ]
 
@@ -49,7 +50,7 @@ function AboutMenuPartner() {
     <div className="flex flex-col items-start mb-[318px]">
       <p className="font-pretendard-semibold text-[44px] text-black mb-[50px] mt-[167px]">협찬사</p>
 
-      <div className='grid grid-cols-3 sm:grid-cols-2 m:grid-cols-1 gap-[25px] w-full'>
+      <div className='grid grid-cols-3 gap-y-[66px] sm:grid-cols-2 m:grid-cols-1 gap-[25px] w-full'>
         {
           partners.map((partner, idx) => (
             <div key={idx} className='flex flex-col justify-center items-start'>
