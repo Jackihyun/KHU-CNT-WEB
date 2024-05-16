@@ -15,15 +15,16 @@ function InvitationPage() {
         <p className='text-[24px] font-pretendard-medium mb-[30px]'>주소: 서울 동대문구 경희대로 26</p>
         <img src={WayImage} alt='오시는길' className='w-full mb-[30px]' />
         <div className='grid grid-cols-3 gap-x-[31px] w-full h-[70px] mb-[150px]'>
-          <div className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%]'>
-            <p className='text-[#CD6629] text-[24px] font-pretendard-bold leading-none'>네이버지도</p>
-          </div>
-          <div className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%]'>
-            <p className='text-[#CD6629] text-[24px] font-pretendard-bold leading-none'>카카오맵</p>
-          </div>
-          <div className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%]'>
-            <p className='text-[#CD6629] text-[24px] font-pretendard-bold leading-none'>구글 지도</p>
-          </div>
+          <a href="https://naver.me/xb7aDbW2" target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
+            네이버지도
+          </a>
+          <a href="https://place.map.kakao.com/m/17561258" target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
+            카카오맵
+          </a>
+
+          <a href="https://maps.app.goo.gl/H3QMivKxvERKuDJ99" target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
+            구글 지도
+          </a>
         </div>
 
         {/* 교통안내 부분 */}
@@ -121,15 +122,15 @@ function InvitationPage() {
           <p className='text-[44px] font-pretendard-semibold mb-[50px]'>주변 정보</p>
           <p className='text-[24px] font-pretendard-medium mb-[30px]'>방문 전후 식사 시 참고하실 수 있도록 경희대학교 서울캠퍼스 인근 음식점 정보를 공유합니다.</p>
           <div className='grid grid-cols-3 gap-x-[31px] w-full h-[70px]'>
-            <div className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%]'>
-              <p className='text-[#CD6629] text-[24px] font-pretendard-bold leading-none'>식당</p>
-            </div>
-            <div className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%]'>
-              <p className='text-[#CD6629] text-[24px] font-pretendard-bold leading-none'>카페/디저트</p>
-            </div>
-            <div className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%]'>
-              <p className='text-[#CD6629] text-[24px] font-pretendard-bold leading-none'>술집</p>
-            </div>
+            <a href='https://naver.me/5TinG0V1' target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-10 hover:scale-105 duration-150 ease-in-out'>
+              식당
+            </a>
+            <a href='https://naver.me/xrcDZNJN' target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-10 hover:scale-105 duration-150 ease-in-out'>
+              카페/디저트
+            </a>
+            <a href='https://naver.me/FawFjCba' target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-105 duration-150 ease-in-out'>
+              술집
+            </a>
           </div>
         </div>
 
@@ -137,6 +138,7 @@ function InvitationPage() {
         <div className='flex flex-col w-full mb-[150px]'>
           <p className='text-[44px] font-pretendard-semibold mb-[50px]'>INSTAGRAM</p>
           <p className='text-[24px] font-pretendard-medium'>추가적인 소식은 경희대학교 의상학과 졸업작품 인스타그램 <a href='https://www.instagram.com/khu_cnt/' target="_blank"><span className='text-[#CE6729]'>@KHU_CNT</span></a> 에서 확인 가능합니다.</p>
+
         </div>
       </div>
       <Footer />
