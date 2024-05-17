@@ -104,7 +104,7 @@ function AboutMenuThanks() {
         </div>
         <div className="text-[#A1A1A1] "> &gt; Contact</div>
       </div>
-      <div className='mb-[15vh]'></div>
+      <div className='mb-[14vh]'></div>
     </div >
   );
 }
