@@ -34,12 +34,14 @@ function InvitationPage() {
             <span className="text-[28px] font-pretendard-bold">지하철</span>
             <br />
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>1호선, 경의중앙선 회기역 1번 출구 하차 – 동대문01버스 탑승하여 경희대의료원 하차 – 도보 5분
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>1호선, 경의중앙선 회기역 1번 출구 하차 – 동대문01버스 탑승하여 경희대의료원 하차 – 도보 5분
             </span>
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>1호선, 경의중앙선 회기역 1번 출구 하차 – 도보 15분
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>1호선, 경의중앙선 회기역 1번 출구 하차 – 도보 15분
             </span>
             <br />
             <br />
@@ -48,16 +50,19 @@ function InvitationPage() {
             <span className="text-[28px] font-pretendard-bold">버스</span>
             <br />
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>경희의료원 하차 마을버스 01(회기역 1번 출구 앞)
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>경희의료원 하차 마을버스 01(회기역 1번 출구 앞)
             </span>
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>경희대 입구 하차 273, 201
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>경희대 입구 하차 273, 201
             </span>
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>경희중고 하차 120, 147, 261, 273, 1222
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>경희중고 하차 120, 147, 261, 273, 1222
             </span>
             <br />
             <br />
@@ -66,53 +71,40 @@ function InvitationPage() {
             <span className="text-[28px] font-pretendard-bold">자가용</span>
             <br />
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>자유로분기점&nbsp;→ 성산대교 북단(자유로, 강변북로) → 강변북로 → 성산로 → 내부순환로 → 정릉길 →
-              회기로→ 경희대학교
+            <span className="flex text-[24px] font-pretendard-medium">
+              <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+              <span className='text-bold'></span>자유로분기점&nbsp;→ 성산대교 북단(자유로, 강변북로) → 강변북로 → 성산로 → 내부순환로 → 정릉길 → 회기로→ 경희대학교
             </span>
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>일직분기점&nbsp;→ 목감IC(서해안고속도로) → 금천IC → 서부간선도로 → 성산대교북단(성산로) →
-              내부순환로 → 정릉길
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>일직분기점&nbsp;→ 목감IC(서해안고속도로) → 금천IC → 서부간선도로 → 성산대교북단(성산로) → 내부순환로 → 정릉길 → 회기로 → 경희대학교
             </span>
             <br />
-            <span className="text-[24px] font-pretendard-medium">
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>양재IC&nbsp;→ 한남IC(경부고속도로) → 한남대교 남단 → 올림픽대로 → 성수대교 분기점 → 경동시장 → 회기역앞 → 회기로 → 경희대학교
+            </span>
+            <br />
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>청담IC&nbsp;→ 올림픽대로 → 성수대교분기점 → 경동시장 → 회기역 앞 → 회기로 → 경희대학교
+            </span>
+            <br />
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>판교IC&nbsp;→ 한남IC(경부고속도로) → 한남대교 남단 → 올림픽대로 → 성수대교 분기점 → 경동시장 → 회기역 앞 → 회기로 → 경희대학교
+            </span>
+            <br />
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>천호IC&nbsp;→ 천호사거리(천호대로) → 아차산역 → 중랑교(동부간선도로) → 시조사 삼거리 → 회기역앞
               → 회기로 → 경희대학교
             </span>
             <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>양재IC&nbsp;→ 한남IC(경부고속도로) → 한남대교 남단 → 올림픽대로 → 성수대교 분기점 → 경동시장 →
-              회기역앞
-            </span>
-            <br />
-            <span className="text-[24px] font-pretendard-medium">
-              → 회기로 → 경희대학교
-            </span>
-            <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>청담IC&nbsp;→ 올림픽대로 → 성수대교분기점 → 경동시장 → 회기역 앞 → 회기로 → 경희대학교
-            </span>
-            <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>판교IC&nbsp;→ 한남IC(경부고속도로) → 한남대교 남단 → 올림픽대로 → 성수대교 분기점 → 경동시장 →
-              회기역 앞
-            </span>
-            <br />
-            <span className="text-[24px] font-pretendard-medium">
-              → 회기로 → 경희대학교
-            </span>
-            <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>천호IC&nbsp;→ 천호사거리(천호대로) → 아차산역 → 중랑교(동부간선도로) → 시조사 삼거리 → 회기역앞
-              → 회기로
-            </span>
-            <br />
-            <span className="text-[24px] font-pretendard-medium">
-              → 경희대학교
-            </span>
-            <br />
-            <span className="text-[24px] font-pretendard-medium">
-              <span className='text-bold'>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>상일IC&nbsp;→ 남양주IC(서울외곽순환고속도로) → 시조사 삼거리 → 회기역 앞 → 회기로 → 경희대학교
+            <span className="flex text-[24px] font-pretendard-medium">
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <span className='text-bold'></span>상일IC&nbsp;→ 남양주IC(서울외곽순환고속도로) → 시조사 삼거리 → 회기역 앞 → 회기로 → 경희대학교
             </span>
           </p>
         </div>

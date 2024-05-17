@@ -347,7 +347,7 @@ function DesignerMain() {
         </p>
       </div>
 
-      <div className="bg-white grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 m:grid-cols-1 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px]">
+      <div className="bg-white grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[100px] md:px-[50px] sm:px-[20px] m:px-[20px]">
         {designer.map((designer, idx) => (
           <div key={idx} className="flex flex-col items-start">
             <div className="w-full overflow-hidden">
