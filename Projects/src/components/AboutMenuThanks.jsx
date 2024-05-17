@@ -1,5 +1,6 @@
 import CommityPhoto from '../assets/졸준위사진.png';
 
+
 function AboutMenuThanks() {
   return (
     <div className="flex flex-col mt-[163px] xl:mt-[125px] lg:mt-[95px] md:mt-[74px] sm:mt-[57px] m:mt-[43px]">
