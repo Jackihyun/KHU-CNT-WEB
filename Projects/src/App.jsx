@@ -11,10 +11,12 @@ import AboutMenuThanks from './components/AboutMenuThanks';
 import AboutMenuPartner from './components/AboutMenuPartner';
 import TeamIntro from './pages/TeamIntroPage';
 import Invite from './pages/InvitationPage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
 

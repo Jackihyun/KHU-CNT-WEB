@@ -8,7 +8,7 @@ function Article() {
       <img src={MainPoster} alt="메인포스터" className="mb-[250px] w-full " />
       <div className="w-full flex pl-[100px] xl:pl-[77px] lg:pl-[59.2px] md:pl-[45.5px] sm:pl-[35px] m:pl-[27px]">
         <div className="flex items-start w-full justify-between gap-[15px]">
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1, y:-80, transition:{delay: 0.3, type:"spring"}, }}>
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1, y:-130, transition:{delay: 0.5, type:"spring", ease: "easeInOut", duration: 4}, }}>
             <div className="flex">
               <div className="flex-col">
                 <p className="text-[56px] mb-[85px] font-['ft-activica-strong']">Life is more important than fashion<br />THAT&#39;S WHY FASHION IS IMPORTANT</p>
