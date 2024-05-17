@@ -52,9 +52,9 @@ function AboutMenuPartner() {
 
   return (
     <div className="flex flex-col items-start mb-[318px]">
-      <p className="font-pretendard-semibold text-[44px] text-black mb-[50px] mt-[167px]">협찬사</p>
+      <p className="font-pretendard-semibold text-[44px] md:text-[32px] sm:text-[28px] m:text-[24px] text-black mb-[50px] md:mb-[30px] sm:mb-[25px] m:mb-[20px] mt-[167px] xl:mt-[125px] lg:mt-[95px] md:mt-[74px] sm:mt-[57px] m:mt-[43px]">협찬사</p>
 
-      <div className='grid grid-cols-3 gap-y-[66px] sm:grid-cols-2 m:grid-cols-1 gap-[25px] w-full'>
+      <div className='grid grid-cols-3 gap-y-[66px] md:gap-y-[60px] sm:gap-y[56px] m:gap-y-[52px] sm:grid-cols-2 m:grid-cols-2 gap-x-[25px] md:gap-x-[20px] sm:gap-x-[18px] m:gap-x-[16px] w-full'>
         {
           partners.map((partner, idx) => (
             <a key={idx} href={partner.link} target='_blank'>
@@ -62,7 +62,7 @@ function AboutMenuPartner() {
                 <div className="supporter flex w-full bg-[#FBF9F8] justify-center items-center">
                   <img src={partner.src} alt={partner.alt} className={`w-full`} />
                 </div>
-                <p className='font-pretendard-regular text-black mt-[17px]'>{partner.name}</p>
+                <p className='font-pretendard-regular text-black mt-[17px] text-[24px] md:text-[20px] sm:text-[16px] m:text-[12px] '>{partner.name}</p>
               </div>
             </a>
           ))

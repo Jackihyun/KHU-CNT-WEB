@@ -367,8 +367,8 @@ function DesignerMain() {
 
   const [activeButton, setActiveButton] = useState("all");
 
-  function calInitial(lastName){
-    const initialConsonant = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+  function calInitial(lastName) {
+    const initialConsonant = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
 
     const ga = 44032;
     const code = lastName.charCodeAt(0);
@@ -379,7 +379,7 @@ function DesignerMain() {
   }
 
   const [filterDesigners, setFilterDesigners] = useState(designer);
-  const [showAll,setShowAll] = useState(true);
+  const [showAll, setShowAll] = useState(true);
 
   const handleFilterByInitial = (initial) => {
     if (initial === "all") {
@@ -395,7 +395,7 @@ function DesignerMain() {
   };
 
   const initiaalButtons = [
-    'all','ㄱ','ㄴ','ㄷ','ㄹ','ㅁ','ㅂ','ㅅ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'  
+    'all', 'ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
   ];
 
   const [, setRepaint] = useState(0);
@@ -425,15 +425,14 @@ function DesignerMain() {
       </div>
 
       <div className="flex flex-col w-full h-full">
-        <div className="flex justify-center mt-[4vh]">
+        <div className="flex justify-start mt-[4vh] overflow-x-scroll">
           {initiaalButtons.map((initial) => (
             <button
               key={initial}
               onClick={() => handleFilterByInitial(initial)}
-              className={`mx-2 px-4 py-2 rounded-md ${
-                activeButton === initial ? 'bg-[#CD6629]' : 'bg-gray-200 hover:bg-[#CD6629]'
-              }`}
-              >
+              className={`mx-2 px-4 py-2 rounded-md ${activeButton === initial ? 'bg-[#CD6629]' : 'bg-gray-200 hover:bg-[#CD6629]'
+                }`}
+            >
               {initial}
             </button>
           ))}
@@ -442,23 +441,23 @@ function DesignerMain() {
 
       <div className="bg-white grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[100px] md:px-[50px] sm:px-[20px] m:px-[20px]">
         {showAll ? designer.map((designer, idx) => (
-           <div key={idx} className="flex flex-col items-start">
-            <div className="w-full overflow-hidden">
-              <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
-            </div>
-            <p className="font-pretendard-semibold mt-[7%] text-[24px]">{designer.name}</p>
-            <p className="font-pretendard-regular text-[24px]">{designer.ename}</p>
-         </div>
-        ))
-         : filterDesigners.map((designer, idx) => (
           <div key={idx} className="flex flex-col items-start">
             <div className="w-full overflow-hidden">
               <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
             </div>
-            <p className="font-pretendard-semibold mt-[7%] text-[24px]">{designer.name}</p>
-            <p className="font-pretendard-regular text-[24px]">{designer.ename}</p>
-        </div>
-        ))}
+            <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.name}</p>
+            <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
+          </div>
+        ))
+          : filterDesigners.map((designer, idx) => (
+            <div key={idx} className="flex flex-col items-start">
+              <div className="w-full overflow-hidden">
+                <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
+              </div>
+              <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] ">{designer.name}</p>
+              <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
+            </div>
+          ))}
       </div>
     </div>
   );
