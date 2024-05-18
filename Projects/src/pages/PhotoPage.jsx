@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 // 쇼 끝나고 씀
 // import PhotoArticle from "../components/PhotoArticle";

@@ -24,8 +24,6 @@ function Article() {
           </motion.div>
         </div>
       </div>
-
-
     </>
   );
 }

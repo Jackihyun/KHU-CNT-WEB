@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import DesignerMain from "../components/DesignerMain";
 import Footer from "../components/Footer";
 function DesignerPage() {

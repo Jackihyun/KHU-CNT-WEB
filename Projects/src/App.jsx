@@ -1,28 +1,16 @@
 import './App.css';
-<<<<<<< HEAD
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-=======
 import { BrowserRouter as Router, Routes, Route, useLocation, useRoutes } from 'react-router-dom';
->>>>>>> origin/ys-fe
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ArchivePage from './pages/ArchivePage';
 import DesignerPage from './pages/DesignerPage';
 import PhotoPage from './pages/PhotoPage';
 import WhiteprojectPage from './pages/WhiteprojectPage';
-import AboutMenuStage from './components/AboutMenuStage';
-import AboutMenuThanks from './components/AboutMenuThanks';
-import AboutMenuPartner from './components/AboutMenuPartner';
 import TeamIntro from './pages/TeamIntroPage';
 import Invite from './pages/InvitationPage';
 import ScrollToTop from './components/ScrollToTop';
-<<<<<<< HEAD
-// import PageTransition from './components/PageTransition';
-=======
-import PageTransition from './components/PageTransition';
 import Header from './components/Header';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
->>>>>>> origin/ys-fe
 
 function App() {
   const location = useLocation();
@@ -77,7 +65,7 @@ function App() {
           >
             {statefulRoutes}
           </CSSTransition>
-    </SwitchTransition>
+        </SwitchTransition>
 
       </div>
     </>

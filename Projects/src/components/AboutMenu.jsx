@@ -1,7 +1,5 @@
-import { Outlet, useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import AboutButton from './AboutButton';
-import { useParams } from 'react-router-dom';
 import AboutMenuThanks from './AboutMenuThanks';
 import AboutMenuStage from './AboutMenuStage';
 import AboutMenuPartner from './AboutMenuPartner';
@@ -16,7 +14,6 @@ const decodeParam = (param) => {
 }
 
 function AboutMenu() {
-  const location = useLocation();
 
   const [params, setSearchParams] = useSearchParams();
   const [menuParam, setMenuParam] = useState(params.get('menu') || 'stage');
@@ -48,7 +45,7 @@ function AboutMenu() {
         />
         <div className='h-[1px] border-gray-300 basis-full border-t-2 my-auto relative bottom-[45px] xl:bottom-[38px] lg:bottom-[31px] md:bottom-[27px] sm:bottom-[22px] m:bottom-[15px]' />
         <AboutButton
-          isActive={menuParam === 'partner'}  
+          isActive={menuParam === 'partner'}
           onClick={() => handleMenuButtonClick('partner')}
           title='PARTNER'
           content='협찬사'

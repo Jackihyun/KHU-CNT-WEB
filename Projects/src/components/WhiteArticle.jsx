@@ -1,5 +1,4 @@
 // src/components/WhiteArticle.js
-import ImageBox from "./ImageBox";
 import WprojPoster from "../assets/WprojPoster.png";
 import ImageLoader from "./ImageLoader";
 import Skeleton from "./Skeleton";
@@ -25,7 +24,6 @@ function WhiteArticle() {
           src="https://www.youtube.com/embed/jGJNxhUP61I?si=jEeb8eHPM3O-u9Wi"
           title="YouTube video player"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-         imglowFullScreen
         ></iframe>
       </div>
 

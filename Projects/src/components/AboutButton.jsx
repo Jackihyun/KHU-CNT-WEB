@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
 import MenuImage from '../assets/메뉴단추.png';
 import MenuImage2 from '../assets/회색메뉴단추.png';
-import { useEffect } from 'react';
 
 const AboutButton = ({
   isActive,

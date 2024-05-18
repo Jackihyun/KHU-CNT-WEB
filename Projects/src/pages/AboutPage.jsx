@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import AboutArticle1 from "../components/AboutArticle1";
 import AboutMenu from "../components/AboutMenu";
 import Footer from "../components/Footer";
