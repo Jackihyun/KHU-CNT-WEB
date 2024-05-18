@@ -6,14 +6,10 @@ import { motion } from 'framer-motion';
 function Article() {
   return (
     <>
-      <img src={MainPoster} alt="메인포스터" className="mb-[250px] md:mb-[200px] sm:mb-[150px] m:mb-[150px] w-full" />
-      <div className="w-full flex flex-col pl-[100px] xl:pl-[77px] lg:pl-[59.2px] md:px-[45.5px] sm:px-[40px] m:px-[30px]">
-        <div className="flex items-start md:items-center sm:items-center m:items-center w-full justify-between gap-[15px]">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, y: -80, transition: { delay: 0.6, type: "spring" } }}
-            className="duration-200 w-full"
-          >
+      <img src={MainPoster} alt="메인포스터" className="mb-[250px] w-full " />
+      <div className="w-full flex pl-[100px] xl:pl-[77px] lg:pl-[59.2px] md:pl-[45.5px] sm:pl-[35px] m:pl-[27px]">
+        <div className="flex items-start w-full justify-between gap-[15px]">
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1, y:-130, transition:{delay: 0.5, type:"spring", ease: "easeInOut", duration: 4}, }}>
             <div className="flex">
               <div className="flex flex-col w-full items-start md:items-center sm:items-center m:items-center">
                 <img src={MoblieMainImage} alt="모바일메인이미지" className="w-[60px] h-[60px] hidden xl:hidden lg:hidden md:block sm:block m:block mb-9" />
@@ -28,6 +24,8 @@ function Article() {
           </motion.div>
         </div>
       </div>
+      
+
     </>
   );
 }

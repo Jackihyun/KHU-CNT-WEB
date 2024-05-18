@@ -425,7 +425,7 @@ function DesignerMain() {
       </div>
 
       <div className="flex flex-col w-full h-full">
-        <div className="flex justify-start mt-[4vh] overflow-x-scroll">
+        <div className="flex justify-center md:justify-start sm:justify-start m:justify-start mt-[4vh] overflow-x-scroll">
           {initiaalButtons.map((initial) => (
             <button
               key={initial}
@@ -439,7 +439,7 @@ function DesignerMain() {
         </div>
       </div>
 
-      <div className="bg-white grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[100px] md:px-[50px] sm:px-[20px] m:px-[20px]">
+      <div className="bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[100px] md:px-[50px] sm:px-[20px] m:px-[20px]">
         {showAll ? designer.map((designer, idx) => (
           <div key={idx} className="flex flex-col items-start">
             <div className="w-full overflow-hidden">
