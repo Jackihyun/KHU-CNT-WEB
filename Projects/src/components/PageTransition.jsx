@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useLocation } from 'react-router-dom';
 
-const TIMEOUT = 300;
+const TIMEOUT = 150;
 
 const getTransitionStyles = {
   entering: {

@@ -460,40 +460,40 @@ function TeamIntroPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
       <Header />
-      <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px]" />
-      <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px] mt-[50px]">
+      <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px] md:pt-[50px] sm:pt-[50px] m:pt-[50px]" />
+      <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] mt-[50px]">
         <article className="flex flex-col justify-center items-center">
-          <p className="font-['ft-activica-strong'] text-[32px]">{team.team}</p>
-          <p className="font-['ft-activica-strong'] text-[150px] leading-none mb-[42px]">{team.name}</p>
+          <p className="font-['ft-activica-strong'] text-[32px] xl:text-[30px] lg:text-[26px] md:text-[22px] sm:text-[18px] m:text-[14px]">{team.team}</p>
+          <p className="font-['ft-activica-strong'] text-[150px] xl:text-[138px] lg:text-[120px] md:text-[100px] sm:text-[62px] m:text-[60px] leading-none mb-[42px]">{team.name}</p>
 
           <div>
             {team.shortIntro.map((intro, idx) => (
               <div key={idx} className="flex flex-col justify-center items-center">
-                <p className="text-center font-pretendard-regular text-[32px]">{intro.short1}<br />{intro.short2}</p>
+                <p className="text-center font-pretendard-regular text-[32px] xl:text-[30px] lg:text-[26px] md:text-[22px] sm:text-[18px] m:text-[14px]">{intro.short1}<br />{intro.short2}</p>
               </div>
             ))}
           </div>
         </article>
 
-        <article className="mt-[97px]">
-          <p className="text-[24px] w-full font-pretendard-regular" dangerouslySetInnerHTML={{ __html: team.longIntro }} />
+        <article className="mt-[97px] md:mt-[60px] sm:mt-[40px] m:mt-[30px]">
+          <p className="text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] w-full font-pretendard-regular" dangerouslySetInnerHTML={{ __html: team.longIntro }} />
         </article>
-        <div className="mt-[150px]">
+        <div className="mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
           <p className="font-['ft-activica-strong'] text-[40px] mb-[39px]">DESINGERS</p>
           <img src={team.groupPhoto} alt="groupphoto" className="mb-[69px]" />
-          <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-y-[92px] gap-x-[23px]">
+          <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 m:grid-cols-2 gap-y-[92px] md:gap-y-[60px] sm:gap-y[40px] m:gap-y-[20px] gap-x-[23px]">
             {team.desingers.map((desinger, idx) => (
               <div key={idx} className="flex flex-col justify-center items-start">
-                <img src={desinger.photo} alt={desinger.name} className="mb-[29px]" />
-                <p className="font-pretendard-regular text-[24px]">{desinger.name}</p>
-                <p className="font-pretendard-regular text-[24px]">{desinger.ename}</p>
+                <img src={desinger.photo} alt={desinger.name} className="mb-[29px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]" />
+                <p className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">{desinger.name}</p>
+                <p className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">{desinger.ename}</p>
               </div>
             ))}
           </div>
         </div>
-        <div className="flex flex-col mt-[150px]">
+        <div className="flex flex-col mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
           <p className="font-['ft-activica-strong'] text-[40px]">ARCHIVE</p>
-          <div className="w-full bg-[#CD6629] mt-[50px] mb-[370px]">
+          <div className="w-full bg-[#CD6629] mt-[50px] md:mt-[40px] sm:mt-[30px] m:mt-[20px] mb-[370px] md:mb-[300px] sm:mb-[200px] m:mb-[150px]">
             <p className="w-full text-center text-[#FBF9F8] text-[8vw] text-nowrap font-['ft-activica-strong']">COMING SOON</p>
           </div>
         </div>

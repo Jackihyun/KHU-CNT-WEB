@@ -4,7 +4,7 @@ import WhiteArticle from "../components/WhiteArticle";
 
 function WhiteprojectPage() {
   return (
-    <div className='flex flex-col justify-between flex-1 '>
+    <div className='flex flex-col justify-between flex-1 overflow-x-hidden'>
       <Header />
       <main>
         <WhiteArticle />

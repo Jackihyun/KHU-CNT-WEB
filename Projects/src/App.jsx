@@ -19,7 +19,6 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      
       <Routes>
         <Route path="/" element={<HomePage />} />
 
@@ -30,18 +29,12 @@ function App() {
         </Route>
 
         <Route path="/archive" element={<ArchivePage />} />
-
         <Route path='/designer' element={<DesignerPage />} />
-
         <Route path='/photo' element={<PhotoPage />} />
-
         <Route path='/whiteproj.' element={<WhiteprojectPage />} />
-
         <Route path='/teams/:teamId' element={<TeamIntro />} />
-
         <Route path='/invite/' element={<Invite />} />
       </Routes>
-      
     </Router >
   );
 }
