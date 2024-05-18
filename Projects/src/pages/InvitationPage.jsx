@@ -6,7 +6,6 @@ import WayImage from '../assets/오시는길.png';
 function InvitationPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
-      <Header />
       <div className='pt-[80px] px-[360px] xl:px-[200px] lg:px-[150px] md:px-[100px] sm:px-[30px] m:px-[20px] flex flex-col justify-center items-start'>
         <img src={InviteImage} alt='초대장' className='w-full mb-20' />
         {/* 오시는길 */}

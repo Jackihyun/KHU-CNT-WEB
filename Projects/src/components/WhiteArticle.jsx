@@ -1,6 +1,8 @@
 // src/components/WhiteArticle.js
 import ImageBox from "./ImageBox";
 import WprojPoster from "../assets/WprojPoster.png";
+import ImageLoader from "./ImageLoader";
+import Skeleton from "./Skeleton";
 
 const importedImages = import.meta.glob('../assets/화이트프로젝트 사진/*.jpg', { eager: true });
 const images = Object.values(importedImages).map((img) => ({ img: img.default }));
@@ -23,7 +25,7 @@ function WhiteArticle() {
           src="https://www.youtube.com/embed/jGJNxhUP61I?si=jEeb8eHPM3O-u9Wi"
           title="YouTube video player"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
+         imglowFullScreen
         ></iframe>
       </div>
 
@@ -61,7 +63,9 @@ function WhiteArticle() {
         </div>
         <div className="mt-[5vw] w-full grid grid-cols-3 gap-x-[3vw] gap-y-[3vw] items-center">
           {images.map((image, idx) => (
-            <ImageBox key={idx} src={image.img} />
+            <ImageLoader key={idx} fetcher={() => image.img} className="object-cover w-full aspect-[3/4]" >
+              <Skeleton className="w-full aspect-[3/4]" />
+            </ImageLoader>
           ))}
         </div>
       </div>

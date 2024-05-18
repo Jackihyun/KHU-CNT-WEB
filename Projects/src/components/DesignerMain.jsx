@@ -43,7 +43,8 @@ import Phamphuong from "../assets/조별이미지/D조/한수민.jpg";
 import Seungheon from "../assets/조별이미지/E조/한승헌.jpg";
 import Guiyan from "../assets/조별이미지/G조/허귀연.jpg";
 import Chaehui from "../assets/조별이미지/E조/홍채희.jpeg";
-
+import ImageLoader from './ImageLoader';
+import Skeleton from './Skeleton';
 import { useEffect, useState } from 'react';
 
 function DesignerMain() {
@@ -425,7 +426,7 @@ function DesignerMain() {
       </div>
 
       <div className="flex flex-col w-full h-full">
-        <div className="flex justify-center md:justify-start sm:justify-start m:justify-start mt-[4vh] overflow-x-scroll">
+        <div className="remove-scrollbar flex justify-center md:justify-start sm:justify-start m:justify-start mt-[4vh] overflow-x-scroll">
           {initiaalButtons.map((initial) => (
             <button
               key={initial}
@@ -439,11 +440,13 @@ function DesignerMain() {
         </div>
       </div>
 
-      <div className="bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[100px] md:px-[50px] sm:px-[20px] m:px-[20px]">
+      <div className=" bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 gap-y-[75px] mt-[45px] px-[360px] xl:px-[250px] lg:px-[100px] md:px-[50px] sm:px-[20px] m:px-[20px]">
         {showAll ? designer.map((designer, idx) => (
           <div key={idx} className="flex flex-col items-start">
             <div className="w-full overflow-hidden">
-              <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
+              <ImageLoader fetcher={() => designer.src}>
+                <Skeleton className="w-full aspect-[3/4]" />
+              </ImageLoader>
             </div>
             <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.name}</p>
             <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
@@ -452,7 +455,9 @@ function DesignerMain() {
           : filterDesigners.map((designer, idx) => (
             <div key={idx} className="flex flex-col items-start">
               <div className="w-full overflow-hidden">
-                <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
+                <ImageLoader fetcher={() => designer.src}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
               </div>
               <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] ">{designer.name}</p>
               <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>

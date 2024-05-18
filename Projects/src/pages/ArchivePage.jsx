@@ -5,7 +5,6 @@ import Archive from "../components/Archive";
 function ArchivePage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
-      <Header />
       <main className="pt-[80px]">
         <div>
           <Archive />

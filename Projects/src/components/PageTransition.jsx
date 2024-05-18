@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React, { useRef } from 'react';
 // import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // import { useLocation } from 'react-router-dom';
@@ -18,11 +19,19 @@
 //     opacity: 0,
 //   },
 // };
+=======
+import React, { useRef } from 'react';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import { useLocation } from 'react-router-dom';
+
+const TIMEOUT = 300;
+>>>>>>> origin/ys-fe
 
 // const PageTransition = ({ children }) => {
 //   const location = useLocation();
 //   const nodeRef = useRef(null); 
   
+<<<<<<< HEAD
 //   return (
 //     <TransitionGroup component={null}>
 //       <CSSTransition
@@ -41,5 +50,19 @@
 //     </TransitionGroup>
 //   );
 // };
+=======
+  return (
+    <SwitchTransition>
+      <CSSTransition
+        key={location.pathname}
+        timeout={TIMEOUT}
+        classNames="scale"
+      >
+          {children}
+      </CSSTransition>
+    </SwitchTransition>
+  );
+};
+>>>>>>> origin/ys-fe
 
 // export default PageTransition;
