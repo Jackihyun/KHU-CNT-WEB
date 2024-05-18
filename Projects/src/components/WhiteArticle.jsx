@@ -1,5 +1,4 @@
 // src/components/WhiteArticle.js
-import React from 'react';
 import ImageBox from "./ImageBox";
 import WprojPoster from "../assets/WprojPoster.png";
 
