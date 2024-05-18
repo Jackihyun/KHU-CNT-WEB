@@ -1,6 +1,6 @@
 import MainImage from "../assets/image 20.png";
 import MainPoster from "../assets/메인포스터.png";
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function Article() {
   return (
@@ -21,7 +21,7 @@ function Article() {
         </div>
 
       </div>
-
+      
 
     </>
   );
