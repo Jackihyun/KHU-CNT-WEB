@@ -459,7 +459,6 @@ function TeamIntroPage() {
 
   return (
     <div className='flex flex-col justify-between flex-1 '>
-      <Header />
       <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px] md:pt-[50px] sm:pt-[50px] m:pt-[50px]" />
       <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] mt-[50px]">
         <article className="flex flex-col justify-center items-center">

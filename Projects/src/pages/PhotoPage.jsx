@@ -8,7 +8,6 @@ import OrangePoster from "../assets/주황포스터.png";
 function PhotoPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
-      <Header />
       {/* 이건 쇼끝나고 쓰는 것 */}
       {/* <main className="mb-[817px]">
         <PhotoArticle />

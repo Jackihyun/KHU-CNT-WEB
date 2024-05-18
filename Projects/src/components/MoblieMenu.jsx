@@ -18,7 +18,7 @@ function MobileMenu({ isOpen, onClose, activeMenu, setActiveMenu }) {
   const menuItems = ["ABOUT", "DESIGNER", "ARCHIVE", "WHITEPROJ.", "PHOTO"].map((menu) => (
     <Link
       key={menu}
-      to={`/${menu.toLowerCase()}${menu === 'ABOUT' ? "/stage" : ""}`}
+      to={`/${menu.toLowerCase()}`}
       className={`text-black hover:text-[#D9D9D9] transition-colors duration-200 text-center ${activeMenu === menu ? 'bg-[#CD6629] text-white' : ''}`}
       onClick={() => {
         setActiveMenu(menu);
@@ -30,7 +30,7 @@ function MobileMenu({ isOpen, onClose, activeMenu, setActiveMenu }) {
   ));
 
   return (
-    <div className={`fixed top-0 left-0 z-50 bg-white bg-opacity-100 w-full h-full flex flex-col items-center justify-center transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300`}>
+    <div className={`fixed top-0 left-0 z-10 bg-white bg-opacity-100 w-full h-full flex flex-col items-center justify-center transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300`}>
       <Link to={'/'}>
         <img src={MainLogo} alt="logo" className="h-[40px] w-[195px] cursor-pointer mb-8" />
       </Link>
