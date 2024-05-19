@@ -490,7 +490,7 @@ function DesignerMain() {
 
       <div className="flex flex-row"> 
        <div className="flex flex-col "> 
-         <div className=" bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 md:gap-x-4 sm:gap-x-4 m:gap-x-4 gap-y-[75px] mt-[45px] pl-[360px]  xl:pl-[250px] lg:pl-[100px] md:pl-[50px] sm:pl-[20px] m:pl-[20px]">
+         <div className=" bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 md:gap-x-4 sm:gap-x-4 m:gap-x-4 gap-y-[75px] md:gap-y-[55px] sm:gap-y-[55px] m:gap-y-[45px] mt-[45px] pl-[360px]  xl:pl-[250px] lg:pl-[100px] md:pl-[50px] sm:pl-[20px] m:pl-[20px]">
            {showAll ? designer.map((designer, idx) => (
             <div key={idx} id={designer.id} className="flex flex-col items-start">
               <div className="w-full overflow-hidden">
