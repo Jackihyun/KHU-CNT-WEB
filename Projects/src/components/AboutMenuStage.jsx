@@ -1,10 +1,10 @@
-import TeamA from "../assets/조별이미지/A조/A조.jpg";
-import TeamB from "../assets/조별이미지/B조/B조.jpg";
-import TeamC from "../assets/조별이미지/C조/C조.jpg";
-import TeamD from "../assets/조별이미지/D조/D조.jpg";
-import TeamE from "../assets/조별이미지/E조/E조.jpg";
-import TeamF from "../assets/조별이미지/F조/F조.jpg";
-import TeamG from "../assets/조별이미지/G조/G조.jpg";
+import TeamA from "../assets/About팀이미지/A조.jpg";
+import TeamB from "../assets/About팀이미지/B조.jpg";
+import TeamC from "../assets/About팀이미지/C조.jpg";
+import TeamD from "../assets/About팀이미지/D조.jpg";
+import TeamE from "../assets/About팀이미지/E조.jpg";
+import TeamF from "../assets/About팀이미지/F조.jpg";
+import TeamG from "../assets/About팀이미지/G조.jpg";
 import { Link } from "react-router-dom";
 
 function AboutMenuStage() {

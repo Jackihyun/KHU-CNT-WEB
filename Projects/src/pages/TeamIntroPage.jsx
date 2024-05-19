@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 // A조 이미지
@@ -30,7 +29,7 @@ import teamCdesinger1 from "../assets/조별이미지/C조/김다영.jpg";
 import teamCdesinger2 from "../assets/조별이미지/C조/김미곤.jpg";
 import teamCdesinger3 from "../assets/조별이미지/C조/김소은.jpg";
 import teamCdesinger4 from "../assets/조별이미지/C조/나민영.jpg";
-import teamCdesinger5 from "../assets/조별이미지/C조/민시은.png";
+import teamCdesinger5 from "../assets/조별이미지/C조/민시은.jpg";
 import teamCdesinger6 from "../assets/조별이미지/C조/박슬빈.jpg";
 import teamCdesinger7 from "../assets/조별이미지/C조/우가인.jpg";
 
@@ -53,7 +52,7 @@ import teamEdesinger3 from "../assets/조별이미지/E조/이자영.jpg";
 import teamEdesinger4 from "../assets/조별이미지/E조/이현민.jpg";
 import teamEdesinger5 from "../assets/조별이미지/E조/장유미.jpg";
 import teamEdesinger6 from "../assets/조별이미지/E조/한승헌.jpg";
-import teamEdesinger7 from "../assets/조별이미지/E조/홍채희.jpeg";
+import teamEdesinger7 from "../assets/조별이미지/E조/홍채희.jpg";
 
 // F조 이미지
 import teamFimage from "../assets/조별이미지/F조/F조.jpg";
