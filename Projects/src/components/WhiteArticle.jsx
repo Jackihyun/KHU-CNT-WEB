@@ -1,6 +1,4 @@
 // src/components/WhiteArticle.js
-import React from 'react';
-import ImageBox from "./ImageBox";
 import WprojPoster from "../assets/WprojPoster.png";
 import ImageLoader from "./ImageLoader";
 import Skeleton from "./Skeleton";
@@ -26,18 +24,15 @@ function WhiteArticle() {
           src="https://www.youtube.com/embed/jGJNxhUP61I?si=jEeb8eHPM3O-u9Wi"
           title="YouTube video player"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-         imglowFullScreen
         ></iframe>
       </div>
 
       {/* 본문 */}
       <div className="flex flex-col justify-between px-[360px] xl:px-[200px] lg:px-[170px] md:px-[100px] sm:px-[30px] m:px-[20px] mb-[333px] xl:mb-[256px] lg:mb-[197px] md:mb-[151px] sm:mb-[116px] m:mb-[90px]">
         <div className="flex">
-          <img
-            src={WprojPoster}
-            alt="whiteprojectposter"
-            className="w-[60%] mr-[40px] xl:mr-[31px] lg:mr-[23px] md:mr-[18px] sm:mr-[14px] m:mr-[11px]"
-          />
+          <ImageLoader fetcher={() => WprojPoster} className='w-[60%] mr-[40px] xl:mr-[31px] lg:mr-[23px] md:mr-[18px] sm:mr-[14px] m:mr-[11px]'>
+            <Skeleton className='w-full aspect-[3/4] rounded' />
+          </ImageLoader>
           <div className="w-full font-pretendard-regular text-[16px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[7px]">
             <p>
               The White Project를 통해 2024년 경희대학교 의상학과 졸업 패션쇼의 과정을

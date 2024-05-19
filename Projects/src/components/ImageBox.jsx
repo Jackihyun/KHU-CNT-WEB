@@ -1,5 +1,4 @@
 // src/components/ImageBox.js
-import React from 'react';
 
 function ImageBox({ src }) {
   return (

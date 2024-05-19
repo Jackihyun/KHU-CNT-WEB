@@ -1,4 +1,3 @@
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Dday from '../components/Dday';
 import Invite from '../components/Invite';

@@ -3,18 +3,18 @@ import { useEffect } from 'react';
 import newMainPoster from "../assets/아카이브포스터.png";
 
 function Archive() {
-  const location = useLocation();
+  // const location = useLocation();
 
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  }, [location,]);
+  // useEffect(() => {
+  //   if (location.hash) {
+  //     let elem = document.getElementById(location.hash.slice(1));
+  //     if (elem) {
+  //       elem.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   } else {
+  //     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  //   }
+  // }, [location,]);
 
   return (
     <div className="flex flex-col overflow-hidden bg-[#fbf9f8] h-full w-full">
