@@ -2,11 +2,15 @@ import MainImage from "../assets/image 20.png";
 import MainPoster from "../assets/메인포스터.png";
 import MoblieMainImage from "../assets/메뉴단추.png";
 import { motion } from 'framer-motion';
+import ImageLoader from './ImageLoader';
+import Skeleton from './Skeleton';
 
 function Article() {
   return (
     <>
-      <img src={MainPoster} alt="메인포스터" className="mb-[250px] w-full " />
+      <ImageLoader fetcher={() => MainPoster} className='w-full mb-[250px]'>
+        <Skeleton className='w-full aspect-[3/4] rounded' />
+      </ImageLoader>
       <div className="w-full flex pl-[100px] xl:pl-[77px] lg:pl-[59.2px] md:px-[45.5px] sm:px-[35px] m:px-[27px]">
         <div className="flex items-start w-full justify-between gap-[15px]">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, y: -130, transition: { delay: 0.5, type: "spring", ease: "easeInOut", duration: 4 }, }}>

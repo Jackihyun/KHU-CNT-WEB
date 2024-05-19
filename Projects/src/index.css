@@ -51,3 +51,13 @@
 .remove-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.sticky-container{
+  position: relative;
+}
+
+.sticky-buttons {
+  position: sticky;
+  top: 0;
+}
+
