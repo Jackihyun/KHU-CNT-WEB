@@ -20,7 +20,7 @@ function Archive() {
       </div>
       <div className="">
         <div className="flex flex-col justify-center items-center mt-[7vh] sm:text-sm">
-          <p className="font-pretendard-medium text-black text-[1.5vw]">
+          <p className="font-pretendard-medium text-black text-[1.5vw] sm:text-[2.7vw] m:text-[2.7vw]">
             추후 본 페이지에서 작품 사진을 만나보실 수 있습니다
           </p>
         </div>

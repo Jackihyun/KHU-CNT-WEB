@@ -57,7 +57,7 @@ function DesignerMain() {
       name: "강민영",
       ename: "Minyoung Kang",
       lastName: "강",
-      id : "ㄱstart"
+      id: "가"
     },
     {
       alt: "강사우 디자이너",
@@ -65,7 +65,7 @@ function DesignerMain() {
       name: "강사우",
       ename: "Jiang Siyu",
       lastName: "강",
-      id : ""
+      id: ""
     },
     {
       alt: "김규리 디자이너",
@@ -73,7 +73,7 @@ function DesignerMain() {
       name: "김규리",
       ename: "Gyuri Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김다영 디자이너",
@@ -81,7 +81,7 @@ function DesignerMain() {
       name: "김다영",
       ename: "Dayoung Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김미곤 디자이너",
@@ -89,7 +89,7 @@ function DesignerMain() {
       name: "김미곤",
       ename: "Migon Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김민서 디자이너",
@@ -97,7 +97,7 @@ function DesignerMain() {
       name: "김민서",
       ename: "Minseo Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김민지 디자이너",
@@ -105,7 +105,7 @@ function DesignerMain() {
       name: "김민지",
       ename: "Minji Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김민철 디자이너",
@@ -113,7 +113,7 @@ function DesignerMain() {
       name: "김민철",
       ename: "Mincheol Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김소은 디자이너",
@@ -121,7 +121,7 @@ function DesignerMain() {
       name: "김소은",
       ename: "Soeun Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김은채 디자이너",
@@ -129,15 +129,15 @@ function DesignerMain() {
       name: "김은채",
       ename: "Eunchae Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
-      alt: "김이체 디자이너",
+      alt: "김이채 디자이너",
       src: Iche,
-      name: "김이체",
+      name: "김이채",
       ename: "Iche Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "김희연 디자이너",
@@ -145,15 +145,15 @@ function DesignerMain() {
       name: "김희연",
       ename: "Heeyeon Kim",
       lastName: "김",
-      id : ""
+      id: ""
     },
     {
       alt: "나민영 디자이너",
       src: NaMinyoung,
       name: "나민영",
-      ename: "NaMinyoung",
+      ename: "Minyoung Na",
       lastName: "나",
-      id : "ㄴstart"
+      id: "나"
     },
     {
       alt: "민시은 디자이너",
@@ -161,7 +161,7 @@ function DesignerMain() {
       name: "민시은",
       ename: "Sieun Min",
       lastName: "민",
-      id : "ㅁstart"
+      id: "마"
     },
     {
       alt: "박슬빈 디자이너",
@@ -169,7 +169,7 @@ function DesignerMain() {
       name: "박슬빈",
       ename: "Seulbin Park",
       lastName: "박",
-      id : "ㅂstart"
+      id: "바"
     },
     {
       alt: "박정은 디자이너",
@@ -177,7 +177,7 @@ function DesignerMain() {
       name: "박정은",
       ename: "Jeongeun Park",
       lastName: "박",
-      id : ""
+      id: ""
     },
     {
       alt: "박지민 디자이너",
@@ -185,7 +185,7 @@ function DesignerMain() {
       name: "박지민",
       ename: "Jimin Park",
       lastName: "박",
-      id : ""
+      id: ""
     },
     {
       alt: "사한나 디자이너",
@@ -193,7 +193,7 @@ function DesignerMain() {
       name: "사한나",
       ename: "Hanna Sa",
       lastName: "사",
-      id : "ㅅstart"
+      id: "사"
     },
     {
       alt: "송겸승 디자이너",
@@ -201,15 +201,15 @@ function DesignerMain() {
       name: "송겸승",
       ename: "Gyeomseung Song",
       lastName: "송",
-      id : ""
+      id: ""
     },
     {
       alt: "왕혜영 디자이너",
       src: Huiying,
       name: "왕혜영",
-      ename: "Huiying Wang",
+      ename: "Wang Hui Ying",
       lastName: "왕",
-      id : "ㅇstart"
+      id: "아"
     },
     {
       alt: "우가인 디자이너",
@@ -217,7 +217,7 @@ function DesignerMain() {
       name: "우가인",
       ename: "Gain Woo",
       lastName: "우",
-      id : ""
+      id: ""
     },
     {
       alt: "우수진 디자이너",
@@ -225,39 +225,39 @@ function DesignerMain() {
       name: "우수진",
       ename: "Sujin Woo",
       lastName: "우",
-      id : ""
+      id: ""
     },
     {
       alt: "원소영 디자이너",
       src: Hsiaoyun,
       name: "원소영",
-      ename: "Hsiaoyun Won",
+      ename: "Yuan Hsiao Yin",
       lastName: "원",
-      id : ""
+      id: ""
     },
     {
       alt: "유가동 디자이너",
       src: Jiatong,
       name: "유가동",
-      ename: "Jiatong Yu",
+      ename: "Liu Jia Tong",
       lastName: "유",
-      id : ""
+      id: ""
     },
     {
       alt: "유서안 디자이너",
       src: Juian,
       name: "유서안",
-      ename: "Juian Yu",
+      ename: "Liao Jui An",
       lastName: "유",
-      id : ""
+      id: ""
     },
     {
       alt: "유철찬 디자이너",
       src: Zhecan,
       name: "유철찬",
-      ename: "Zhecan Yu",
+      ename: "Liu Zhe Can",
       lastName: "유",
-      id : ""
+      id: ""
     },
     {
       alt: "이경범 디자이너",
@@ -265,15 +265,15 @@ function DesignerMain() {
       name: "이경범",
       ename: "Gyeongbeom Lee",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이사기 디자이너",
       src: Siqi,
       name: "이사기",
-      ename: "Siqi Lee",
+      ename: "Li Si Qi",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이석준 디자이너",
@@ -281,7 +281,7 @@ function DesignerMain() {
       name: "이석준",
       ename: "Seokjun Lee",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이소망 디자이너",
@@ -289,23 +289,23 @@ function DesignerMain() {
       name: "이소망",
       ename: "Somang Lee",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이우기 디자이너",
       src: Yuqi,
       name: "이우기",
-      ename: "Yuqi Lee",
+      ename: "Li Yu Qi",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이유나 디자이너",
       src: Yuna,
       name: "이유나",
-      ename: "Yuna Lee",
+      ename: "Yu-na Lee",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이자영 디자이너",
@@ -313,7 +313,7 @@ function DesignerMain() {
       name: "이자영",
       ename: "Jayoung Lee",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이지우 디자이너",
@@ -321,7 +321,7 @@ function DesignerMain() {
       name: "이지우",
       ename: "Jiwoo Lee",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "이현민 디자이너",
@@ -329,7 +329,7 @@ function DesignerMain() {
       name: "이현민",
       ename: "Hyunmin Lee",
       lastName: "이",
-      id : ""
+      id: ""
     },
     {
       alt: "임기현 디자이너",
@@ -337,7 +337,7 @@ function DesignerMain() {
       name: "임기현",
       ename: "Kihyun Lim",
       lastName: "임",
-      id : ""
+      id: ""
     },
     {
       alt: "장유미 디자이너",
@@ -345,15 +345,15 @@ function DesignerMain() {
       name: "장유미",
       ename: "Youmi Jang",
       lastName: "장",
-      id : "ㅈstart"
+      id: "자"
     },
     {
       alt: "장한빙 디자이너",
       src: Hanbing,
       name: "장한빙",
-      ename: "Hanbing Jang",
+      ename: "Zhang Han Bing",
       lastName: "장",
-      id : ""
+      id: ""
     },
     {
       alt: "조연진 디자이너",
@@ -361,31 +361,31 @@ function DesignerMain() {
       name: "조연진",
       ename: "Yeonjin Cho",
       lastName: "조",
-      id : ""
+      id: ""
     },
     {
       alt: "지서현 디자이너",
       src: Seohyeon,
       name: "지서현",
-      ename: "Seohyeon Ji",
+      ename: "Seohyeon Jee",
       lastName: "지",
-      id : ""
+      id: ""
     },
     {
       alt: "하정문 디자이너",
       src: Jingwen,
       name: "하정문",
-      ename: "Jingwen Ha",
+      ename: "Xia Jing Wen",
       lastName: "하",
-      id : "ㅎstart"
+      id: "하"
     },
     {
       alt: "한수민 디자이너",
       src: Phamphuong,
       name: "한수민",
-      ename: "Phamphuong Han",
+      ename: "Pham Phuong Thao",
       lastName: "한",
-      id : ""
+      id: ""
     },
     {
       alt: "한승헌 디자이너",
@@ -393,15 +393,15 @@ function DesignerMain() {
       name: "한승헌",
       ename: "Seungheon Han",
       lastName: "한",
-      id : ""
+      id: ""
     },
     {
       alt: "허귀연 디자이너",
       src: Guiyan,
       name: "허귀연",
-      ename: "Guiyan He",
+      ename: "Xu Gui Yan",
       lastName: "허",
-      id : ""
+      id: ""
     },
     {
       alt: "홍채희 디자이너",
@@ -409,7 +409,7 @@ function DesignerMain() {
       name: "홍채희",
       ename: "Chaehui Hong",
       lastName: "홍",
-      id : ""
+      id: ""
     },
   ]
 
@@ -427,13 +427,13 @@ function DesignerMain() {
   // }
 
 
-  
+
 
   const [filterDesigners, setFilterDesigners] = useState(designer);
   const [showAll, setShowAll] = useState(true);
 
   const uiContext = useStore(uiStore);
-  
+
   // useEffect(() => {
   //   if(headerRef.current) {
   //     const headerHeight = headerRef.current.offsetHeight;
@@ -443,20 +443,58 @@ function DesignerMain() {
 
 
 
+  // 기존 스크롤. 속도 조절 안됐던 거
+  // const handleFilterByInitial = (initial) => {
+  //   const element = document.getElementById(`${initial}start`);
+  //   if (element) {
+  //     const y = element.getBoundingClientRect().top - uiContext.HeaderHeight - 40;
+  //     window.scrollBy({ top: y, behavior: "smooth", });
+  //   }
+  // };
+
+  // 스크롤 천천히 -> 저 숫자만 고치면 됨. 2000이면 2초
   const handleFilterByInitial = (initial) => {
-    const element = document.getElementById(`${initial}start`);
+    const element = document.getElementById(`${initial}`);
     if (element) {
       const y = element.getBoundingClientRect().top - uiContext.HeaderHeight - 40;
-      window.scrollBy({ top: y, behavior: "smooth" });
+      smoothScrollBy(y, 2000); // 1000ms 동안 스크롤
     }
   };
-  
-  
-  
+
+  const smoothScrollBy = (scrollAmount, duration) => {
+    const startY = window.scrollY;
+    const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+    const easeInOutCubic = (t) => {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    };
+
+    const scroll = () => {
+      const currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+      const time = Math.min(1, ((currentTime - startTime) / duration));
+      const timeFunction = easeInOutCubic(time);
+
+      window.scroll(0, Math.ceil((timeFunction * scrollAmount) + startY));
+
+      if (window.scrollY === startY + scrollAmount || time >= 1) {
+        return;
+      }
+
+      requestAnimationFrame(scroll);
+    };
+
+    scroll();
+  };
+
+
+
+
 
   const initiaalButtons = [
-    'ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
+    '가', '나', '다', '라', '마', '바', '사', '아', '자', '차', '카', '타', '파', '하'
   ];
+
+  const specialButtons = ['다', '라', '차', '카', '타', '파',]; // 특별히 색을 변경할 성씨 목록
 
   const [, setRepaint] = useState(0);
 
@@ -472,7 +510,7 @@ function DesignerMain() {
     });
   }, [])
 
-  
+
 
   return (
     <div className="flex flex-col w-full h-full">
@@ -486,48 +524,57 @@ function DesignerMain() {
         </p>
       </div>
 
-      
-
-      <div className="flex flex-row"> 
-       <div className="flex flex-col "> 
-         <div className=" bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 md:gap-x-4 sm:gap-x-4 m:gap-x-4 gap-y-[75px] md:gap-y-[55px] sm:gap-y-[55px] m:gap-y-[45px] mt-[45px] pl-[360px]  xl:pl-[250px] lg:pl-[100px] md:pl-[50px] sm:pl-[20px] m:pl-[20px]">
-           {showAll ? designer.map((designer, idx) => (
-            <div key={idx} id={designer.id} className="flex flex-col items-start">
-              <div className="w-full overflow-hidden">
-               <ImageLoader fetcher={() => designer.src}>
-                <Skeleton className="w-full aspect-[3/4]" />
-               </ImageLoader>
+      <div className="flex flex-row pr-[196px] xl:pr-[96px] lg:pr-[64px] md:pr-[35px] sm:pr-[25px] m:pr-[25px]">
+        <div className="flex flex-col ">
+          <div className=" bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 md:gap-x-4 sm:gap-x-4 m:gap-x-4 gap-y-[75px] md:gap-y-[55px] sm:gap-y-[55px] m:gap-y-[45px] mt-[65px] sm:mt-[25px] m:mt-[24px] pl-[360px]  xl:pl-[250px] lg:pl-[100px] md:pl-[50px] sm:pl-[20px] m:pl-[20px]">
+            {showAll ? designer.map((designer, idx) => (
+              <div key={idx} id={designer.id} className="flex flex-col items-start">
+                <div className="w-full overflow-hidden">
+                  <ImageLoader fetcher={() => designer.src}>
+                    <Skeleton className="w-full aspect-[3/4]" />
+                  </ImageLoader>
+                </div>
+                <p className="font-pretendard-semibold mt-[7%] text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.name}</p>
+                <p className="font-pretendard-regular text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
               </div>
-              <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.name}</p>
-              <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
-            </div>
-      ))
-        : filterDesigners.map((designer, idx) => (
-          <div key={idx} className="flex flex-col items-start">
-            <div className="w-full overflow-hidden">
-              <ImageLoader fetcher={() => designer.src}>
-                <Skeleton className="w-full aspect-[3/4]" />
-              </ImageLoader>
-            </div>
-            <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] ">{designer.name}</p>
-            <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
-            </div>
-        ))}
+            ))
+              : filterDesigners.map((designer, idx) => (
+                <div key={idx} className="flex flex-col items-start">
+                  <div className="w-full overflow-hidden">
+                    <ImageLoader fetcher={() => designer.src}>
+                      <Skeleton className="w-full aspect-[3/4]" />
+                    </ImageLoader>
+                  </div>
+                  <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] ">{designer.name}</p>
+                  <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
+                </div>
+              ))}
+          </div>
         </div>
-       </div>
-        <article className="flex flex-col mr-[196px] xl:mr-[96px] lg:mr-[64px] md:mr-[5px] sm:mr-[5px] m:mr-[5px] ml-[100px] xl:ml-[90px] lg:ml-[36px] md:ml-[5px] sm:ml-[5px] m:ml-[5px]">
-          <div className="sticky top-[50px] remove-scrollbar flex justify-end md:justify-end sm:justify-end m:justify-end mt-[4vh] overflow-x-scroll">
+        <article className="flex flex-col mt-[65px] sm:mt-[25px] m:mt-[24px] ml-[134px] xl:ml-[120px] lg:ml-[80px] md:ml-[35px] sm:ml-[17px] m:ml-[16px]">
+          <div className="sticky top-[150px] remove-scrollbar flex justify-end md:justify-end sm:justify-end m:justify-end overflow-x-scroll">
             <div className="flex flex-col">
               {initiaalButtons.map((initial) => (
                 <button
                   key={initial}
-                  onClick={() => handleFilterByInitial(initial)}
-                  className={`mx-2 px-4 py-2 mt-5 rounded-md ${activeButton === initial ? 'bg-[#CD6629]' : 'bg-gray-200 hover:bg-[#CD6629]'} `}
-                  //disabled={filterDesigners.length === 0}
+                  onClick={() => {
+                    if (!specialButtons.includes(initial)) {
+                      setActiveButton(initial);
+                      handleFilterByInitial(initial);
+                    }
+                  }}
+                  className={`text-[28px] xl:text-[22px] lg:text-[18px] md:text-[14px] sm:text-[12px] m:text-[11px] font-pretendard-regular mb-[15px] ${specialButtons.includes(initial) ? 'text-[#CD6629]/40 cursor-default' : activeButton === initial ? 'bg-[#CD6629] text-white' : 'text-[#CD6629] hover:bg-[#CD6629] hover:text-white'}`}
+                  disabled={specialButtons.includes(initial)}
+                //disabled={filterDesigners.length === 0}
                 >
                   {initial}
                 </button>
               ))}
+              <button>
+                <a href="#top">
+                  <p className="flex justify-center items-center text-center p-2">	&#94;</p>
+                </a>
+              </button>
             </div>
           </div>
         </article>

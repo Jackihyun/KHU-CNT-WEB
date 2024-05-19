@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 function AboutMenuStage() {
   return (
-    <div className="flex flex-col mt-[205px] md:mt-[150px] sm:mt-[100px] m:mt-[50px] gap-[50px] md:gap-[35px] sm:gap-[25px] m:gap-[15px] mb-[347px] md:mb-[280px] sm:mb-[200px] m:mb-[150px] ">
+    <div className="flex flex-col mt-[205px] md:mt-[150px] sm:mt-[60px] m:mt-[43px] gap-[50px] md:gap-[35px] sm:gap-[25px] m:gap-[15px] mb-[347px] md:mb-[280px] sm:mb-[200px] m:mb-[150px] ">
       <Link to="/teams/A">
         <div className="flex flex-col justify-center items-end hover:scale-105 duration-200">
           <p className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">TEAM A. ANEMOIA</p>

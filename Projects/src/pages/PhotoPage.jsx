@@ -30,7 +30,7 @@ function PhotoPage() {
         </div>
         <div className="">
           <div className="flex flex-col justify-center items-center mt-[7vh] sm:text-sm">
-            <p className="font-pretendard-medium text-[#FBF9F8] text-[1.5vw]">
+            <p className="font-pretendard-medium text-[#FBF9F8] text-[1.5vw] sm:text-[2.5vw] m:text-[2.5vw]">
               추후 본 페이지에서 패션쇼 영상 및 비하인드 사진을 만나보실 수 있습니다
             </p>
           </div>
