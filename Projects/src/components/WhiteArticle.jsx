@@ -7,7 +7,7 @@ import Skeleton from "./Skeleton";
 
 const importedImages = import.meta.glob('../assets/화이트프로젝트 사진/*.jpg', { eager: true });
 const images = Object.values(importedImages).map((img) => ({ img: img.default }));
-console.log(images);  // 이미지 경로를 확인하기 위해 로그 추가
+
 
 function WhiteArticle() {
   return (

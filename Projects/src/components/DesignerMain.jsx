@@ -46,6 +46,8 @@ import Chaehui from "../assets/조별이미지/E조/홍채희.jpeg";
 import ImageLoader from './ImageLoader';
 import Skeleton from './Skeleton';
 import { useEffect, useState } from 'react';
+import { useRef } from 'react';
+
 
 function DesignerMain() {
   const designer = [
@@ -381,6 +383,9 @@ function DesignerMain() {
 
   const [filterDesigners, setFilterDesigners] = useState(designer);
   const [showAll, setShowAll] = useState(true);
+  const buttonsRef = useRef(null);
+  const [isFixed, setIsFixed] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleFilterByInitial = (initial) => {
     if (initial === "all") {
@@ -413,6 +418,66 @@ function DesignerMain() {
     });
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            setIsFixed(true);
+          } else {
+            setIsFixed(false);
+          }
+        });
+      },
+      { root: null, threshold: 0 }
+    );
+  
+    observer.observe(document.body);
+  
+    return () => {
+      observer.unobserve(document.body);
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            // 버튼 요소가 뷰포트 밖으로 벗어났을 때
+            setIsFixed(true);
+          } else {
+            // 버튼 요소가 뷰포트 내로 들어왔을 때
+            setIsFixed(false);
+          }
+        });
+      },
+      { root: null, threshold: 0 }
+    );
+  
+    if (buttonsRef.current) {
+      observer.observe(buttonsRef.current);
+    }
+  
+    return () => {
+      if (buttonsRef.current) {
+        observer.unobserve(buttonsRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex flex-col w-full h-full">
       <div className="flex flex-col justify-center items-center bg-[#CD6629]">
@@ -426,17 +491,23 @@ function DesignerMain() {
       </div>
 
       <div className="flex flex-col w-full h-full">
-        <div className="remove-scrollbar flex justify-center md:justify-start sm:justify-start m:justify-start mt-[4vh] overflow-x-scroll">
-          {initiaalButtons.map((initial) => (
-            <button
-              key={initial}
-              onClick={() => handleFilterByInitial(initial)}
-              className={`mx-2 px-4 py-2 rounded-md ${activeButton === initial ? 'bg-[#CD6629]' : 'bg-gray-200 hover:bg-[#CD6629]'
-                }`}
-            >
-              {initial}
-            </button>
-          ))}
+      <div
+        ref={buttonsRef}
+        className={`remove-scrollbar flex flex-col justify-end items-end fixed top-[5vh] right-0 z-10 p-4 ${
+          isFixed ? '' : 'hidden'
+        }`}
+      >
+        {initiaalButtons.map((initial) => (
+          <button
+            key={initial}
+            onClick={() => handleFilterByInitial(initial)}
+            className={`mb-2 px-4 py-2 rounded-md ${
+              activeButton === initial ? 'bg-[#CD6629]' : 'bg-gray-200 hover:bg-[#CD6629]'
+            }`}
+          >
+            {initial}
+          </button>
+        ))}
         </div>
       </div>
 
