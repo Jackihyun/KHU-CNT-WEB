@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
-
+@import url("./css/transitions.css");
 /* ft-activica-strong폰트 */
 @import url("https://youworkforthem.com/font/T21761/ft-activica");
 
@@ -47,4 +47,17 @@
   font-style: normal;
 }
 
+
+.remove-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky-container{
+  position: relative;
+}
+
+.sticky-buttons {
+  position: sticky;
+  top: 0;
+}
 

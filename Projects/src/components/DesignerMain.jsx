@@ -11,7 +11,7 @@ import Eunchae from "../assets/조별이미지/E조/김은채.jpg";
 import Iche from "../assets/조별이미지/B조/김이채.jpg";
 import Heeyeon from "../assets/조별이미지/B조/김희연.jpg";
 import NaMinyoung from "../assets/조별이미지/C조/나민영.jpg";
-import Sieun from "../assets/조별이미지/C조/민시은.png";
+import Sieun from "../assets/조별이미지/C조/민시은.jpg";
 import Seulbin from "../assets/조별이미지/C조/박슬빈.jpg";
 import Jeongeun from "../assets/조별이미지/D조/박정은.jpg";
 import Jimin from "../assets/조별이미지/B조/박지민.jpg";
@@ -42,284 +42,421 @@ import Jingwen from "../assets/조별이미지/G조/하정문.jpg";
 import Phamphuong from "../assets/조별이미지/D조/한수민.jpg";
 import Seungheon from "../assets/조별이미지/E조/한승헌.jpg";
 import Guiyan from "../assets/조별이미지/G조/허귀연.jpg";
-import Chaehui from "../assets/조별이미지/E조/홍채희.jpeg";
-
+import Chaehui from "../assets/조별이미지/E조/홍채희.jpg";
+import ImageLoader from './ImageLoader';
+import Skeleton from './Skeleton';
 import { useEffect, useState } from 'react';
+import { useStore } from "zustand";
+import { uiStore } from "../stores/uiStore";
 
 function DesignerMain() {
-
   const designer = [
     {
       alt: "강민영 디자이너",
       src: Minyoung,
       name: "강민영",
       ename: "Minyoung Kang",
+      lastName: "강",
+      id : "ㄱstart"
     },
     {
       alt: "강사우 디자이너",
       src: Sowoo,
       name: "강사우",
       ename: "Jiang Siyu",
+      lastName: "강",
+      id : ""
     },
     {
       alt: "김규리 디자이너",
       src: Gyuri,
       name: "김규리",
       ename: "Gyuri Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김다영 디자이너",
       src: Dayoung,
       name: "김다영",
-      ename: "Dayoung Kim"
+      ename: "Dayoung Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김미곤 디자이너",
       src: Migon,
       name: "김미곤",
-      ename: "Migon Kim"
+      ename: "Migon Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김민서 디자이너",
       src: Minseo,
       name: "김민서",
-      ename: "Minseo Kim"
+      ename: "Minseo Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김민지 디자이너",
       src: Minji,
       name: "김민지",
-      ename: "Minji Kim"
+      ename: "Minji Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김민철 디자이너",
       src: Mincheol,
       name: "김민철",
-      ename: "Mincheol Kim"
+      ename: "Mincheol Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김소은 디자이너",
       src: Soeun,
       name: "김소은",
-      ename: "Soeun Kim"
+      ename: "Soeun Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김은채 디자이너",
       src: Eunchae,
       name: "김은채",
-      ename: "Eunchae Kim"
+      ename: "Eunchae Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김이체 디자이너",
       src: Iche,
       name: "김이체",
-      ename: "Iche Kim"
+      ename: "Iche Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "김희연 디자이너",
       src: Heeyeon,
       name: "김희연",
-      ename: "Heeyeon Kim"
+      ename: "Heeyeon Kim",
+      lastName: "김",
+      id : ""
     },
     {
       alt: "나민영 디자이너",
       src: NaMinyoung,
       name: "나민영",
-      ename: "NaMinyoung"
+      ename: "NaMinyoung",
+      lastName: "나",
+      id : "ㄴstart"
     },
     {
       alt: "민시은 디자이너",
       src: Sieun,
       name: "민시은",
-      ename: "Sieun Min"
+      ename: "Sieun Min",
+      lastName: "민",
+      id : "ㅁstart"
     },
     {
       alt: "박슬빈 디자이너",
       src: Seulbin,
       name: "박슬빈",
-      ename: "Seulbin Park"
+      ename: "Seulbin Park",
+      lastName: "박",
+      id : "ㅂstart"
     },
     {
       alt: "박정은 디자이너",
       src: Jeongeun,
       name: "박정은",
-      ename: "Jeongeun Park"
+      ename: "Jeongeun Park",
+      lastName: "박",
+      id : ""
     },
     {
       alt: "박지민 디자이너",
       src: Jimin,
       name: "박지민",
-      ename: "Jimin Park"
+      ename: "Jimin Park",
+      lastName: "박",
+      id : ""
     },
     {
       alt: "사한나 디자이너",
       src: Hanna,
       name: "사한나",
-      ename: "Hanna Sa"
+      ename: "Hanna Sa",
+      lastName: "사",
+      id : "ㅅstart"
     },
     {
       alt: "송겸승 디자이너",
       src: Gyeomseung,
       name: "송겸승",
-      ename: "Gyeomseung Song"
+      ename: "Gyeomseung Song",
+      lastName: "송",
+      id : ""
     },
     {
       alt: "왕혜영 디자이너",
       src: Huiying,
       name: "왕혜영",
-      ename: "Huiying Wang"
+      ename: "Huiying Wang",
+      lastName: "왕",
+      id : "ㅇstart"
     },
     {
       alt: "우가인 디자이너",
       src: Gain,
       name: "우가인",
-      ename: "Gain Woo"
+      ename: "Gain Woo",
+      lastName: "우",
+      id : ""
     },
     {
       alt: "우수진 디자이너",
       src: Sujin,
       name: "우수진",
-      ename: "Sujin Woo"
+      ename: "Sujin Woo",
+      lastName: "우",
+      id : ""
     },
     {
       alt: "원소영 디자이너",
       src: Hsiaoyun,
       name: "원소영",
-      ename: "Hsiaoyun Won"
+      ename: "Hsiaoyun Won",
+      lastName: "원",
+      id : ""
     },
     {
       alt: "유가동 디자이너",
       src: Jiatong,
       name: "유가동",
-      ename: "Jiatong Yu"
+      ename: "Jiatong Yu",
+      lastName: "유",
+      id : ""
     },
     {
       alt: "유서안 디자이너",
       src: Juian,
       name: "유서안",
-      ename: "Juian Yu"
+      ename: "Juian Yu",
+      lastName: "유",
+      id : ""
     },
     {
       alt: "유철찬 디자이너",
       src: Zhecan,
       name: "유철찬",
-      ename: "Zhecan Yu"
+      ename: "Zhecan Yu",
+      lastName: "유",
+      id : ""
     },
     {
       alt: "이경범 디자이너",
       src: Gyeongbeom,
       name: "이경범",
-      ename: "Gyeongbeom Lee"
+      ename: "Gyeongbeom Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이사기 디자이너",
       src: Siqi,
       name: "이사기",
-      ename: "Siqi Lee"
+      ename: "Siqi Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이석준 디자이너",
       src: Seokjun,
       name: "이석준",
-      ename: "Seokjun Lee"
+      ename: "Seokjun Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이소망 디자이너",
       src: Somang,
       name: "이소망",
-      ename: "Somang Lee"
+      ename: "Somang Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이우기 디자이너",
       src: Yuqi,
       name: "이우기",
-      ename: "Yuqi Lee"
+      ename: "Yuqi Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이유나 디자이너",
       src: Yuna,
       name: "이유나",
-      ename: "Yuna Lee"
+      ename: "Yuna Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이자영 디자이너",
       src: Jayoung,
       name: "이자영",
-      ename: "Jayoung Lee"
+      ename: "Jayoung Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이지우 디자이너",
       src: Jiwoo,
       name: "이지우",
-      ename: "Jiwoo Lee"
+      ename: "Jiwoo Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "이현민 디자이너",
       src: Hyunmin,
       name: "이현민",
-      ename: "Hyunmin Lee"
+      ename: "Hyunmin Lee",
+      lastName: "이",
+      id : ""
     },
     {
       alt: "임기현 디자이너",
       src: kihyun,
       name: "임기현",
-      ename: "Kihyun Lim"
+      ename: "Kihyun Lim",
+      lastName: "임",
+      id : ""
     },
     {
       alt: "장유미 디자이너",
       src: Youmi,
       name: "장유미",
-      ename: "Youmi Jang"
+      ename: "Youmi Jang",
+      lastName: "장",
+      id : "ㅈstart"
     },
     {
       alt: "장한빙 디자이너",
       src: Hanbing,
       name: "장한빙",
-      ename: "Hanbing Jang"
+      ename: "Hanbing Jang",
+      lastName: "장",
+      id : ""
     },
     {
       alt: "조연진 디자이너",
       src: Yeonjin,
       name: "조연진",
-      ename: "Yeonjin Cho"
+      ename: "Yeonjin Cho",
+      lastName: "조",
+      id : ""
     },
     {
       alt: "지서현 디자이너",
       src: Seohyeon,
       name: "지서현",
-      ename: "Seohyeon Ji"
+      ename: "Seohyeon Ji",
+      lastName: "지",
+      id : ""
     },
     {
       alt: "하정문 디자이너",
       src: Jingwen,
       name: "하정문",
-      ename: "Jingwen Ha"
+      ename: "Jingwen Ha",
+      lastName: "하",
+      id : "ㅎstart"
     },
     {
       alt: "한수민 디자이너",
       src: Phamphuong,
       name: "한수민",
-      ename: "Phamphuong Han"
+      ename: "Phamphuong Han",
+      lastName: "한",
+      id : ""
     },
     {
       alt: "한승헌 디자이너",
       src: Seungheon,
       name: "한승헌",
-      ename: "Seungheon Han"
+      ename: "Seungheon Han",
+      lastName: "한",
+      id : ""
     },
     {
       alt: "허귀연 디자이너",
       src: Guiyan,
       name: "허귀연",
-      ename: "Guiyan He"
+      ename: "Guiyan He",
+      lastName: "허",
+      id : ""
     },
     {
       alt: "홍채희 디자이너",
       src: Chaehui,
       name: "홍채희",
-      ename: "Chaehui Hong"
+      ename: "Chaehui Hong",
+      lastName: "홍",
+      id : ""
     },
   ]
+
+  const [activeButton, setActiveButton] = useState("all");
+
+  // function calInitial(lastName) {
+  //   const initialConsonant = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
+
+  //   const ga = 44032;
+  //   const code = lastName.charCodeAt(0);
+  //   const uni = code - ga;
+  //   const consonantIndex = parseInt(uni / 588);
+
+  //   return initialConsonant[consonantIndex];
+  // }
+
+
+  
+
+  const [filterDesigners, setFilterDesigners] = useState(designer);
+  const [showAll, setShowAll] = useState(true);
+
+  const uiContext = useStore(uiStore);
+  
+  // useEffect(() => {
+  //   if(headerRef.current) {
+  //     const headerHeight = headerRef.current.offsetHeight;
+  //     height(headerSize);
+  //   }
+  // }, []);
+
+
+
+  const handleFilterByInitial = (initial) => {
+    const element = document.getElementById(`${initial}start`);
+    if (element) {
+      const y = element.getBoundingClientRect().top - uiContext.HeaderHeight - 40;
+      window.scrollBy({ top: y, behavior: "smooth" });
+    }
+  };
+  
+  
+  
+
+  const initiaalButtons = [
+    'ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
+  ];
 
   const [, setRepaint] = useState(0);
 
@@ -335,29 +472,67 @@ function DesignerMain() {
     });
   }, [])
 
+  
+
   return (
     <div className="flex flex-col w-full h-full">
       <div className="flex flex-col justify-center items-center bg-[#CD6629]">
         <p className="mt-[80px] text-[20.3vw] text-center text-[#fbf9f8] font-['ft-activica-strong']">DESIGERS</p>
         <p className="w-full text-[5.6vw] font-['ft-activica-strong'] text-center mt-[5%] text-[#fbf9f8] sm:text-sm">
-          제44회 패션쇼, 46인의 디자이너
+          제44회 패션쇼, 45인의 디자이너
         </p>
         <p className="w-full text-[1.5vw] text-center text-[#fbf9f8] mt-[10%] mb-[3%] font-pretendard-regular sm:text-sm">
           추후 본 페이지에서 디자이너 소개 및 작품 페이지를 만나보실 수 있습니다.
         </p>
       </div>
 
-      <div className="bg-white grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 m:grid-cols-1 gap-x-6 gap-y-[75px] mt-[75px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[150px] sm:px-[100px] m:px-[80px]">
-        {designer.map((designer, idx) => (
+      
+
+      <div className="flex flex-row"> 
+       <div className="flex flex-col "> 
+         <div className=" bg-white grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 m:grid-cols-2 gap-x-6 md:gap-x-4 sm:gap-x-4 m:gap-x-4 gap-y-[75px] md:gap-y-[55px] sm:gap-y-[55px] m:gap-y-[45px] mt-[45px] pl-[360px]  xl:pl-[250px] lg:pl-[100px] md:pl-[50px] sm:pl-[20px] m:pl-[20px]">
+           {showAll ? designer.map((designer, idx) => (
+            <div key={idx} id={designer.id} className="flex flex-col items-start">
+              <div className="w-full overflow-hidden">
+               <ImageLoader fetcher={() => designer.src}>
+                <Skeleton className="w-full aspect-[3/4]" />
+               </ImageLoader>
+              </div>
+              <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.name}</p>
+              <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
+            </div>
+      ))
+        : filterDesigners.map((designer, idx) => (
           <div key={idx} className="flex flex-col items-start">
             <div className="w-full overflow-hidden">
-              <img src={designer.src} alt={designer.alt} className="w-full h-full object-cover" />
+              <ImageLoader fetcher={() => designer.src}>
+                <Skeleton className="w-full aspect-[3/4]" />
+              </ImageLoader>
             </div>
-            <p className="font-pretendard-semibold mt-[7%] text-[24px]">{designer.name}</p>
-            <p className="font-pretendard-regular text-[24px]">{designer.ename}</p>
-          </div>
+            <p className="font-pretendard-semibold mt-[7%] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] ">{designer.name}</p>
+            <p className="font-pretendard-regular text-[24px] md:text-[15px] sm:text-[13px] m:text-[11px] ">{designer.ename}</p>
+            </div>
         ))}
+        </div>
+       </div>
+        <article className="flex flex-col mr-[196px] xl:mr-[96px] lg:mr-[64px] md:mr-[5px] sm:mr-[5px] m:mr-[5px] ml-[100px] xl:ml-[90px] lg:ml-[36px] md:ml-[5px] sm:ml-[5px] m:ml-[5px]">
+          <div className="sticky top-[50px] remove-scrollbar flex justify-end md:justify-end sm:justify-end m:justify-end mt-[4vh] overflow-x-scroll">
+            <div className="flex flex-col">
+              {initiaalButtons.map((initial) => (
+                <button
+                  key={initial}
+                  onClick={() => handleFilterByInitial(initial)}
+                  className={`mx-2 px-4 py-2 mt-5 rounded-md ${activeButton === initial ? 'bg-[#CD6629]' : 'bg-gray-200 hover:bg-[#CD6629]'} `}
+                  //disabled={filterDesigners.length === 0}
+                >
+                  {initial}
+                </button>
+              ))}
+            </div>
+          </div>
+        </article>
       </div>
+
     </div>
   );
 }
