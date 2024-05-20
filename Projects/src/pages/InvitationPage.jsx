@@ -1,6 +1,5 @@
 import InviteImage from '../assets/초대장.png';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
 import WayImage from '../assets/오시는길.png';
 
 function InvitationPage() {

@@ -3,8 +3,6 @@ import MenuImage2 from '../assets/회색메뉴단추.png';
 
 const AboutButton = ({
   isActive,
-  title,
-  content,
   showLine,
   ...props
 }) => {
@@ -23,12 +21,12 @@ const AboutButton = ({
               />
             </div>
           </div>
-          
+
         </button >
       </div >
       {/* 버튼 사이 줄 */}
       {showLine && <div className='h-[1px] w-full bg-gray-300 flex-grow'></div>}
-      
+
     </>
   );
 }

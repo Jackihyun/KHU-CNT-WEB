@@ -569,7 +569,7 @@ function DesignerMain() {
                       handleFilterByInitial(initial);
                     }
                   }}
-                  className={`text-[28px] xl:text-[22px] lg:text-[18px] md:text-[14px] sm:text-[12px] m:text-[11px] font-pretendard-regular mb-[15px] ${specialButtons.includes(initial) ? 'text-[#CD6629]/40 cursor-default' : activeButton === initial ? 'bg-[#CD6629] text-white' : 'text-[#CD6629] hover:bg-[#CD6629] hover:text-white'}`}
+                  className={`text-[24px] xl:text-[20px] lg:text-[16px] md:text-[14px] sm:text-[12px] m:text-[11px] font-pretendard-regular mb-[15px] ${specialButtons.includes(initial) ? 'text-[#CD6629]/40 cursor-default' : activeButton === initial ? 'bg-[#CD6629] text-white' : 'text-[#CD6629] hover:bg-[#CD6629] hover:text-white'}`}
                   disabled={specialButtons.includes(initial)}
                 //disabled={filterDesigners.length === 0}
                 >
@@ -577,7 +577,7 @@ function DesignerMain() {
                 </button>
               ))}
               <button id="ScrollToTop" onClick={handleScrollToTop}>
-                  <p className="flex justify-center items-center text-center p-2">	&#94;</p>
+                <p className="flex font-pretendard-regular justify-center items-center text-center p-2">&#94;</p>
               </button>
             </div>
           </div>

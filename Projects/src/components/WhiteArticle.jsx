@@ -49,10 +49,10 @@ function WhiteArticle() {
               Department of Clothing and Textiles at KyungHee University shows its
               creative process. The garments, crafted with muslin, invite viewers to
               imagine the finished designs, providing space to appreciate the
-              designers' ideas. This collection highlights the hard work of 45
+              designers&#39; ideas. This collection highlights the hard work of 45
               designers to show the ethical responsibilities of their profession and
               the true value of clothing. By exploring the seven themes that
-              reinterpret the idea of "LAST-ING," this project aims to encourage
+              reinterpret the idea of &#34;LAST-ING,&#34; this project aims to encourage
               thinking about lasting impact and sustainability in fashion.
             </p>
           </div>
