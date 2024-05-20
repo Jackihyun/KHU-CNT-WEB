@@ -58,7 +58,7 @@ function Header() {
   ));
 
   return (
-    <header ref={headerRef} className="fixed top-0 left-0 z-40 bg-white bg-opacity-50 h-[80px] xl:h-[70px] lg:h-[60px] md:h-[50px] md:overflow-x-hidden sm:h-[50px] sm:overflow-x-hidden m:h-[50px] m:overflow-x-hidden w-full border-t-0 border-b sm:border-0 m:border-0 border-x-0 border-[#444444] backdrop-blur">
+    <header ref={headerRef} className="fixed top-0 left-0 z-40 bg-white bg-opacity-50 h-[80px] xl:h-[70px] lg:h-[60px] md:h-[50px] md:overflow-x-hidden sm:h-[50px] sm:overflow-x-hidden m:h-[50px] m:overflow-x-hidden w-full backdrop-blur">
       <nav className="h-full w-full max-w-full relative flex justify-around md:justify-between sm:justify-between m:justify-between items-center text-[22px] md:px-[15px] sm:px-[15px] m:px-[15px]">
         <Link to={'/'}>
           <img src={MainLogo} alt="logo" className="h-full m:w-[30vw] sm:w-[30vw] md:w-[22vw] lg:w-[18vw] xl:w-[18vw] w-[15vw] cursor-pointer" />

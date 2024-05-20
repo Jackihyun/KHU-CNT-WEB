@@ -28,14 +28,12 @@ function Archive() {
 
       <div className="w-full flex justify-center">
         <div className="max-w-full relative overflow-hidden">
-          <a href="/">
-            <img
-              src={newMainPoster}
-              alt="newMainPoster"
-              className="max-w-full h-auto object-contain"
-              style={{ maxWidth: "100%", height: "full" }}
-            />
-          </a>
+          <img
+            src={newMainPoster}
+            alt="newMainPoster"
+            className="max-w-full h-auto object-contain"
+            style={{ maxWidth: "100%", height: "full" }}
+          />
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ function AboutMenu() {
           position="right"
         />
       </div>
-      <div className='flex items-start justify-between mt-[15px] sm:mt-[5px] m:mt-[5px] pr-[5px] md:pr-0 sm:pr-0 m:pr-0'>
+      <div className='flex items-start justify-between mt-[15px] sm:mt-[5px] m:mt-[5px] pr-0 lg:pr-0 md:pr-0 sm:pr-0 m:pr-0'>
         <p className={`text-center w-[130px] xl:w-[100px] lg:w-[75px] md:w-[55px] sm:w-[60px] m:w-[43px] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${menuParam === 'stage' ? 'text-black' : 'text-black/40'}`}>STAGE<br />{menuParam === 'stage' && <span className="w-[130px] xl:w-[100px] lg:w-[75px] md:w-[55px] sm:w-[60px] m:w-[43px] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">스테이지 주제</span>}</p>
 
         <p className={`text-center w-[130px] xl:w-[100px] lg:w-[75px] md:w-[55px] sm:w-[60px] m:w-[43px] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${menuParam === 'thanks' ? 'text-black' : 'text-black/40'}`}>THANKS TO<br />{menuParam === 'thanks' && <span className="text-center w-[130px] xl:w-[100px] lg:w-[75px] md:w-[55px] sm:w-[60px] m:w-[43px] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">지도 및 지원</span>}</p>

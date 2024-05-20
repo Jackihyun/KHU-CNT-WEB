@@ -76,6 +76,8 @@ import teamGdesinger5 from "../assets/조별이미지/G조/허귀연.jpg";
 
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ImageLoader from "../components/ImageLoader";
+import Skeleton from "../components/Skeleton";
 
 const teams = {
   A: {
@@ -458,7 +460,10 @@ function TeamIntroPage() {
 
   return (
     <div className='flex flex-col justify-between flex-1 '>
-      <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px] md:pt-[50px] sm:pt-[50px] m:pt-[50px]" />
+      <ImageLoader fetcher={() => team.image} className='w-full h-full pt-[80px] md:pt-[50px] sm:pt-[50px] m:pt-[50px]'>
+        <Skeleton className='w-full aspect-[3/1] rounded' />
+      </ImageLoader>
+      {/* <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px] md:pt-[50px] sm:pt-[50px] m:pt-[50px]" /> */}
       <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] mt-[50px]">
         <article className="flex flex-col justify-center items-center">
           <p className="font-['ft-activica-strong'] text-[32px] xl:text-[30px] lg:text-[26px] md:text-[22px] sm:text-[18px] m:text-[14px]">{team.team}</p>
@@ -478,11 +483,15 @@ function TeamIntroPage() {
         </article>
         <div className="mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
           <p className="font-['ft-activica-strong'] text-[40px] mb-[39px]">DESINGERS</p>
-          <img src={team.groupPhoto} alt="groupphoto" className="mb-[69px]" />
+          <ImageLoader fetcher={() => team.groupPhoto} className='mb-[69px]'>
+            <Skeleton className='w-full aspect-[3/2] rounded' />
+          </ImageLoader>
           <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 m:grid-cols-2 gap-y-[92px] md:gap-y-[60px] sm:gap-y[40px] m:gap-y-[20px] gap-x-[23px]">
             {team.desingers.map((desinger, idx) => (
               <div key={idx} className="flex flex-col justify-center items-start">
-                <img src={desinger.photo} alt={desinger.name} className="mb-[29px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]" />
+                <ImageLoader fetcher={() => desinger.photo} className='mb-[29px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]'>
+                  <Skeleton className='w-full aspect-[3/4] rounded' />
+                </ImageLoader>
                 <p className="font-pretendard-semibold text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px]">{desinger.name}</p>
                 <p className="font-pretendard-regular text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px]">{desinger.ename}</p>
               </div>

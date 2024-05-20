@@ -569,7 +569,7 @@ function DesignerMain() {
                       handleFilterByInitial(initial);
                     }
                   }}
-                  className={`text-[24px] xl:text-[20px] lg:text-[16px] md:text-[14px] sm:text-[12px] m:text-[11px] font-pretendard-regular mb-[15px] ${specialButtons.includes(initial) ? 'text-[#CD6629]/40 cursor-default' : activeButton === initial ? 'bg-[#CD6629] text-white' : 'text-[#CD6629] hover:bg-[#CD6629] hover:text-white'}`}
+                  className={`text-[24px] xl:text-[20px] lg:text-[16px] md:text-[14px] sm:text-[12px] m:text-[11px] font-pretendard-regular mb-[15px] xl:mb-[14px] lg:mb-[12px] md:mb-[10px] sm:mb-[8px] m:mb-[7px] ${specialButtons.includes(initial) ? 'text-[#CD6629]/40 cursor-default' : activeButton === initial ? 'bg-[#CD6629] text-white' : 'text-[#CD6629] hover:bg-[#CD6629] hover:text-white'}`}
                   disabled={specialButtons.includes(initial)}
                 //disabled={filterDesigners.length === 0}
                 >

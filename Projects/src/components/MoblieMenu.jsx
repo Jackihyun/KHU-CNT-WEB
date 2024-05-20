@@ -19,7 +19,7 @@ function MobileMenu({ isOpen, onClose, activeMenu, setActiveMenu }) {
     <Link
       key={menu}
       to={`/${menu.toLowerCase()}`}
-      className={`text-black hover:text-[#D9D9D9] py-1 transition-colors duration-200 text-center ${activeMenu === menu ? 'bg-[#CD6629] text-white' : ''}`}
+      className={`text-black hover:text-[#D9D9D9] pt-1 pb-1.5 transition-colors duration-200 text-center ${activeMenu === menu ? 'bg-[#CD6629] text-white' : ''}`}
       onClick={() => {
         setActiveMenu(menu);
         onClose(); // Close menu on item click

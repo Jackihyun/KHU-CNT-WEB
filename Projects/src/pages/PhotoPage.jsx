@@ -13,7 +13,7 @@ function PhotoPage() {
         <div className="mt-[254px]"></div>
         <PhotoArticle2 />
       </main> */}
-      <div className="pt-[80px] flex flex-col overflow-hidden h-full w-full bg-[#D38050]">
+      <div className="pt-[80px] xl:pt-[70px] lg:pt-[60px] md:pt-[50px] sm:pt-[50px] m:pt-[50px] flex flex-col overflow-hidden h-full w-full bg-[#D38050]">
         <div className="flex flex-col justify-center items-center mt-[5vh]">
           <p className="text-[15vw] leading-none text-center text-[#FBF9F8] font-['ft-activica-strong']">
             COMING
@@ -38,14 +38,12 @@ function PhotoPage() {
 
         <div className="w-full flex justify-center">
           <div className="max-w-full relative overflow-hidden">
-            <a href="/">
-              <img
-                src={OrangePoster}
-                alt="주황Poster"
-                className="max-w-full h-auto object-contain"
-                style={{ maxWidth: "100%", height: "full" }}
-              />
-            </a>
+            <img
+              src={OrangePoster}
+              alt="주황Poster"
+              className="max-w-full h-auto object-contain"
+              style={{ maxWidth: "100%", height: "full" }}
+            />
           </div>
         </div>
       </div>

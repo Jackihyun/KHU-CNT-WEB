@@ -90,21 +90,21 @@ function AboutMenuThanks() {
         <a href='https://www.instagram.com/_andrusha_p?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' className="text-[#A1A1A1] text-center"> &gt; Contact</a>
 
         <div className=" font-pretendard-semibold">패션쇼 영상 제작</div>
-        <div className='flex items-center'>
-          <div className='font-pretendard-regular text-nowrap'>서하영</div>
-          <div className="text-[11px] font-pretendard-regular ml-2 text-nowrap">전체, Team A,F</div>
+        <div className='flex items-center w-full'>
+          <div className='w-fit font-pretendard-regular text-nowrap'>서하영</div>
+          <div className="w-fit text-[10px] font-pretendard-regular ml-2 text-nowrap">전체, Team A,F</div>
         </div>
         <a href='mailto:puni929@naver.com' target='_blank' className="text-[#A1A1A1] text-center"> &gt; Contact</a>
         <div className=''></div>
-        <div className='flex items-center'>
-          <div className='font-pretendard-regular text-nowrap'>윤지영</div>
-          <div className="text-[11px] font-pretendard-regular ml-2 text-nowrap">Team B, D, E</div>
+        <div className='flex items-center w-full'>
+          <div className='w-fit font-pretendard-regular text-nowrap'>윤지영</div>
+          <div className="w-fit text-[10px] font-pretendard-regular ml-2 text-nowrap">Team B, D, E</div>
         </div>
         <a href='mailto:yjy1269@gmail.com' target='_blank' className="text-[#A1A1A1] text-center"> &gt; Contact</a>
         <div className=''></div>
-        <div className='flex items-center'>
-          <div className='font-pretendard-regular text-nowrap'>김은정</div>
-          <div className="text-[11px] font-pretendard-regular ml-2 text-nowrap">Team C</div>
+        <div className='flex items-center w-full'>
+          <div className='w-fit font-pretendard-regular text-nowrap'>김은정</div>
+          <div className="w-fit text-[10px] font-pretendard-regular ml-2 text-nowrap">Team C</div>
         </div>
         <a href='mailto:rla1015dms@naver.com' target='_blank' className="text-[#A1A1A1] text-center"> &gt; Contact</a>
       </div>

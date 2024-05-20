@@ -11,7 +11,7 @@ function WhiteArticle() {
   return (
     <div className="flex w-full flex-col justify-center items-center pt-[80px] md:pt-[40px] sm:pt-[40px] m:pt-[40px]">
       {/* 제목 */}
-      <p className="font-['ft-activica-strong'] text-[150px] xl:text-[115px] lg:text-[88px] md:text-[68px] sm:text-[40px] m:text-[35px] mt-[231px] xl:mt-[177px] lg:mt-[136px] md:mt-[104px] sm:mt-[80px] m:mt-[61px] whitespace-nowrap">
+      <p className="font-['ft-activica-strong'] text-[150px] xl:text-[115px] lg:text-[88px] md:text-[68px] sm:text-[35px] m:text-[35px] mt-[231px] xl:mt-[177px] lg:mt-[136px] md:mt-[104px] sm:mt-[80px] m:mt-[61px] whitespace-nowrap">
         THE WHITE PROJECT
       </p>
 

@@ -1,17 +1,24 @@
 import InviteImage from '../assets/초대장.png';
 import Footer from '../components/Footer';
 import WayImage from '../assets/오시는길.png';
+import ImageLoader from '../components/ImageLoader';
+import Skeleton from '../components/Skeleton';
 
 function InvitationPage() {
   return (
     <div className='flex flex-col justify-between flex-1 '>
       <div className='pt-[80px] px-[360px] xl:px-[200px] lg:px-[150px] md:px-[100px] sm:px-[30px] m:px-[20px] flex flex-col justify-center items-start'>
-        <img src={InviteImage} alt='초대장' className='w-full mb-20' />
+        <ImageLoader fetcher={() => InviteImage} className='w-full mb-20'>
+          <Skeleton className="w-full aspect-[2/3] rounded" />
+        </ImageLoader>
         {/* 오시는길 */}
         <p className='text-[44px] md:text-[32px] sm:text-[28px] m:text-[24px] font-pretendard-semibold mb-[50px] md:mb-[30px] sm:mb-[25px] m:mb-[20px]'>오시는길</p>
         <p className='text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-bold'>경희대학교 서울캠퍼스 평화의전당</p>
         <p className='text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-medium mb-[30px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]'>주소: 서울 동대문구 경희대로 26</p>
-        <img src={WayImage} alt='오시는길' className='w-full mb-[30px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]' />
+        {/* <img src={WayImage} alt='오시는길' className='w-full mb-[30px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]' /> */}
+        <ImageLoader fetcher={() => WayImage} className='w-full mb-[30px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]'>
+          <Skeleton className="w-full aspect-[3/2]" />
+        </ImageLoader>
         <div className='grid grid-cols-3 gap-x-[31px] md:gap-[25px] sm:gap-[20px] m:gap-[15px] w-full h-[70px] md:h-[50px] sm:h-[40px] m:h-[30px] mb-[150px] md:mb-[100px] sm:mb-[75px] m:mb-[50px]'>
           <a href="https://naver.me/xb7aDbW2" target='_blank' className='w-full border-[3px] md:border-[2px] sm:border-[1.5px] m:border-[1.5px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
             네이버지도
