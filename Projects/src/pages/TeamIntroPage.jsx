@@ -208,7 +208,7 @@ const teams = {
         short2: ""
       }
     ],
-    longIntro: `“우리의 birthday를 특별하게 만들어주는 unbirthday의 소중함"<br/><br/>어린 시절, 한 친구가 특별한 날이 아님에도 매일 공주처럼 드레스를 입고 다녔었다.<br/>그 친구는 평범한 날에도 매일 주인공같이 보였다.<br/>우리는 꼭 생일에만 주인공이 될 수 있을까?<br/>우리는 우리의 일상을 더욱 소중히 대할 때, 비로소 삶의 주인공이 되어 특별하고도 주체적인 삶으로 나아갈 수 있다.<br/><br/><br/><Strong>Stage 1. Unbirthday</Strong>  :  birthday를 특별하게 만드는 364일의 일상<br/><Strong>Stage 2. Birthday</Strong>  :  unbirthday로 인해 특별해질 수 있는 하루`,
+    longIntro: `어린 시절, 한 친구가 특별한 날이 아님에도 매일 공주처럼 드레스를 입고 다녔었다.<br/>그 친구는 평범한 날에도 매일 주인공같이 보였다.<br/>우리는 꼭 생일에만 주인공이 될 수 있을까?<br/>우리는 우리의 일상을 더욱 소중히 대할 때, 비로소 삶의 주인공이 되어 특별하고도 주체적인 삶으로 나아갈 수 있다.<br/><br/><br/><Strong>Stage 1. Unbirthday</Strong>  :  birthday를 특별하게 만드는 364일의 일상<br/><Strong>Stage 2. Birthday</Strong>  :  unbirthday로 인해 특별해질 수 있는 하루`,
 
     desingers: [
       {
