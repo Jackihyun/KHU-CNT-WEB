@@ -29,11 +29,11 @@ function WhiteArticle() {
 
       {/* 본문 */}
       <div className="flex flex-col justify-between px-[360px] xl:px-[200px] lg:px-[170px] md:px-[100px] sm:px-[30px] m:px-[20px] mb-[333px] xl:mb-[256px] lg:mb-[197px] md:mb-[151px] sm:mb-[116px] m:mb-[90px]">
-        <div className="flex">
-          <ImageLoader fetcher={() => WprojPoster} className='w-[60%] mr-[40px] xl:mr-[31px] lg:mr-[23px] md:mr-[18px] sm:mr-[14px] m:mr-[11px]'>
+        <div className="flex md:flex-col sm:flex-col m:flex-col w-full">
+          <ImageLoader fetcher={() => WprojPoster} className='w-[55%] md:w-full sm:w-full m:w-full mr-[40px] xl:mr-[31px] lg:mr-[23px] md:mr-[18px] sm:mr-[14px] m:mr-[11px]'>
             <Skeleton className='w-full aspect-[3/4] rounded' />
           </ImageLoader>
-          <div className="w-full font-pretendard-regular text-[16px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[7px]">
+          <div className="w-full font-pretendard-regular text-[16px] xl:text-[15px] lg:text-[14px] md:text-[14px] sm:text-[12px] m:text-[11px] md:my-7 sm:my-6 m:my-5">
             <p>
               The White Project를 통해 2024년 경희대학교 의상학과 졸업 패션쇼의 과정을
               공개한다. 작품들은 컬러와 소재가 배제된 채 광목으로 완성되었다. 색이

@@ -14,14 +14,14 @@ function InvitationPage() {
         <p className='text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-medium mb-[30px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]'>주소: 서울 동대문구 경희대로 26</p>
         <img src={WayImage} alt='오시는길' className='w-full mb-[30px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]' />
         <div className='grid grid-cols-3 gap-x-[31px] md:gap-[25px] sm:gap-[20px] m:gap-[15px] w-full h-[70px] md:h-[50px] sm:h-[40px] m:h-[30px] mb-[150px] md:mb-[100px] sm:mb-[75px] m:mb-[50px]'>
-          <a href="https://naver.me/xb7aDbW2" target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
+          <a href="https://naver.me/xb7aDbW2" target='_blank' className='w-full border-[3px] md:border-[2px] sm:border-[1.5px] m:border-[1.5px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
             네이버지도
           </a>
-          <a href="https://place.map.kakao.com/m/17561258" target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
+          <a href="https://place.map.kakao.com/m/17561258" target='_blank' className='w-full border-[3px] md:border-[2px] sm:border-[1.5px] m:border-[1.5px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
             카카오맵
           </a>
 
-          <a href="https://maps.app.goo.gl/H3QMivKxvERKuDJ99" target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
+          <a href="https://maps.app.goo.gl/H3QMivKxvERKuDJ99" target='_blank' className='w-full border-[3px] md:border-[2px] sm:border-[1.5px] m:border-[1.5px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] hover:bg-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] hover:text-white text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-bold leading-none hover:scale-105 duration-150 ease-in-out'>
             구글 지도
           </a>
         </div>
@@ -92,16 +92,16 @@ function InvitationPage() {
 
         {/*  주변정보 부분 */}
         <div className='flex flex-col w-full mb-[150px] md:mb-[100px] sm:mb-[75px] m:mb-[50px]'>
-          <p className='text-[44px] md:text-[32px] sm:text-[28px] m:text-[24px]  font-pretendard-semibold mb-[50px] md:mb-[30px] sm:mb-[26px] m:mb-[22px]'>주변 정보</p>
+          <p className='text-[44px] md:text-[32px] sm:text-[28px] m:text-[24px] font-pretendard-semibold mb-[50px] md:mb-[30px] sm:mb-[26px] m:mb-[22px]'>주변 정보</p>
           <p className='text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-medium mb-[30px] md:mb-[20px] sm:mb-[16px] m:mb-[12px]'>방문 전후 식사 시 참고하실 수 있도록 경희대학교 서울캠퍼스 인근 음식점 정보를 공유합니다.</p>
-          <div className='grid grid-cols-3 gap-x-[31px] w-fullh-[70px] md:h-[50px] sm:h-[40px] m:h-[30px]'>
-            <a href='https://naver.me/5TinG0V1' target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-10 hover:scale-105 duration-150 ease-in-out'>
+          <div className='grid grid-cols-3 gap-x-[31px] w-full h-[70px] md:h-[50px] sm:h-[40px] m:h-[30px]'>
+            <a href='https://naver.me/5TinG0V1' target='_blank' className='w-full border-[3px] md:border-[2px] sm:border-[1.5px] m:border-[1.5px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px] font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-10 hover:scale-105 duration-150 ease-in-out'>
               식당
             </a>
-            <a href='https://naver.me/xrcDZNJN' target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-10 hover:scale-105 duration-150 ease-in-out'>
+            <a href='https://naver.me/xrcDZNJN' target='_blank' className='w-full border-[3px] md:border-[2px] sm:border-[1.5px] m:border-[1.5px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-10 hover:scale-105 duration-150 ease-in-out'>
               카페/디저트
             </a>
-            <a href='https://naver.me/FawFjCba' target='_blank' className='w-full border-[3px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-105 duration-150 ease-in-out'>
+            <a href='https://naver.me/FawFjCba' target='_blank' className='w-full border-[3px] md:border-[2px] sm:border-[1.5px] m:border-[1.5px] bg-[#fbf9f8] rounded-[5px] border-[#cd6629] flex justify-center items-center p-[5%] text-[#CD6629] text-[24px] md:text-[16px] sm:text-[12px] m:text-[8px]  font-pretendard-bold leading-none hover:bg-[#CD6629] hover:text-white hover:scale-105 duration-150 ease-in-out'>
               술집
             </a>
           </div>

@@ -142,7 +142,7 @@ const teams = {
       {
         photo: teamAdesinger7,
         name: "조연진",
-        ename: "Yeonjin Jo",
+        ename: "Yeonjin Cho",
       }
     ]
   },
@@ -204,7 +204,7 @@ const teams = {
     groupPhoto: teamCgroupPhoto,
     shortIntro: [
       {
-        short1: `" 사라져가는 공간에 대한 도시인의 낯선 그리움"`,
+        short1: `“우리의 birthday를 특별하게 만들어주는 unbirthday의 소중함”`,
         short2: ""
       }
     ],
@@ -372,32 +372,32 @@ const teams = {
       {
         photo: teamFdesinger1,
         name: "원소영",
-        ename: "Gyuri Kim",
+        ename: "Yuan Hsiao Yin",
       },
       {
         photo: teamFdesinger2,
         name: "유가동",
-        ename: "Eunchae Kim",
+        ename: "Liu Jiatong",
       },
       {
         photo: teamFdesinger3,
         name: "유철찬",
-        ename: "Jayoung Lee",
+        ename: "Liu Zhe Can",
       },
       {
         photo: teamFdesinger4,
         name: "이사기",
-        ename: "Hyunmin Lee",
+        ename: "Li Si Qi ",
       },
       {
         photo: teamFdesinger5,
         name: "이우기",
-        ename: "Youmi Jang",
+        ename: "Li Yu Qi",
       },
       {
         photo: teamFdesinger6,
         name: "장한빙",
-        ename: "Seungheon Han",
+        ename: "Zhang Han Bing",
       },
     ]
   },
@@ -483,8 +483,8 @@ function TeamIntroPage() {
             {team.desingers.map((desinger, idx) => (
               <div key={idx} className="flex flex-col justify-center items-start">
                 <img src={desinger.photo} alt={desinger.name} className="mb-[29px] md:mb-[20px] sm:mb-[15px] m:mb-[10px]" />
-                <p className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">{desinger.name}</p>
-                <p className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">{desinger.ename}</p>
+                <p className="font-pretendard-semibold text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px]">{desinger.name}</p>
+                <p className="font-pretendard-regular text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px]">{desinger.ename}</p>
               </div>
             ))}
           </div>
@@ -492,7 +492,7 @@ function TeamIntroPage() {
         <div className="flex flex-col mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
           <p className="font-['ft-activica-strong'] text-[40px]">ARCHIVE</p>
           <div className="w-full bg-[#CD6629] mt-[50px] md:mt-[40px] sm:mt-[30px] m:mt-[20px] mb-[370px] md:mb-[300px] sm:mb-[200px] m:mb-[150px]">
-            <p className="w-full text-center text-[#FBF9F8] text-[8vw] text-nowrap font-['ft-activica-strong']">COMING SOON</p>
+            <p className="w-full text-center mb-[1.2vw] text-[#FBF9F8] text-[7vw] text-nowrap font-['ft-activica-strong']">COMING SOON</p>
           </div>
         </div>
       </main>

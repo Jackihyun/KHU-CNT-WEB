@@ -14,9 +14,9 @@ function AboutArticle1() {
       <ImageLoader fetcher={() => AboutPoster} className='w-full'>
         <Skeleton className='w-full aspect-[3/4] rounded' />
       </ImageLoader>
-      <div className="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 m:grid-cols-1 mt-[48px] md:mt-[38px] sm:mt-[28px] m:mt-[28px] mb-[169px] md:mb-[150px] sm:mb-[130px] m:mb-[100px] gap-[45px] md:gap-[35px] sm:gap-[25px] m:gap-[20px]">
-        <p className='font-pretendard-regular text-[24px] xl:text-[22px] lg:text-[20px] md:text-[18px] sm:text-[16px] m:text-[14px]'>{text.한국어}</p>
-        <p className='font-pretendard-regular text-[24px] xl:text-[22px] lg:text-[20px] md:text-[18px] sm:text-[16px] m:text-[14px]'>{text.영어}</p>
+      <div className="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 m:grid-cols-1 mt-[48px] md:mt-[38px] sm:mt-[28px] m:mt-[28px] mb-[169px] md:mb-[150px] sm:mb-[100px] m:mb-[80px] gap-[45px] md:gap-[35px] sm:gap-[25px] m:gap-[20px]">
+        <p className='font-pretendard-regular text-[18px] xl:text-[16px] lg:text-[14px] md:text-[14px] sm:text-[12px] m:text-[11px]'>{text.한국어}</p>
+        <p className='font-pretendard-regular text-[18px] xl:text-[16px] lg:text-[14px] md:text-[14px] sm:text-[12px] m:text-[11px]'>{text.영어}</p>
       </div>
     </div>
   );

@@ -8,28 +8,32 @@ const partners = [
   {
     alt: "협찬사1",
     src: JanSportPhoto,
-    name: <p>잔스포츠<br />JANSPORT</p>,
+    name: <p>잔스포츠</p>,
+    ename: <p>JANSPORT</p>,
     height: "h-[194px]",
     link: "https://jansport.co.kr/"
   },
   {
     alt: "협찬사2",
     src: CarinLogo,
-    name: <p>카린<br />CARIN</p>,
+    name: <p>카린</p>,
+    ename: <p>CARIN</p>,
     height: "h-[64px]",
     link: "https://caringlasses.com/"
   },
   {
     alt: "협찬사3",
     src: VerttyLogo,
-    name: <p>베르티<br />VERTTY</p>,
+    name: <p>베르티</p>,
+    ename: <p>VERTTY</p>,
     height: "h-[194px]",
     link: "https://vertty.co.kr/"
   },
   {
     alt: "협찬사4",
     src: IlHwaLogo,
-    name: <p>일화<br />ILHWA</p>,
+    name: <p>일화</p>,
+    ename: <p>ILHWA</p>,
     height: "h-[89.6px]",
     link: "https://www.ilhwa.co.kr/"
   },
@@ -62,7 +66,8 @@ function AboutMenuPartner() {
                 <div className="supporter flex w-full bg-[#FBF9F8] justify-center items-center">
                   <img src={partner.src} alt={partner.alt} className={`w-full`} />
                 </div>
-                <p className='font-pretendard-regular text-black mt-[17px] text-[24px] md:text-[20px] sm:text-[16px] m:text-[12px] '>{partner.name}</p>
+                <p className='font-pretendard-regular text-black mt-[17px] text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] '>{partner.name}</p>
+                <p className='font-pretendard-regular text-black text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] '>{partner.ename}</p>
               </div>
             </a>
           ))
