@@ -487,6 +487,12 @@ function DesignerMain() {
   };
 
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
 
 
@@ -570,10 +576,8 @@ function DesignerMain() {
                   {initial}
                 </button>
               ))}
-              <button>
-                <a href="#top">
+              <button id="ScrollToTop" onClick={handleScrollToTop}>
                   <p className="flex justify-center items-center text-center p-2">	&#94;</p>
-                </a>
               </button>
             </div>
           </div>
