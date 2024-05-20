@@ -12,8 +12,8 @@ function HomePage() {
         <div className='flex justify-center items-center mt-[25px]'>
           <Invite />
         </div>
-
-        <div className='w-full mt-[97px]'>
+        {/* 원래 97px */}
+        <div className='w-full mt-[25px]'>
           <HomeArticle />
         </div>
 
