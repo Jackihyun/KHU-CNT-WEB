@@ -30,7 +30,7 @@ function MobileMenu({ isOpen, onClose, activeMenu, setActiveMenu }) {
   ));
   // h - full grid grid - flow - col gap - x - [50px] xl: gap - x - [40px] lg: gap - x - [30px] md: gap - x - [20px] items - center font - ['ft-activica-strong'] md:hidden sm:hidden m:hidden transition - all duration - 500 ease -in -out
   return (
-    <div className={`fixed top-0 left-0 z-10 bg-white bg-opacity-100 w-full h-full flex flex-col items-center justify-center transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300`}>
+    <div className={`fixed top-0 left-0 z-20 bg-white bg-opacity-100 w-full h-full flex flex-col items-center justify-center transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300`}>
       <Link to={'/'}>
         <img src={MainLogo} alt="logo" className="h-[40px] w-[195px] cursor-pointer mb-8" />
       </Link>

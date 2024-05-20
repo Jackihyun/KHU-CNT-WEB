@@ -525,7 +525,7 @@ function DesignerMain() {
         <p className="w-full text-[5.6vw] font-['ft-activica-strong'] text-center mt-[5%] text-[#fbf9f8] sm:text-sm">
           제44회 패션쇼, 45인의 디자이너
         </p>
-        <p className="w-full text-[1.5vw] text-center text-[#fbf9f8] mt-[10%] mb-[3%] font-pretendard-regular sm:text-sm">
+        <p className="w-full text-[2vw] text-center text-[#fbf9f8] mt-[10%] mb-[3%] font-pretendard-regular">
           추후 본 페이지에서 디자이너 소개 및 작품 페이지를 만나보실 수 있습니다.
         </p>
       </div>
