@@ -52,7 +52,7 @@ Link: [KHUCNT](https://khucnt.kr)
 #### 팀, 졸준위, 협찬사 내용 / 팀 상세 내용
 <p align = "center" >
   <img src="https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/aab25fe4-cfc5-4149-9d1d-601f58bfac70">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/78fbc604-35f4-4198-84c0-53355a13f0f0">
 </p>
 
