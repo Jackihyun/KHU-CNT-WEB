@@ -36,7 +36,7 @@
 
 
 #### 디자이너 프로필
-<img width="500" alt = "디자이너 페이지" src = "https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/9b556edc-2a47-447e-9a8f-e5ccf12d70c5">
+<img width="500" alt = "디자이너 페이지" src = "https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/fdea4658-776e-4e78-9b39-5f0ac118c6ef">
 
 |디자이너 페이지|
 
