@@ -70,4 +70,26 @@ Link: [KHUCNT](https://khucnt.kr)
 
 + 45명의 디자이너를 이름 순으로 나열하고, 스크롤 이벤트를 사용하여 초성으로 찾을 수 있게 하였다.
 + 맨 밑으로 갔을 경우에 맨 위로 올라가려면 스크롤을 많이 해야해서 맨 위로 올라가는 버튼도 추가하였다.
-  
+
+
+
+### 패션쇼 포함 30일 동안 Analytics 지표
+
+#### 전체 그래프
+![Web Analytics](https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/f09b34ba-9461-4fc9-b044-0fa7cef8d4be)
+
+### 페이지별 분석
+![pages](https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/87da0685-250a-4bf9-b235-ab7eb16d3846)
+
+### 유입 경로 분석
+![Referrers](https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/fd30754d-a51d-423d-855c-b113b5661a49)
+
+### 국가별 방문자 분석
+![국가](https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/babcc3d3-995e-48be-8b0d-20ae12452734)
+
+### 기기별 분석
+![기기](https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/266e59c6-ba37-46c3-abcd-79134e23789f)
+
+### 브라우저별 분석
+![브라우저](https://github.com/Jackihyun/KHU-CNT-WEB/assets/93994971/f528fe46-e735-4bba-a62f-5766896d6b54)
+
