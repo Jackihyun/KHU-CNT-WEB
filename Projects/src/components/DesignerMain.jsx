@@ -115,7 +115,10 @@ function DesignerMain() {
       const element = document.getElementById(slot.firstItem.id);
       if (element) {
         const y =
-          element.getBoundingClientRect().top + window.scrollY - uiContext.HeaderHeight - 40;
+          element.getBoundingClientRect().top +
+          window.scrollY -
+          uiContext.HeaderHeight -
+          40;
         smoothScrollTo(y, 2000); // 2000ms 동안 스크롤
       }
     }
@@ -158,7 +161,10 @@ function DesignerMain() {
       const time = Math.min(1, (currentTime - startTime) / duration);
       const timeFunction = easeInOutCubic(time);
 
-      window.scroll(0, Math.ceil(timeFunction * (scrollAmount - startY) + startY));
+      window.scroll(
+        0,
+        Math.ceil(timeFunction * (scrollAmount - startY) + startY)
+      );
 
       if (window.scrollY === scrollAmount || time >= 1) {
         return;
@@ -195,15 +201,11 @@ function DesignerMain() {
   return (
     <div className="flex flex-col w-full h-full">
       <div className="flex flex-col justify-center items-center bg-[#CD6629]">
-        <p className="mt-[80px] text-[20.3vw] text-center text-[#fbf9f8] font-['ft-activica-strong']">
+        <p className="mt-[80px] text-[19.3vw] text-center text-[#fbf9f8] font-['ft-activica-strong']">
           DESIGERS
         </p>
-        <p className="w-full text-[5.6vw] font-['ft-activica-strong'] text-center mt-[5%] text-[#fbf9f8] sm:text-sm">
+        <p className="w-full text-[4.6vw] font-['ft-activica-strong'] text-center mb-[10%] text-[#fbf9f8] sm:text-sm">
           제44회 패션쇼, 45인의 디자이너
-        </p>
-        <p className="w-full text-[2vw] text-center text-[#fbf9f8] mt-[10%] mb-[3%] font-pretendard-regular">
-          추후 본 페이지에서 디자이너 소개 및 작품 페이지를 만나보실 수
-          있습니다.
         </p>
       </div>
 

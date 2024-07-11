@@ -1,6 +1,4 @@
 import Footer from "../components/Footer";
-import Dday from "../components/Dday";
-import Invite from "../components/Invite";
 import HomeArticle from "../components/HomeArticle";
 
 function HomePage() {
