@@ -7,7 +7,7 @@ const AboutButton = ({ isActive, showLine, ...props }) => {
       {/* 버튼 사이 줄 */}
       {showLine && <div className="h-[1px] w-full bg-gray-300 flex-grow"></div>}
       <div
-        className={`aspect-square w-[33%] flex flex-col ${
+        className={`aspect-square w-[33.3%] flex flex-col ${
           showLine ? " w-fit" : ""
         }`}
       >
