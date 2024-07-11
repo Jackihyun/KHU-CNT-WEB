@@ -24,7 +24,7 @@ function AboutMenu() {
 
   return (
     <div>
-      <div className="flex items-center justify-between px-2 sm:px-1 m:px-1">
+      <div className="flex items-center justify-between">
         <AboutButton
           isActive={menuParam === "stage"}
           onClick={() => handleMenuButtonClick("stage")}
@@ -53,14 +53,14 @@ function AboutMenu() {
       </div>
       <div className="flex items-start justify-between mt-[15px] sm:mt-[5px] m:mt-[5px] ">
         <p
-          className={`text-center w-[12%] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${
+          className={`text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-11  m:w-8 font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${
             menuParam === "stage" ? "text-black" : "text-black/40"
           }`}
         >
           STAGE
           <br />
           {menuParam === "stage" && (
-            <span className="w-[12%] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
+            <span className="w-28 xl:w-28 lg:w-24 md:w-20 sm:w-11 m:w-8 font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
               스테이지 주제
             </span>
           )}
