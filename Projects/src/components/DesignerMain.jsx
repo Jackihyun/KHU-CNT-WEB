@@ -6,6 +6,7 @@ import { uiStore } from "../stores/uiStore";
 import { DesignerData } from "../data/Designers";
 import clsx from "clsx";
 import React from "react";
+import { Link } from "react-router-dom";
 
 // 화면에 표시되고 있는지 확인하는 함수
 
@@ -222,24 +223,30 @@ function DesignerMain() {
                   designerRefs.current[idx] = React.createRef();
                 }
                 return (
-                  <div
+                  <Link
+                    to={`/designer/${encodeURIComponent(designer.name)}`}
                     key={idx}
-                    id={`${designer.id}`}
-                    className="flex flex-col items-start"
-                    ref={designerRefs.current[idx]}
+                    className="desinger-card"
                   >
-                    <div className="w-full overflow-hidden">
-                      <ImageLoader fetcher={() => designer.src}>
-                        <Skeleton className="w-full aspect-[3/4]" />
-                      </ImageLoader>
+                    <div
+                      key={idx}
+                      id={`${designer.id}`}
+                      className="flex flex-col items-start"
+                      ref={designerRefs.current[idx]}
+                    >
+                      <div className="w-full overflow-hidden">
+                        <ImageLoader fetcher={() => designer.src}>
+                          <Skeleton className="w-full aspect-[3/4]" />
+                        </ImageLoader>
+                      </div>
+                      <p className="font-pretendard-semibold mt-[7%] text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] ">
+                        {designer.name}
+                      </p>
+                      <p className="font-pretendard-regular text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] ">
+                        {designer.ename}
+                      </p>
                     </div>
-                    <p className="font-pretendard-semibold mt-[7%] text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] ">
-                      {designer.name}
-                    </p>
-                    <p className="font-pretendard-regular text-[18px] md:text-[15px] sm:text-[13px] m:text-[11px] ">
-                      {designer.ename}
-                    </p>
-                  </div>
+                  </Link>
                 );
               })}
           </div>

@@ -4,7 +4,6 @@ import {
   Routes,
   Route,
   useLocation,
-  useRoutes,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -18,46 +17,10 @@ import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 import { Analytics } from "@vercel/analytics/react";
+import DesignerDetailPage from "./pages/DesignerDetailPage";
 
 function App() {
   const location = useLocation();
-
-  const routesData = [
-    {
-      path: "/",
-      element: <HomePage />,
-    },
-    {
-      path: "/about",
-      element: <AboutPage />,
-    },
-    {
-      path: "/archive",
-      element: <ArchivePage />,
-    },
-    {
-      path: "/designer",
-      element: <DesignerPage />,
-    },
-    {
-      path: "/photo",
-      element: <PhotoPage />,
-    },
-    {
-      path: "/whiteproj.",
-      element: <WhiteprojectPage />,
-    },
-    {
-      path: "/teams/:teamId",
-      element: <TeamIntro />,
-    },
-    {
-      path: "/invite",
-      element: <Invite />,
-    },
-  ];
-
-  const statefulRoutes = useRoutes(routesData);
 
   return (
     <>
@@ -70,7 +33,17 @@ function App() {
             timeout={250}
             classNames="fade"
           >
-            {statefulRoutes}
+            <Routes location={location}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/archive" element={<ArchivePage />} />
+              <Route path="/designer" element={<DesignerPage />} />
+              <Route path="/designer/:name" element={<DesignerDetailPage />} />
+              <Route path="/photo" element={<PhotoPage />} />
+              <Route path="/whiteproj" element={<WhiteprojectPage />} />
+              <Route path="/teams/:teamId" element={<TeamIntro />} />
+              <Route path="/invite" element={<Invite />} />
+            </Routes>
           </CSSTransition>
         </SwitchTransition>
         <Analytics />

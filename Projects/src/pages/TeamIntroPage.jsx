@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import { useRef } from "react";
 
 // A조 이미지
 import teamAimage from "../assets/조별이미지/A조/A조.jpg";
@@ -104,10 +105,7 @@ const teams = {
       자연과 사람의 온기를 동시에 머금을 수 있는 존재는 오로지 인간으로부터 비롯된다.<br/>
       우리는 우리만이 표현할 수 있는 그리운 고향의 조각들을 모아 자연의 공백을 회고하고자 한다.<br/>
       자연이 주는 위로와 안정의 힘은 강력하다.
-      우리의 재치 있는 위로를 통해 각자의 그리운 공간을 떠올려주길 바란다.<br/><br/><br/>
-
-      <strong>Stage 1. 살아가다</strong> : 바삐 살아가는 현대인의 도시<br/>
-      <strong>Stage 2. 사라지다</strong> : 그리움 속에 사라져가는 시골`,
+      우리의 재치 있는 위로를 통해 각자의 그리운 공간을 떠올려주길 바란다.<br/><br/><br/>`,
 
     desingers: [
       {
@@ -146,8 +144,15 @@ const teams = {
         ename: "Yeonjin Cho",
       },
     ],
-    stage1: [],
-    stage2: [],
+    stage1: {
+      name: "살아가다",
+      intro: "바삐 살아가는 현대인의 도시",
+    },
+    stage2: {
+      name: "사라지다",
+      intro: "그리움 속에 사라져가는 시골",
+    },
+    film: "",
   },
   B: {
     team: "TEAM B",
@@ -160,7 +165,7 @@ const teams = {
         short2: `- 항해와 정박의 여정, 엘도라도를 향하여`,
       },
     ],
-    longIntro: `세상은 바다와 같고 우리의 삶은 항해와 같다.<br/>바다는 평온하고 조용할 수 있지만, 때로는 거세게 파도가 치고 폭풍우가 몰아친다. 항해의 과정에서 만나는 마찰과 고난은 필연적이다.<br/>고난으로 우리는 성장하고 새로운 것을 배우지만,<br/>이를 극복하는 것만큼이나 재정비를 통해 자신을 돌보는 것은 우리의 삶을 더 풍요롭고 안정적으로 만든다.<br/>정박을 할 때 비로소 우리는 삶을 균형 있게 유지할 수 있다.<br/>우리는 항해를 하는 과정에서 적절한 쉼과 재정비를 통해 과거를 돌아보고,<br/>현재의 위치를 파악하며 새로운 도약을 준비한다.<br/><br/><br/><Strong>Stage1. Anchor 정박</Strong>  :  적절한 쉼과 재정비<br/><Strong>Stage2. Voyage 항해</Strong>  :  목표를 향한 여정`,
+    longIntro: `세상은 바다와 같고 우리의 삶은 항해와 같다.<br/>바다는 평온하고 조용할 수 있지만, 때로는 거세게 파도가 치고 폭풍우가 몰아친다. 항해의 과정에서 만나는 마찰과 고난은 필연적이다.<br/>고난으로 우리는 성장하고 새로운 것을 배우지만,<br/>이를 극복하는 것만큼이나 재정비를 통해 자신을 돌보는 것은 우리의 삶을 더 풍요롭고 안정적으로 만든다.<br/>정박을 할 때 비로소 우리는 삶을 균형 있게 유지할 수 있다.<br/>우리는 항해를 하는 과정에서 적절한 쉼과 재정비를 통해 과거를 돌아보고,<br/>현재의 위치를 파악하며 새로운 도약을 준비한다.<br/><br/><br/>`,
 
     desingers: [
       {
@@ -199,6 +204,15 @@ const teams = {
         ename: "Sujin Woo",
       },
     ],
+    stage1: {
+      name: "Anchor 정박",
+      intro: "적절한 쉼과 재정비",
+    },
+    stage2: {
+      name: "Voyage 항해",
+      intro: "목표를 향한 여정",
+    },
+    film: "",
   },
   C: {
     team: "TEAM C",
@@ -211,7 +225,7 @@ const teams = {
         short2: "",
       },
     ],
-    longIntro: `어린 시절, 한 친구가 특별한 날이 아님에도 매일 공주처럼 드레스를 입고 다녔었다.<br/>그 친구는 평범한 날에도 매일 주인공같이 보였다.<br/>우리는 꼭 생일에만 주인공이 될 수 있을까?<br/>우리는 우리의 일상을 더욱 소중히 대할 때, 비로소 삶의 주인공이 되어 특별하고도 주체적인 삶으로 나아갈 수 있다.<br/><br/><br/><Strong>Stage 1. Unbirthday</Strong>  :  birthday를 특별하게 만드는 364일의 일상<br/><Strong>Stage 2. Birthday</Strong>  :  unbirthday로 인해 특별해질 수 있는 하루`,
+    longIntro: `어린 시절, 한 친구가 특별한 날이 아님에도 매일 공주처럼 드레스를 입고 다녔었다.<br/>그 친구는 평범한 날에도 매일 주인공같이 보였다.<br/>우리는 꼭 생일에만 주인공이 될 수 있을까?<br/>우리는 우리의 일상을 더욱 소중히 대할 때, 비로소 삶의 주인공이 되어 특별하고도 주체적인 삶으로 나아갈 수 있다.<br/><br/><br/>`,
 
     desingers: [
       {
@@ -250,6 +264,15 @@ const teams = {
         ename: "Gain Woo",
       },
     ],
+    stage1: {
+      name: "Unbirthday",
+      intro: "birthday를 특별하게 만드는 364일의 일상",
+    },
+    stage2: {
+      name: "Birthday",
+      intro: "unbirthday로 인해 특별해질 수 있는 하루",
+    },
+    film: "",
   },
 
   D: {
@@ -263,7 +286,7 @@ const teams = {
         short2: "",
       },
     ],
-    longIntro: `LEGO의 어원인 덴마크어 "Leg Godt"는 "재미있게 잘 놀다"라는 뜻을 가졌다.<br/>재미있게 놀 수 있는 장난감을 만들기 위한 레고사의 원칙에서는 삶의 중요한 가치를 엿볼 수 있다.<br/><br/>무한한 가능성을 지닐 것<br/>일년 내내 질리지 않을 것<br/>활기차고 조화로울 것<br/>영원히 가지고 놀 수 있을 것 등<br/><br/>연결과 가능성의 가치를 지닌 레고블록을 조립하는 것은 어린아이들의 자유로운 유희이며, 일상에 지친 어른들의 소소한 위로가 되기도 한다.<br/><br/><br/><Strong>Stage 1. LEGO-DUPLO</Strong>  :  아이들의 즐거운 놀이를 위한 밝은 색상과 큰 크기의 레고<br/><Strong>Stage 2. LEGO-TECHNIC</Strong>  :  공업적 부품을 활용한, 보다 정교한 어른들을 위한 장난감`,
+    longIntro: `LEGO의 어원인 덴마크어 "Leg Godt"는 "재미있게 잘 놀다"라는 뜻을 가졌다.<br/>재미있게 놀 수 있는 장난감을 만들기 위한 레고사의 원칙에서는 삶의 중요한 가치를 엿볼 수 있다.<br/><br/>무한한 가능성을 지닐 것<br/>일년 내내 질리지 않을 것<br/>활기차고 조화로울 것<br/>영원히 가지고 놀 수 있을 것 등<br/><br/>연결과 가능성의 가치를 지닌 레고블록을 조립하는 것은 어린아이들의 자유로운 유희이며, 일상에 지친 어른들의 소소한 위로가 되기도 한다.<br/><br/><br/>`,
 
     desingers: [
       {
@@ -297,6 +320,15 @@ const teams = {
         ename: "Pham Phuong Thao",
       },
     ],
+    stage1: {
+      name: "LEGO-DUPLO",
+      intro: "아이들의 즐거운 놀이를 위한 밝은 색상과 큰 크기의 레고",
+    },
+    stage2: {
+      name: "LEGO-TECHNIC",
+      intro: "공업적 부품을 활용한, 보다 정교한 어른들을 위한 장난감",
+    },
+    film: "",
   },
   E: {
     team: "TEAM E",
@@ -318,7 +350,7 @@ const teams = {
     반면, 타인에게 집중된 관심을 가지며 자신을 등외시하는 사람 또한 발생한다.<br/>
     너무나 완벽한 타인을 상정하기에, 끊임없이 타자에 몰두하고,<br/>
     흠없는 타자에 대한 열망은 자기파괴적 행동으로 귀결된다.<br/><br/>
-    나 자신을 너무 사랑하여 사랑이 나 자신에게로 수렴하는 배타적인 성향의 Narcissism,<br/>나보다 타인을 사랑하여 사랑이 타인을 향해 발산하는 희생적인 성향의 Echoism<br/>사랑이 선사하는 변치 않는 행복을 추구하고 양극적인 방법으로 나아가지 않도록 관심을 가져야 한다고 생각하기에 우리는 양극화에 저항(Anti)하고자 한다.<br/><br/><br/><Strong>Stage 1. Anti - Echoism</Strong>  :  오로지 자신만을 생각하던 미성숙한 사랑에서, 어른스럽고 완성된 사랑으로<br/><Strong>Stage 2. Anti - Narcissism</Strong>  :  타인을 맹목적으로 좇던 불안정한 사랑에서, 자신을 소중히 하는 안정된 사랑으로`,
+    나 자신을 너무 사랑하여 사랑이 나 자신에게로 수렴하는 배타적인 성향의 Narcissism,<br/>나보다 타인을 사랑하여 사랑이 타인을 향해 발산하는 희생적인 성향의 Echoism<br/>사랑이 선사하는 변치 않는 행복을 추구하고 양극적인 방법으로 나아가지 않도록 관심을 가져야 한다고 생각하기에 우리는 양극화에 저항(Anti)하고자 한다.<br/><br/><br/>`,
 
     desingers: [
       {
@@ -357,6 +389,17 @@ const teams = {
         ename: "Chaehui Hong",
       },
     ],
+    stage1: {
+      name: "Anti-Echoism",
+      intro:
+        "오로지 자신만을 생각하던 미성숙한 사람에서, 어른스럽고 완성된 사람으로",
+    },
+    stage2: {
+      name: "Anti-Narcissism",
+      intro:
+        "타인을 맹목적으로 좇던 불안정한 사랑에서, 자신을 소중히 하는 안정된 사랑으로",
+    },
+    film: "",
   },
   F: {
     team: "TEAM F",
@@ -369,7 +412,7 @@ const teams = {
         short2: "",
       },
     ],
-    longIntro: `도자기는 흙으로 만들어져서 본질적으로 약하며 충격에 취약하다.<br/>하지만 여러 단계의 제작 공정을 거치며 점점 강해진다. 고온에서 소성되어 단단해지고, 내마모성이 뛰어나진다. 도자기의 단단함은 그 매력적인 특성 중 하나이다.<br/><br/>이러한 도자기의 특성은 연약함과 단호함을 모두 가진 인간과 비슷하다고 할 수 있다.<br/>우리는 온갖 어려움을 시달리는 과정에서 때로는 강해 보이지만 어느 순간에는 무너지기도 한다.<br/><br/><br/><Strong>Stage 1. Frailty(연약함)</Strong>  :  충격과 고난에 의해 쉽게 깨지고 무너지다<br/><Strong>Stage 2. Adamant(단호함)</Strong>  :  어려움을 이겨내어 강하고 단단하다`,
+    longIntro: `도자기는 흙으로 만들어져서 본질적으로 약하며 충격에 취약하다.<br/>하지만 여러 단계의 제작 공정을 거치며 점점 강해진다. 고온에서 소성되어 단단해지고, 내마모성이 뛰어나진다. 도자기의 단단함은 그 매력적인 특성 중 하나이다.<br/><br/>이러한 도자기의 특성은 연약함과 단호함을 모두 가진 인간과 비슷하다고 할 수 있다.<br/>우리는 온갖 어려움을 시달리는 과정에서 때로는 강해 보이지만 어느 순간에는 무너지기도 한다.<br/><br/><br/>`,
 
     desingers: [
       {
@@ -403,6 +446,15 @@ const teams = {
         ename: "Zhang Han Bing",
       },
     ],
+    stage1: {
+      name: "Frailty(연약함)",
+      intro: "충격과 고난에 의해 쉽게 깨지고 무너지다",
+    },
+    stage2: {
+      name: "Adamant(단호함)",
+      intro: "어려움을 이겨내어 강하고 단단하다",
+    },
+    film: "",
   },
   G: {
     team: "TEAM G",
@@ -415,7 +467,7 @@ const teams = {
         short2: "",
       },
     ],
-    longIntro: `예로부터 '새장 속의 새'라는 말은 속박된 사람을 비유하며 강렬한 자유감에 대한 열망을 표현해왔다.<br/><br/>푸른 하늘을 날아야 하는 새들은 좁은 새장 속에 갇힌 순간 더는 자유롭게 날지 못하고 노랫소리도 더이상 아름답지 않다.<br/>새장 속의 시간은 더없이 무겁고, 매 순간마다 괴롭다.<br/>그러나 자유에 대한 열망을 버리지 않고 늘 그 금속의 질곡을 헤쳐 나가려 했다.<br/><br/>새가 우리에게 주는 이미지는 자유롭고 경쾌한 모습이다. 우리의 주제에 있어 어떤 영혼의 상징으로 볼 수 있다. 일종의 자유와 외부의 속박을 초월한 정신을 대표한다.<br/>새장은 화려하고 속박적인 모습이다. 어떤 상태나 조건에 갇혀 자유롭게 발전하거나 성장할 수 없게 하고, 해탈에 대한 갈망과 자아에 대한 생각을 불러일으킨다.<br/><br/><br/><Strong>Stage 1. 鳥</Strong> : 자유롭고 경쾌한 모습<br/><Strong>Stage 2. 籠</Strong> : 화려하고 속박적인 모습`,
+    longIntro: `예로부터 '새장 속의 새'라는 말은 속박된 사람을 비유하며 강렬한 자유감에 대한 열망을 표현해왔다.<br/><br/>푸른 하늘을 날아야 하는 새들은 좁은 새장 속에 갇힌 순간 더는 자유롭게 날지 못하고 노랫소리도 더이상 아름답지 않다.<br/>새장 속의 시간은 더없이 무겁고, 매 순간마다 괴롭다.<br/>그러나 자유에 대한 열망을 버리지 않고 늘 그 금속의 질곡을 헤쳐 나가려 했다.<br/><br/>새가 우리에게 주는 이미지는 자유롭고 경쾌한 모습이다. 우리의 주제에 있어 어떤 영혼의 상징으로 볼 수 있다. 일종의 자유와 외부의 속박을 초월한 정신을 대표한다.<br/>새장은 화려하고 속박적인 모습이다. 어떤 상태나 조건에 갇혀 자유롭게 발전하거나 성장할 수 없게 하고, 해탈에 대한 갈망과 자아에 대한 생각을 불러일으킨다.<br/><br/><br/>`,
 
     desingers: [
       {
@@ -444,12 +496,38 @@ const teams = {
         ename: "Xu Gui Yan",
       },
     ],
+    stage1: {
+      name: "鳥",
+      intro: "자유롭고 경쾌한 모습",
+    },
+    stage2: {
+      name: "籠",
+      intro: "화려하고 속박적인 모습",
+    },
+    film: "",
   },
 };
 
 function TeamIntroPage() {
   const { teamId } = useParams();
   const team = teams[teamId];
+
+  // stage 스크롤 기능
+  const stage1Ref = useRef(null);
+  const stage2Ref = useRef(null);
+
+  const scrollToStage = (stageRef) => {
+    if (stageRef.current) {
+      const headerHeight = 100; // 헤더 높이를 픽셀 단위로 지정
+      const elementPosition = stageRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -468,7 +546,7 @@ function TeamIntroPage() {
         <Skeleton className="w-full aspect-[3/1] rounded" />
       </ImageLoader>
       {/* <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px] md:pt-[50px] sm:pt-[50px] m:pt-[50px]" /> */}
-      <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] mt-[50px]">
+      <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] mt-[50px] mb-[450px]">
         <article className="flex flex-col justify-center items-center">
           <p className="font-['ft-activica-strong'] text-[32px] xl:text-[30px] lg:text-[26px] md:text-[22px] sm:text-[18px] m:text-[14px]">
             {team.team}
@@ -498,6 +576,26 @@ function TeamIntroPage() {
             className="text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] w-full font-pretendard-regular"
             dangerouslySetInnerHTML={{ __html: team.longIntro }}
           />
+          <p
+            id="stage1"
+            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]"
+            onClick={() => scrollToStage(stage1Ref)}
+          >
+            Stage1. {team.stage1.name} :{" "}
+            <span className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">
+              {team.stage1.intro}
+            </span>
+          </p>
+          <p
+            id="stage2"
+            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]"
+            onClick={() => scrollToStage(stage2Ref)}
+          >
+            Stage2. {team.stage2.name} :{" "}
+            <span className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">
+              {team.stage2.intro}
+            </span>
+          </p>
         </article>
         <div className="mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
           <p className="font-['ft-activica-strong'] text-[40px] mb-[39px]">
@@ -529,9 +627,24 @@ function TeamIntroPage() {
           </div>
         </div>
         <div className="flex flex-col mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
-          <p className="font-['ft-activica-strong'] text-[40px]">ARCHIVE</p>
-          <p className="">Stage 1.</p>
-          <p className="">Stage 2.</p>
+          <p className="font-['ft-activica-strong'] text-[40px] mb-[80px]">
+            ARCHIVE
+          </p>
+          <p
+            ref={stage1Ref}
+            className="font-pretendard-semibold text-[24px] mb-[50px]"
+          >
+            Stage 1. {team.stage1.name}
+          </p>
+          <p
+            ref={stage2Ref}
+            className="font-pretendard-semibold text-[24px] mb-[50px]"
+          >
+            Stage 2. {team.stage2.name}
+          </p>
+          <p className="font-['ft-activica-strong'] text-[40px] mb-[50px]">
+            THEME FILM
+          </p>
         </div>
       </main>
       <Footer />
