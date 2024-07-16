@@ -578,7 +578,7 @@ function TeamIntroPage() {
           />
           <p
             id="stage1"
-            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]"
+            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] cursor-pointer"
             onClick={() => scrollToStage(stage1Ref)}
           >
             Stage1. {team.stage1.name} :{" "}
@@ -588,7 +588,7 @@ function TeamIntroPage() {
           </p>
           <p
             id="stage2"
-            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]"
+            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] cursor-pointer"
             onClick={() => scrollToStage(stage2Ref)}
           >
             Stage2. {team.stage2.name} :{" "}

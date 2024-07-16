@@ -39,7 +39,11 @@ function DesignerDetailPage() {
           ABOUT DESINGER
         </p>
         <div className="flex">
-          <img className="w-full bg-gray-200 mr-[30px]" />
+          <div className="w-full overflow-hidden mr-[29px]">
+            <ImageLoader fetcher={() => designer.src}>
+              <Skeleton className="w-full aspect-[3/4]" />
+            </ImageLoader>
+          </div>
           <div>
             <p className="font-pretendard-semibold text-[18px]">
               Q. 간단한 자기소개 부탁드립니다. <br />
@@ -51,11 +55,11 @@ function DesignerDetailPage() {
               <br />
             </p>
             <p className="font-pretendard-semibold text-[18px]">
-              Q. 각 착장에서 강조하고 싶은 포인트가 있다면 알려주세요!.
+              Q. {designer.qna}
               <br />
               <br />
             </p>
-            <p className="font-pretendard-regular text-[18px]">
+            <p className="font-pretendard-regular text-[18px] whitespace-pre-wrap">
               A. {designer.point}
               <br />
               <br />
@@ -66,13 +70,73 @@ function DesignerDetailPage() {
           <p className="text-[28px] mt-[100px] mb-[30px] font-['ft-activica-strong']">
             LOOK 1
           </p>
-          <div className="w-[500px] bg-gray-300" />
+          <div className="w-full overflow-hidden mb-[49px]">
+            <ImageLoader fetcher={() => designer.one}>
+              <Skeleton className="w-full aspect-[3/4]" />
+            </ImageLoader>
+          </div>
+          <div className="flex flex-col gap-[30px]">
+            <div className="flex gap-[30px]">
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.one1}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.one2}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+            </div>
+            <div className="flex gap-[30px]">
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.one3}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.one4}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="mb-[100px]">
           <p className="text-[28px] mt-[100px] mb-[30px] font-['ft-activica-strong']">
             LOOK 2
           </p>
-          <div className="w-[500px] bg-gray-300" />
+          <div className="w-full overflow-hidden mb-[49px]">
+            <ImageLoader fetcher={() => designer.two}>
+              <Skeleton className="w-full aspect-[3/4]" />
+            </ImageLoader>
+          </div>
+          <div className="flex flex-col gap-[30px]">
+            <div className="flex gap-[30px]">
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.two1}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.two2}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+            </div>
+            <div className="flex gap-[30px]">
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.two3}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+              <div className="w-full overflow-hidden">
+                <ImageLoader fetcher={() => designer.two4}>
+                  <Skeleton className="w-full aspect-[3/4]" />
+                </ImageLoader>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
