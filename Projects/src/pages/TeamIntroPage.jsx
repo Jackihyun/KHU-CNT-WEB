@@ -497,7 +497,7 @@ function TeamIntroPage() {
           <p
             className="text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] w-full font-pretendard-regular"
             dangerouslySetInnerHTML={{ __html: team.longIntro }}
-          />
+          />  
         </article>
         <div className="mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
           <p className="font-['ft-activica-strong'] text-[40px] mb-[39px]">
