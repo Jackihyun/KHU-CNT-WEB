@@ -44,16 +44,16 @@ import Seungheon from "../assets/조별이미지/E조/한승헌.jpg";
 import Guiyan from "../assets/조별이미지/G조/허귀연.jpg";
 import Chaehui from "../assets/조별이미지/E조/홍채희.jpg";
 
-import 강민영one from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_도록보정본";
-import 강민영one1 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진1.jpg";
-import 강민영one2 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진2.jpg";
-import 강민영one3 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진3.jpg";
-import 강민영one4 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진4.jpg";
-import 강민영two from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_도록보정본.jpg";
-import 강민영two1 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진1.jpg";
-import 강민영two2 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진2.jpg";
-import 강민영two3 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진3.jpg";
-import 강민영two4 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진4.jpg";
+// import 강민영one from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_도록보정본";
+// import 강민영one1 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진1.jpg";
+// import 강민영one2 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진2.jpg";
+// import 강민영one3 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진3.jpg";
+// import 강민영one4 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-1/1. 강민영/B_강민영_사진4.jpg";
+// import 강민영two from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_도록보정본.jpg";
+// import 강민영two1 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진1.jpg";
+// import 강민영two2 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진2.jpg";
+// import 강민영two3 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진3.jpg";
+// import 강민영two4 from "../assets/[디자이너 개인 페이지] 착장 사진/B/B-2/1. 강민영/B_강민영_사진4.jpg";
 
 export const DesignerData = [
   {
@@ -70,16 +70,16 @@ export const DesignerData = [
     qna: "항해를 하는 당신의 모습은 어떠한가요? 그 모습을 어떻게 디자인으로 녹여냈나요?",
     point:
       "자유로움과 무모함을 기반으로 한다. 어린 시절의 과감하고 두려움이 없는 모습을 상상했다. 떠나야 할 길에 대한 두려움이 전혀 없는 상태로 무모한 용기와 모험의 과정을 부풀어짐을 이용해 풀어낸다.",
-    one: 강민영one,
-    one1: 강민영one1,
-    one2: 강민영one2,
-    one3: 강민영one3,
-    one4: 강민영one4,
-    two: 강민영two,
-    two1: 강민영two1,
-    two2: 강민영two2,
-    two3: 강민영two3,
-    two4: 강민영two4,
+    // one: 강민영one,
+    // one1: 강민영one1,
+    // one2: 강민영one2,
+    // one3: 강민영one3,
+    // one4: 강민영one4,
+    // two: 강민영two,
+    // two1: 강민영two1,
+    // two2: 강민영two2,
+    // two3: 강민영two3,
+    // two4: 강민영two4,
   },
   {
     alt: "강사우 디자이너",
