@@ -40,7 +40,7 @@ function App() {
               <Route path="/designer" element={<DesignerPage />} />
               <Route path="/designer/:name" element={<DesignerDetailPage />} />
               <Route path="/photo" element={<PhotoPage />} />
-              <Route path="/whiteproj" element={<WhiteprojectPage />} />
+              <Route path="/whiteproj." element={<WhiteprojectPage />} />
               <Route path="/teams/:teamId" element={<TeamIntro />} />
               <Route path="/invite" element={<Invite />} />
             </Routes>

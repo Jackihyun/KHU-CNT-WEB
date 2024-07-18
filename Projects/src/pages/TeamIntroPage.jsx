@@ -553,7 +553,7 @@ function TeamIntroPage() {
         <Skeleton className="w-full aspect-[3/1] rounded" />
       </ImageLoader>
       {/* <img src={team.image} alt="팀이미지" className="w-full h-full pt-[80px] md:pt-[50px] sm:pt-[50px] m:pt-[50px]" /> */}
-      <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] mt-[50px] mb-[450px]">
+      <main className="px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] mt-[50px] mb-[450px] xl:mb-[400px] lg:mb-[350px] md:mb-[300px] sm:mb-[250px] m:mb-[200px]">
         <article className="flex flex-col justify-center items-center">
           <p className="font-['ft-activica-strong'] text-[32px] xl:text-[30px] lg:text-[26px] md:text-[22px] sm:text-[18px] m:text-[14px]">
             {team.team}
@@ -634,22 +634,22 @@ function TeamIntroPage() {
           </div>
         </div>
         <div className="flex flex-col mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
-          <p className="font-['ft-activica-strong'] text-[40px] mb-[80px]">
+          <p className="font-['ft-activica-strong'] text-[40px] mb-[80px] xl:mb-[70px] lg:mb-[65px] md:mb-[60px] sm:mb-[55px] m:mb-[50px]">
             ARCHIVE
           </p>
           <p
             ref={stage1Ref}
-            className="font-pretendard-semibold text-[24px] mb-[50px]"
+            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px]"
           >
             Stage 1. {team.stage1.name}
           </p>
           <p
             ref={stage2Ref}
-            className="font-pretendard-semibold text-[24px] mb-[50px]"
+            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px]"
           >
             Stage 2. {team.stage2.name}
           </p>
-          <p className="font-['ft-activica-strong'] text-[40px] mb-[50px]">
+          <p className="font-['ft-activica-strong'] text-[40px] mb-[50px]xl:mb-[50px] lg:mb-[45px] md:mb-[40px] sm:mb-[35px] m:mb-[30px]">
             THEME FILM
           </p>
           <video width="full" controls>
