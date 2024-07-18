@@ -608,10 +608,13 @@ function TeamIntroPage() {
           <p className="font-['ft-activica-strong'] text-[40px] mb-[39px]">
             DESINGERS
           </p>
-          <ImageLoader fetcher={() => team.groupPhoto} className="mb-[69px]">
+          <ImageLoader
+            fetcher={() => team.groupPhoto}
+            className="mb-[69px] xl:mb-[68px] lg:mb-[60px] md:mb-[50px] sm:mb-[40px] m:mb-[34px]"
+          >
             <Skeleton className="w-full aspect-[3/2] rounded" />
           </ImageLoader>
-          <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 m:grid-cols-2 gap-y-[92px] md:gap-y-[60px] sm:gap-y[40px] m:gap-y-[20px] gap-x-[23px]">
+          <div className="grid grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 m:grid-cols-2 gap-y-[92px] md:gap-y-[60px] sm:gap-y-[30px] m:gap-y-[20px] gap-x-[23px]">
             {team.desingers.map((desinger, idx) => (
               <div
                 key={idx}
