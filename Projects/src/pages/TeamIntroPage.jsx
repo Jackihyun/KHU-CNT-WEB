@@ -11,6 +11,7 @@ import teamAdesinger4 from "../assets/조별이미지/A조/이소망.jpg";
 import teamAdesinger5 from "../assets/조별이미지/A조/이유나.jpg";
 import teamAdesinger6 from "../assets/조별이미지/A조/이지우.jpg";
 import teamAdesinger7 from "../assets/조별이미지/A조/조연진.jpg";
+import videoA from "../assets/조별비디오/VIDEO_A.mp4";
 
 // B조 이미지
 import teamBgroupPhoto from "../assets/조별이미지/B조/B조단체사진.jpg";
@@ -22,6 +23,7 @@ import teamBdesinger4 from "../assets/조별이미지/B조/김희연.jpg";
 import teamBdesinger5 from "../assets/조별이미지/B조/박지민.jpg";
 import teamBdesinger6 from "../assets/조별이미지/B조/송겸승.jpg";
 import teamBdesinger7 from "../assets/조별이미지/B조/우수진.jpg";
+import videoB from "../assets/조별비디오/VIDEO_B.mp4";
 
 // C조 이미지
 import teamCimage from "../assets/조별이미지/C조/C조.jpg";
@@ -33,6 +35,7 @@ import teamCdesinger4 from "../assets/조별이미지/C조/나민영.jpg";
 import teamCdesinger5 from "../assets/조별이미지/C조/민시은.jpg";
 import teamCdesinger6 from "../assets/조별이미지/C조/박슬빈.jpg";
 import teamCdesinger7 from "../assets/조별이미지/C조/우가인.jpg";
+import videoC from "../assets/조별비디오/VIDEO_C.mp4";
 
 // D조 이미지
 import teamDimage from "../assets/조별이미지/D조/D조.jpg";
@@ -43,6 +46,7 @@ import teamDdesinger3 from "../assets/조별이미지/D조/이경범.jpg";
 import teamDdesinger4 from "../assets/조별이미지/D조/임기현.jpg";
 import teamDdesinger5 from "../assets/조별이미지/D조/지서현.jpg";
 import teamDdesinger6 from "../assets/조별이미지/D조/한수민.jpg";
+import videoD from "../assets/조별비디오/VIDEO_D.mp4";
 
 // E조 이미지
 import teamEimage from "../assets/조별이미지/E조/E조.jpg";
@@ -54,6 +58,7 @@ import teamEdesinger4 from "../assets/조별이미지/E조/이현민.jpg";
 import teamEdesinger5 from "../assets/조별이미지/E조/장유미.jpg";
 import teamEdesinger6 from "../assets/조별이미지/E조/한승헌.jpg";
 import teamEdesinger7 from "../assets/조별이미지/E조/홍채희.jpg";
+import videoE from "../assets/조별비디오/VIDEO_E.mp4";
 
 // F조 이미지
 import teamFimage from "../assets/조별이미지/F조/F조.jpg";
@@ -64,6 +69,7 @@ import teamFdesinger3 from "../assets/조별이미지/F조/유철찬.jpg";
 import teamFdesinger4 from "../assets/조별이미지/F조/이사기.jpg";
 import teamFdesinger5 from "../assets/조별이미지/F조/이우기.jpg";
 import teamFdesinger6 from "../assets/조별이미지/F조/장한빙.jpg";
+import videoF from "../assets/조별비디오/VIDEO_F.mp4";
 
 // G조 이미지
 import teamGimage from "../assets/조별이미지/G조/G조.jpg";
@@ -73,6 +79,7 @@ import teamGdesinger2 from "../assets/조별이미지/G조/왕혜영.jpg";
 import teamGdesinger3 from "../assets/조별이미지/G조/유서안.jpg";
 import teamGdesinger4 from "../assets/조별이미지/G조/하정문.jpg";
 import teamGdesinger5 from "../assets/조별이미지/G조/허귀연.jpg";
+import videoG from "../assets/조별비디오/VIDEO_G.mp4";
 
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -152,7 +159,7 @@ const teams = {
       name: "사라지다",
       intro: "그리움 속에 사라져가는 시골",
     },
-    film: "",
+    film: videoA,
   },
   B: {
     team: "TEAM B",
@@ -212,7 +219,7 @@ const teams = {
       name: "Voyage 항해",
       intro: "목표를 향한 여정",
     },
-    film: "",
+    film: videoB,
   },
   C: {
     team: "TEAM C",
@@ -272,7 +279,7 @@ const teams = {
       name: "Birthday",
       intro: "unbirthday로 인해 특별해질 수 있는 하루",
     },
-    film: "",
+    film: videoC,
   },
 
   D: {
@@ -328,7 +335,7 @@ const teams = {
       name: "LEGO-TECHNIC",
       intro: "공업적 부품을 활용한, 보다 정교한 어른들을 위한 장난감",
     },
-    film: "",
+    film: videoD,
   },
   E: {
     team: "TEAM E",
@@ -399,7 +406,7 @@ const teams = {
       intro:
         "타인을 맹목적으로 좇던 불안정한 사랑에서, 자신을 소중히 하는 안정된 사랑으로",
     },
-    film: "",
+    film: videoE,
   },
   F: {
     team: "TEAM F",
@@ -454,7 +461,7 @@ const teams = {
       name: "Adamant(단호함)",
       intro: "어려움을 이겨내어 강하고 단단하다",
     },
-    film: "",
+    film: videoF,
   },
   G: {
     team: "TEAM G",
@@ -504,7 +511,7 @@ const teams = {
       name: "籠",
       intro: "화려하고 속박적인 모습",
     },
-    film: "",
+    film: videoG,
   },
 };
 
@@ -645,6 +652,9 @@ function TeamIntroPage() {
           <p className="font-['ft-activica-strong'] text-[40px] mb-[50px]">
             THEME FILM
           </p>
+          <video width="full" controls>
+            <source src={team.film} type="video/mp4" />
+          </video>
         </div>
       </main>
       <Footer />
