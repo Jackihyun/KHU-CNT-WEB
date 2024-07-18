@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 // A조 이미지
 import teamAimage from "../assets/조별이미지/A조/A조.jpg";
@@ -154,10 +155,29 @@ const teams = {
     stage1: {
       name: "살아가다",
       intro: "바삐 살아가는 현대인의 도시",
+      images: [
+        "1_32-1_이유나.jpg",
+        "2_30-1_이소망.jpg",
+        "3_29-1_이석준.jpg",
+        "4_7-1_김민지.jpg",
+        "5_39-1_조연진.jpg",
+        "6_18-1_사한나.jpg",
+        "7_34-1_이지우.jpg",
+      ],
     },
     stage2: {
       name: "사라지다",
       intro: "그리움 속에 사라져가는 시골",
+      images: [
+        "8_29-2_이석준.jpg",
+        "9_7-2_김민지.jpg",
+        "10_39-2_조연진.jpg",
+        "11_18-2_사한나.jpg",
+        "12_32-2_이유나.jpg",
+        "13_34-2_이지우.jpg",
+        "14_34-3_이지우.jpg",
+        "15_30-2_이소망.jpg",
+      ],
     },
     film: videoA,
   },
@@ -214,10 +234,28 @@ const teams = {
     stage1: {
       name: "Anchor 정박",
       intro: "적절한 쉼과 재정비",
+      images: [
+        "79_6-1_김민서.jpg",
+        "80_1-1_강민영.jpg",
+        "81_11-1_김이채.jpg",
+        "82_17-1_박지민.jpg",
+        "83_12-1_김희연.jpg",
+        "84_22-1_우수진.jpg",
+        "85_19-1_송겸승.jpg",
+      ],
     },
     stage2: {
       name: "Voyage 항해",
       intro: "목표를 향한 여정",
+      images: [
+        "86_17-2_박지민.jpg",
+        "87_12-2_김희연.jpg",
+        "88_6-2_김민서.jpg",
+        "89_11-2_김이채.jpg",
+        "90_19-2_송겸승.jpg",
+        "91_22-2_우수진.jpg",
+        "92_1-2_강민영.jpg",
+      ],
     },
     film: videoB,
   },
@@ -274,10 +312,28 @@ const teams = {
     stage1: {
       name: "Unbirthday",
       intro: "birthday를 특별하게 만드는 364일의 일상",
+      images: [
+        "16_9-1_김소은.jpg",
+        "17_14-1_민시은.jpg",
+        "18_4-1_김다영.jpg",
+        "19_13-1_나민영.jpg",
+        "20_21-1_우가인.jpg",
+        "21_15-1_박슬빈.jpg",
+        "22_5-1_김미곤.jpg",
+      ],
     },
     stage2: {
       name: "Birthday",
       intro: "unbirthday로 인해 특별해질 수 있는 하루",
+      images: [
+        "23_4-2_김다영.jpg",
+        "24_9-2_김소은.jpg",
+        "25_21-2_우가인.jpg",
+        "26_14-2_민시은.jpg",
+        "27_5-2_김미곤.jpg",
+        "28_13-2_나민영.jpg",
+        "29_15-2_박슬빈.jpg",
+      ],
     },
     film: videoC,
   },
@@ -330,10 +386,26 @@ const teams = {
     stage1: {
       name: "LEGO-DUPLO",
       intro: "아이들의 즐거운 놀이를 위한 밝은 색상과 큰 크기의 레고",
+      images: [
+        "30_16-1_박정은.jpg",
+        "31_40-1_지서현.jpg",
+        "32_8-1_김민철.jpg",
+        "33_36-1_임기현.jpg",
+        "34_42-1_한수민.jpg",
+        "35_27-1_이경범.jpg",
+      ],
     },
     stage2: {
       name: "LEGO-TECHNIC",
       intro: "공업적 부품을 활용한, 보다 정교한 어른들을 위한 장난감",
+      images: [
+        "36_36-2_임기현.jpg",
+        "37_8-2_김민철.jpg",
+        "38_27-2_이경범.jpg",
+        "39_42-2_한수민.jpg",
+        "40_40-2_지서현.jpg",
+        "41_16-2_박정은.jpg",
+      ],
     },
     film: videoD,
   },
@@ -400,11 +472,29 @@ const teams = {
       name: "Anti-Echoism",
       intro:
         "오로지 자신만을 생각하던 미성숙한 사람에서, 어른스럽고 완성된 사람으로",
+      images: [
+        "65_3-1_김규리.jpg",
+        "66_45-1_홍채희.jpg",
+        "67_43-1_한승헌.jpg",
+        "68_33-1_이자영.jpg",
+        "69_37-1_장유미.jpg",
+        "70_35-1_이현민.jpg",
+        "71_10-1_김은채.jpg",
+      ],
     },
     stage2: {
       name: "Anti-Narcissism",
       intro:
         "타인을 맹목적으로 좇던 불안정한 사랑에서, 자신을 소중히 하는 안정된 사랑으로",
+      images: [
+        "72_10-2_김은채.jpg",
+        "73_37-2_장유미.jpg",
+        "74_3-2_김규리.jpg",
+        "75_43-2_한승헌.jpg",
+        "76_33-2_이자영.jpg",
+        "77_45-2_홍채희.jpg",
+        "78_35-2_이현민.jpg",
+      ],
     },
     film: videoE,
   },
@@ -456,10 +546,26 @@ const teams = {
     stage1: {
       name: "Frailty(연약함)",
       intro: "충격과 고난에 의해 쉽게 깨지고 무너지다",
+      images: [
+        "42_28-1_이사기.jpg",
+        "43_26-1_유철찬.jpg",
+        "44_24-1_유가동.jpg",
+        "45_31-1_이우기.jpg",
+        "46_23-1_원소영.jpg",
+        "47_38-1_장한빙.jpg",
+      ],
     },
     stage2: {
       name: "Adamant(단호함)",
       intro: "어려움을 이겨내어 강하고 단단하다",
+      images: [
+        "48_38-2_장한빙.jpg",
+        "49_23-2_원소영.jpg",
+        "50_26-2_유철찬.jpg",
+        "51_28-2_이사기.jpg",
+        "52_31-2_이우기.jpg",
+        "53_24-2_유가동.jpg",
+      ],
     },
     film: videoF,
   },
@@ -506,14 +612,76 @@ const teams = {
     stage1: {
       name: "鳥",
       intro: "자유롭고 경쾌한 모습",
+      images: [
+        "54_44-1_허귀연.jpg",
+        "55_25-1_유서안.jpg",
+        "56_2-1_강사우.jpg",
+        "57_20-1_왕혜영.jpg",
+        "58_41-1_하정문.jpg",
+      ],
     },
     stage2: {
       name: "籠",
       intro: "화려하고 속박적인 모습",
+      images: [
+        "59_20-2_왕혜영.jpg",
+        "60_44-2_허귀연.jpg",
+        "61_25-2_유서안.jpg",
+        "62_2-2_강사우.jpg",
+        "63_41-2_하정문.jpg",
+        "64_41-3_하정문.jpg",
+      ],
     },
     film: videoG,
   },
 };
+
+const importedImages = import.meta.glob("../assets/아카이브 사진/*.jpg", {
+  eager: true,
+});
+const imagePaths = Object.keys(importedImages);
+
+const imageData = [];
+
+imagePaths.forEach((path) => {
+  const fileName = path.match(/\/([^/]+)$/)[1]; // 파일명 추출
+
+  // 팀별 이미지 분류
+  Object.keys(teams).forEach((teamKey) => {
+    const team = teams[teamKey];
+    const name = fileName
+      .match(/[^_]+(?=\.\w+$)/)[0]
+      .split("_")
+      .pop(); // 이름 추출
+    const url = `/designer/${name}`;
+    if (
+      team.stage1 &&
+      team.stage1.images &&
+      team.stage1.images.includes(fileName)
+    ) {
+      imageData.push({
+        img: importedImages[path].default,
+        team: teamKey,
+        stage: "stage1",
+        name: name,
+        url: url, // URL 생성
+      });
+    }
+    if (
+      team.stage2 &&
+      team.stage2.images &&
+      team.stage2.images.includes(fileName)
+    ) {
+      imageData.push({
+        img: importedImages[path].default,
+        team: teamKey,
+        stage: "stage2",
+        name: name,
+        url: url, // URL 생성
+      });
+    }
+  });
+});
 
 function TeamIntroPage() {
   const { teamId } = useParams();
@@ -637,21 +805,61 @@ function TeamIntroPage() {
           </div>
         </div>
         <div className="flex flex-col mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
-          <p className="font-['ft-activica-strong'] text-[40px] mb-[80px] xl:mb-[70px] lg:mb-[65px] md:mb-[60px] sm:mb-[55px] m:mb-[50px]">
+          <p className="font-['ft-activica-strong'] text-[40px] mb-[80px] xl:mb-[70px] lg:mb-[65px] md:mb-[55px] sm:mb-[45px] m:mb-[35px]">
             ARCHIVE
           </p>
           <p
             ref={stage1Ref}
-            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px]"
+            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px] xl:mb-[45px] lg:mb-[40px] md:mb-[35px] sm:mb-[30px] m:mb-[25px]"
           >
             Stage 1. {team.stage1.name}
           </p>
+          <div className="mb-[50px] xl:mb-[45px] lg:mb-[40px] md:mb-[40px] sm:mb-[35px] m:mb-[35px]">
+            <div className="w-full">
+              <img />
+            </div>
+            <div className="grid grid-cols-3 gap-x-[23px] gap-y-[50px]">
+              {imageData
+                .filter(
+                  (data) => data.team === teamId && data.stage === "stage1"
+                )
+                .map((data, idx) => (
+                  <Link to={data.url} key={idx}>
+                    <img
+                      src={data.img}
+                      alt={data.name}
+                      className="object-cover w-full aspect-[3/4]"
+                    />
+                  </Link>
+                ))}
+            </div>
+          </div>
           <p
             ref={stage2Ref}
-            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px]"
+            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px] xl:mb-[45px] lg:mb-[40px] md:mb-[35px] sm:mb-[30px] m:mb-[25px]"
           >
             Stage 2. {team.stage2.name}
           </p>
+          <div className="mb-[50px]">
+            <div className="w-full">
+              <img />
+            </div>
+            <div className="grid grid-cols-3 gap-x-[23px] gap-y-[50px]">
+              {imageData
+                .filter(
+                  (data) => data.team === teamId && data.stage === "stage2"
+                )
+                .map((data, idx) => (
+                  <Link to={data.url} key={idx}>
+                    <img
+                      src={data.img}
+                      alt={data.name}
+                      className="object-cover w-full aspect-[3/4]"
+                    />
+                  </Link>
+                ))}
+            </div>
+          </div>
           <p className="font-['ft-activica-strong'] text-[40px] mb-[50px]xl:mb-[50px] lg:mb-[45px] md:mb-[40px] sm:mb-[35px] m:mb-[30px]">
             THEME FILM
           </p>
