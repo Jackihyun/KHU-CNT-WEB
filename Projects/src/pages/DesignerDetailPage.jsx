@@ -71,31 +71,31 @@ function DesignerDetailPage() {
             LOOK 1
           </p>
           <div className="w-full overflow-hidden mb-[49px] xl:mb-[49px] lg:mb-[45px] md:mb-[41px] sm:mb-[36px] m:mb-[32px]">
-            <ImageLoader fetcher={() => designer.one}>
+            <ImageLoader fetcher={() => designer.images[0]}>
               <Skeleton className="w-full aspect-[3/4]" />
             </ImageLoader>
           </div>
           <div className="flex flex-col gap-[30px] xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] m:gap-[12px]">
             <div className="flex gap-[30px] xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] m:gap-[12px]">
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.one1}>
+                <ImageLoader fetcher={() => designer.images[1]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.one2}>
+                <ImageLoader fetcher={() => designer.images[2]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
             </div>
             <div className="flex gap-[30px] xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] m:gap-[12px]">
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.one3}>
+                <ImageLoader fetcher={() => designer.images[3]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.one4}>
+                <ImageLoader fetcher={() => designer.images[4]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
@@ -103,35 +103,35 @@ function DesignerDetailPage() {
           </div>
         </div>
         <div className="mb-[100px]">
-          <p className="text-[28px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[21px] m:text-[20px] mt-[100px] mb-[30px] font-['ft-activica-strong']">
+          <p className="text-[28px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[21px] m:text-[20px] mb-[30px] font-['ft-activica-strong']">
             LOOK 2
           </p>
           <div className="w-full overflow-hidden mb-[49px] xl:mb-[49px] lg:mb-[45px] md:mb-[41px] sm:mb-[36px] m:mb-[32px]">
-            <ImageLoader fetcher={() => designer.two}>
+            <ImageLoader fetcher={() => designer.images[5]}>
               <Skeleton className="w-full aspect-[3/4]" />
             </ImageLoader>
           </div>
           <div className="flex flex-col gap-[30px] xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] m:gap-[12px]">
             <div className="flex gap-[30px] xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] m:gap-[12px]">
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.two1}>
+                <ImageLoader fetcher={() => designer.images[6]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.two2}>
+                <ImageLoader fetcher={() => designer.images[7]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
             </div>
             <div className="flex gap-[30px] xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] m:gap-[12px]">
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.two3}>
+                <ImageLoader fetcher={() => designer.images[8]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
               <div className="w-full overflow-hidden">
-                <ImageLoader fetcher={() => designer.two4}>
+                <ImageLoader fetcher={() => designer.images[9]}>
                   <Skeleton className="w-full aspect-[3/4]" />
                 </ImageLoader>
               </div>
