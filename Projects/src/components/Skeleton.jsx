@@ -1,5 +1,5 @@
 import { css, keyframes } from "@emotion/css";
-import { HTMLAttributes } from "react";
+// import { HTMLAttributes } from "react";
 
 const loading = keyframes`
   0% {
