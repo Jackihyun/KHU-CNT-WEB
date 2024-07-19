@@ -22,9 +22,19 @@ function PhotoArticle() {
         2024 KHU CNT FASHIONSHOW
         <br /> LAST-ING RE-PLAY
       </p>
-      <div className="w-full h-[75vw] mt-[57px] bg-[#d9d9d9]"></div>
+      <div className="youtube w-full pt-[56.25%] relative mt-[57px] xl:mt-[57px] lg:mt-[50px] md:mt-[43px] sm:mt-[36px] m:mt-[30px] mb-[71px] xl:mb-[64px] lg:mb-[58px] md:mb-[52px] sm:mb-[48px] m:mb-[42px]">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/L4ahE9UqeQU?si=l0DTjOQfSpnmFyaF"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-      <p className="mt-[71px] mb-[36px] font-['ft-activica-strong'] text-[36px] xl:text-[36px] lg:text-[32px] md:text-[28px] sm:text-[24px] m:text-[20px] text-center">
+      <p className="mb-[36px] font-['ft-activica-strong'] text-[36px] xl:text-[36px] lg:text-[32px] md:text-[28px] sm:text-[24px] m:text-[20px] text-center">
         PHOTO - FASHION SHOW
       </p>
       <div className="mt-[20px] w-full grid grid-cols-3 gap-x-[3vw] gap-y-[3vw] items-center">
@@ -38,7 +48,7 @@ function PhotoArticle() {
           </ImageLoader>
         ))}
       </div>
-      <p className="mt-[71px] mb-[36px] font-['ft-activica-strong'] text-[36px] xl:text-[36px] lg:text-[32px] md:text-[28px] sm:text-[24px] m:text-[20px] text-center">
+      <p className="mt-[100px] mb-[36px] font-['ft-activica-strong'] text-[36px] xl:text-[36px] lg:text-[32px] md:text-[28px] sm:text-[24px] m:text-[20px] text-center">
         PHOTO - MAKING PROCESS
       </p>
       <div className="mt-[20px] w-full grid grid-cols-3 gap-x-[3vw] gap-y-[3vw] items-center">

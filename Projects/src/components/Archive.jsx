@@ -1,13 +1,28 @@
 import Skeleton from "./Skeleton";
 import ImageLoader from "./ImageLoader";
+import { Link } from "react-router-dom";
 
 // 화이트프로젝트 사진 -> 아카이브 사진 폴더로 바꾸기
-const importedImages = import.meta.glob("../assets/화이트프로젝트 사진/*.jpg", {
+const importedImages = import.meta.glob("../assets/아카이브 사진/*.jpg", {
   eager: true,
 });
-const images = Object.values(importedImages).map((img) => ({
-  img: img.default,
-}));
+const imagePaths = Object.keys(importedImages);
+imagePaths.sort((a, b) => {
+  const aNum = parseInt(a.match(/^.*\/(\d+)/)[1]);
+  const bNum = parseInt(b.match(/^.*\/(\d+)/)[1]);
+  return aNum - bNum;
+});
+const imageData = imagePaths.map((path) => {
+  const fileName = path.match(/\/([^/]+)$/)[1]; // 파일명 추출 (예: 1_32-1_이유나.jpg)
+  const name = fileName
+    .match(/[^_]+(?=\.\w+$)/)[0]
+    .split("_")
+    .pop(); // 이름 부분 추출 (예: 이유나)
+  return {
+    img: importedImages[path].default,
+    url: `/designer/${name}`, // URL 생성
+  };
+});
 
 function Archive() {
   return (
@@ -22,14 +37,16 @@ function Archive() {
       </div>
 
       <div className="mt-[5vw] w-full grid grid-cols-3 gap-x-[3vw] gap-y-[3vw] items-center px-[360px] xl:px-[200px] lg:px-[170px] md:px-[100px] sm:px-[30px] m:px-[20px] mb-[333px] xl:mb-[256px] lg:mb-[197px] md:mb-[151px] sm:mb-[116px] m:mb-[90px]">
-        {images.map((image, idx) => (
-          <ImageLoader
-            key={idx}
-            fetcher={() => image.img}
-            className="object-cover w-full aspect-[3/4]"
-          >
-            <Skeleton className="w-full aspect-[3/4]" />
-          </ImageLoader>
+        {imageData.map((image, idx) => (
+          <Link to={image.url} key={idx}>
+            <ImageLoader
+              key={idx}
+              fetcher={() => image.img}
+              className="object-cover w-full aspect-[3/4]"
+            >
+              <Skeleton className="w-full aspect-[3/4]" />
+            </ImageLoader>
+          </Link>
         ))}
       </div>
     </div>
