@@ -34,7 +34,7 @@ function DesignerDetailPage() {
           instagram {designer.insta}
         </p>
       </div>
-      <div className="mt-[100px] xl:mt-[90px] lg:mt-[70px] md:mt-[60px] sm:mt-[50px] m:mt-[40px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] flex flex-col">
+      <div className="mt-[100px] xl:mt-[90px] lg:mt-[70px] md:mt-[60px] sm:mt-[50px] m:mt-[40px] px-[360px] xl:px-[250px] lg:px-[200px] md:px-[100px] sm:px-[20px] m:px-[20px] flex flex-col mb-[450px] xl:mb-[400px] lg:mb-[350px] md:mb-[250px] sm:mb-[150px] m:mb-[100px]">
         <p className="text-[28px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[21px] m:text-[20px] mb-[30px] font-['ft-activica-strong']">
           ABOUT DESINGER
         </p>
@@ -70,7 +70,7 @@ function DesignerDetailPage() {
           <p className="text-[28px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[21px] m:text-[20px] mt-[100px] mb-[30px] font-['ft-activica-strong']">
             LOOK 1
           </p>
-          <div className="w-full overflow-hidden mb-[49px] xl:mb-[49px] lg:mb-[45px] md:mb-[41px] sm:mb-[36px] m:mb-[32px]">
+          <div className="w-full flex justify-center items-center overflow-hidden mb-[49px] xl:mb-[49px] lg:mb-[45px] md:mb-[41px] sm:mb-[36px] m:mb-[32px]">
             <ImageLoader fetcher={() => designer.images[0]}>
               <Skeleton className="w-full aspect-[3/4]" />
             </ImageLoader>
@@ -106,7 +106,7 @@ function DesignerDetailPage() {
           <p className="text-[28px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[21px] m:text-[20px] mb-[30px] font-['ft-activica-strong']">
             LOOK 2
           </p>
-          <div className="w-full overflow-hidden mb-[49px] xl:mb-[49px] lg:mb-[45px] md:mb-[41px] sm:mb-[36px] m:mb-[32px]">
+          <div className="w-full flex justify-center items-center overflow-hidden mb-[49px] xl:mb-[49px] lg:mb-[45px] md:mb-[41px] sm:mb-[36px] m:mb-[32px]">
             <ImageLoader fetcher={() => designer.images[5]}>
               <Skeleton className="w-full aspect-[3/4]" />
             </ImageLoader>
