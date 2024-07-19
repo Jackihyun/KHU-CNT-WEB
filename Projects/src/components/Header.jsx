@@ -42,7 +42,6 @@ function Header() {
 
   useEffect(() => {
     uiContext.setHeaderHeight(headerSize.height);
-    console.log('[HeaderSize]', headerSize.height)
   }, [headerSize])
 
   const menuItems = ["ABOUT", "DESIGNER", "ARCHIVE", "WHITEPROJ.", "PHOTO"].map((menu) => (
