@@ -60,7 +60,7 @@ function AboutMenu() {
           STAGE
           <br />
           {menuParam === "stage" && (
-            <span className="w-28 xl:w-28 lg:w-24 md:w-20 sm:w-11 m:w-8 font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
+            <span className="text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-11 m:w-8 font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
               스테이지 주제
             </span>
           )}
@@ -88,7 +88,7 @@ function AboutMenu() {
           PARTNER
           <br />
           {menuParam === "partner" && (
-            <span className="w-[12%] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
+            <span className="text-center w-[12%] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
               협찬사
             </span>
           )}

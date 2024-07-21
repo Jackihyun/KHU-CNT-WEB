@@ -39,13 +39,15 @@ function Archive() {
       <div className="mt-[5vw] w-full grid grid-cols-3 gap-x-[3vw] gap-y-[3vw] items-center px-[360px] xl:px-[200px] lg:px-[170px] md:px-[100px] sm:px-[30px] m:px-[20px] mb-[333px] xl:mb-[256px] lg:mb-[197px] md:mb-[151px] sm:mb-[116px] m:mb-[90px]">
         {imageData.map((image, idx) => (
           <Link to={image.url} key={idx}>
-            <ImageLoader
-              key={idx}
-              fetcher={() => image.img}
-              className="object-cover w-full aspect-[3/4]"
-            >
-              <Skeleton className="w-full aspect-[3/4]" />
-            </ImageLoader>
+            <div className="hover:scale-110">
+              <ImageLoader
+                key={idx}
+                fetcher={() => image.img}
+                className="object-cover w-full aspect-[3/4]"
+              >
+                <Skeleton className="w-full aspect-[3/4]" />
+              </ImageLoader>
+            </div>
           </Link>
         ))}
       </div>

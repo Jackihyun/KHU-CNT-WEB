@@ -3,8 +3,45 @@ import { DesignerData } from "../data/Designers";
 import ImageLoader from "../components/ImageLoader";
 import Skeleton from "../components/Skeleton";
 import Footer from "../components/Footer";
+import classNames from 'classnames';
+import DesignerA from "../assets/DesignerA.png";
+import DesignerB from "../assets/DesignerB.png";
+import DesignerC from "../assets/DesignerC.png";
+import DesignerD from "../assets/DesignerD.png";
+import DesignerE from "../assets/DesignerE.png";
+import DesignerF from "../assets/DesignerF.png";
+import DesignerG from "../assets/DesignerG.png";
+
+const getImageTag = (tag) => {
+  switch (tag) {
+    case 'A':
+      return DesignerA;
+    case 'B':
+      return DesignerB;
+    case 'C':
+      return DesignerC;
+    case 'D':
+      return DesignerD;
+    case 'E':
+      return DesignerE;
+    case 'F':
+      return DesignerF;
+    case 'G':
+      return DesignerG;
+    default:
+      return null;
+  }};
+
+const getImageClass = (tag) => {
+  return classNames('absolute bottom-0 right-0 h-auto', {
+    'w-1/3': ['A', 'E', 'F'].includes(tag),
+    'w-1/4': ['B', 'C', 'D', 'G'].includes(tag),
+  });
+};
+
 
 function DesignerDetailPage() {
+  
   const { name } = useParams();
   const designer = DesignerData.find(
     (d) => d.name === decodeURIComponent(name)
@@ -22,22 +59,33 @@ function DesignerDetailPage() {
   const hideDesignerName = ["강사우", "김민철", "왕혜영","유가동","이석준","이소망","이유나","한수민"];
   const hideQna = hideDesignerName.includes(designer.name);
 
+  const imageSrc = getImageTag(designer.tag);
+  const imageClass = getImageClass(designer.tag);
+
+
   return (
     <div className="flex flex-col justify-between flex-1 ">
-      <div className="flex flex-col justify-center items-center bg-[#CD6629]">
+      <div className="flex flex-col justify-center items-center bg-[#CD6629] relative">
+        {imageSrc && (
+        <img
+          src={imageSrc}
+          alt="designerImage"
+          className={imageClass}
+          />
+        )}
         <p className="mt-[80px] xl:mt-[80px] lg:mt-[70px] md:mt-[60px] sm:mt-[50px] m:mt-[40px] pt-[50px] text-[9vw] text-center text-[#fbf9f8] font-['ft-activica-strong'] text-nowrap">
           {designer.ename}
         </p>
-        <p className="w-full text-[60px] xl:text-[60px] lg:text-[50px] md:text-[40px] font-pretendard-medium text-center mt-[4vw] mb-[1%] text-[#fbf9f8] sm:text-[30px] m:text-[25px]">
+        <p className="w-full text-[40px] xl:text-[40px] lg:text-[30px] md:text-[30px] font-pretendard-medium text-center mt-[4vw] mb-[1%] text-[#fbf9f8] sm:text-[10px] m:text-[5px]">
           {designer.name}
         </p>
-        <p className="w-full text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[16px] font-pretendard-regular text-center mb-[1%] text-[#FBF9F8]">
+        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[6px] font-pretendard-regular text-center mb-[1%] text-[#FBF9F8]">
           {designer.team}
         </p>
-        <p className="w-full text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[16px]  font-pretendard-regular text-center  text-[#FBF9F8] sm:text-lg m:text-md">
+        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[6px]  font-pretendard-regular text-center  text-[#FBF9F8] sm:text-lg m:text-md">
           {designer.email}
         </p>
-        <p className="w-full text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[16px]  font-pretendard-regular text-center mb-[5%] text-[#FBF9F8] sm:text-lg m:text-md">
+        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[6px]  font-pretendard-regular text-center mb-[5%] text-[#FBF9F8] sm:text-lg m:text-md">
           instagram {designer.insta}
         </p>
       </div>

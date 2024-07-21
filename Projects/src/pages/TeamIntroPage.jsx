@@ -748,16 +748,16 @@ function TeamIntroPage() {
 
         <article className="mt-[97px] md:mt-[60px] sm:mt-[40px] m:mt-[30px]">
           <p
-            className="text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] w-full font-pretendard-regular"
+            className="text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] w-full font-pretendard-regular "
             dangerouslySetInnerHTML={{ __html: team.longIntro }}
           />
           <p
             id="stage1"
-            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] cursor-pointer"
+            className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] cursor-pointer "
             onClick={() => scrollToStage(stage1Ref)}
           >
-            Stage1. {team.stage1.name} :{" "}
-            <span className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">
+            <span className="hover:underline">Stage1. {team.stage1.name} </span>:{" "}
+            <span className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px">
               {team.stage1.intro}
             </span>
           </p>
@@ -766,14 +766,14 @@ function TeamIntroPage() {
             className="font-pretendard-semibold text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px] cursor-pointer"
             onClick={() => scrollToStage(stage2Ref)}
           >
-            Stage2. {team.stage2.name} :{" "}
+            <span className="hover:underline">Stage2. {team.stage2.name} </span>:{" "}
             <span className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">
               {team.stage2.intro}
             </span>
           </p>
         </article>
         <div className="mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
-          <p className="font-['ft-activica-strong'] text-[40px] mb-[39px]">
+          <p className="font-['ft-activica-strong'] text-[30px] mb-[39px]">
             DESINGERS
           </p>
           <ImageLoader
@@ -805,12 +805,12 @@ function TeamIntroPage() {
           </div>
         </div>
         <div className="flex flex-col mt-[150px] md:mt-[100px] sm:mt-[70px] m:mt-[50px]">
-          <p className="font-['ft-activica-strong'] text-[40px] mb-[80px] xl:mb-[70px] lg:mb-[65px] md:mb-[55px] sm:mb-[45px] m:mb-[35px]">
+          <p className="font-['ft-activica-strong'] text-[30px] mb-[80px] xl:mb-[70px] lg:mb-[65px] md:mb-[55px] sm:mb-[45px] m:mb-[35px]">
             ARCHIVE
           </p>
           <p
             ref={stage1Ref}
-            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px] xl:mb-[45px] lg:mb-[40px] md:mb-[35px] sm:mb-[30px] m:mb-[25px]"
+            className="font-pretendard-semibold text-[15px] xl:text-[15px] lg:text-[13px] md:text-[11px] sm:text-[9px] m:text-[9px] mb-[50px] xl:mb-[45px] lg:mb-[40px] md:mb-[35px] sm:mb-[30px] m:mb-[25px]"
           >
             Stage 1. {team.stage1.name}
           </p>
@@ -836,7 +836,7 @@ function TeamIntroPage() {
           </div>
           <p
             ref={stage2Ref}
-            className="font-pretendard-semibold text-[24px] xl:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] m:text-[18px] mb-[50px] xl:mb-[45px] lg:mb-[40px] md:mb-[35px] sm:mb-[30px] m:mb-[25px]"
+            className="font-pretendard-semibold text-[15px] xl:text-[15px] lg:text-[13px] md:text-[11px] sm:text-[9px] m:text-[9px] mb-[50px] xl:mb-[45px] lg:mb-[40px] md:mb-[35px] sm:mb-[30px] m:mb-[25px]"
           >
             Stage 2. {team.stage2.name}
           </p>
@@ -860,7 +860,7 @@ function TeamIntroPage() {
                 ))}
             </div>
           </div>
-          <p className="font-['ft-activica-strong'] text-[40px] mb-[50px]xl:mb-[50px] lg:mb-[45px] md:mb-[40px] sm:mb-[35px] m:mb-[30px]">
+          <p className="font-['ft-activica-strong'] text-[30px] mb-[50px] xl:mb-[50px] lg:mb-[45px] md:mb-[40px] sm:mb-[35px] m:mb-[30px]">
             THEME FILM
           </p>
           <video width="full" controls>
