@@ -51,7 +51,7 @@ function AboutMenu() {
           position="right"
         />
       </div>
-      <div className="flex items-start justify-between mt-[15px] sm:mt-[5px] m:mt-[5px] ">
+      <div className="flex items-start text-center justify-between mt-[15px] sm:mt-[5px] m:mt-[5px] ">
         <p
           className={`text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-11  m:w-8 font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${
             menuParam === "stage" ? "text-black" : "text-black/40"
