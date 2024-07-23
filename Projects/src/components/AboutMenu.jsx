@@ -24,7 +24,7 @@ function AboutMenu() {
 
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between px-1 xl:px-1 lg:px-1 md:px-[6px] sm:px-[10px] m:px-[7px]">
         <AboutButton
           isActive={menuParam === "stage"}
           onClick={() => handleMenuButtonClick("stage")}
@@ -53,47 +53,48 @@ function AboutMenu() {
       </div>
       <div className="flex items-start text-center justify-between mt-[15px] sm:mt-[5px] m:mt-[5px] ">
         <p
-          className={`text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-11  m:w-8 font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${
+          className={`text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 min-w-[36px] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap ${
             menuParam === "stage" ? "text-black" : "text-black/40"
           }`}
         >
           STAGE
           <br />
           {menuParam === "stage" && (
-            <span className="text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-11 m:w-8 font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
+            <span className="text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 min-w-[36px] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap">
               스테이지 주제
             </span>
           )}
         </p>
 
         <p
-          className={`text-center w-[12%] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${
+          className={`text-center min-w-[36px] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap ${
             menuParam === "thanks" ? "text-black" : "text-black/40"
           }`}
         >
           THANKS TO
           <br />
           {menuParam === "thanks" && (
-            <span className="text-center w-[12%] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
+            <span className="text-center min-w-[36px] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap">
               지도 및 지원
             </span>
           )}
         </p>
 
         <p
-          className={`text-center w-[12%] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap ${
+          className={`text-center min-w-[36px] w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap ${
             menuParam === "partner" ? "text-black" : "text-black/40"
           }`}
         >
           PARTNER
           <br />
           {menuParam === "partner" && (
-            <span className="text-center w-[12%] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[8px] text-nowrap">
+            <span className="text-center min-w-[36px] w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap">
               협찬사
             </span>
           )}
         </p>
       </div>
+
       {showingPanel}
     </div>
   );
