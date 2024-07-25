@@ -24,7 +24,7 @@ function AboutMenu() {
 
   return (
     <div>
-      <div className="flex items-center justify-between px-1 xl:px-1 lg:px-0 md:px-[2px] sm:px-[10px] m:px-[7px]">
+      <div className="flex items-center justify-between px-2 xl:px-1 lg:px-0 md:px-[2px] sm:px-[10px] m:px-[7px]">
         <AboutButton
           isActive={menuParam === "stage"}
           onClick={() => handleMenuButtonClick("stage")}
@@ -52,20 +52,21 @@ function AboutMenu() {
         />
       </div>
       <div className="flex items-start text-center justify-between mt-[15px] sm:mt-[5px] m:mt-[5px] ">
-        <p
-          className={`text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 min-w-[36px] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap ${
-            menuParam === "stage" ? "text-black" : "text-black/40"
-          }`}
-        >
-          STAGE
-          <br />
+        <div>
+          <p
+            className={`text-center ml-2 xl:ml-2 xl:mr-1 lg:ml-0 md:ml-0 sm:ml-0 m:ml-0 w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 min-w-[36px] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap ${
+              menuParam === "stage" ? "text-black" : "text-black/40"
+            }`}
+          >
+            STAGE
+            <br />
+          </p>
           {menuParam === "stage" && (
-            <span className="text-center w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 min-w-[36px] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap">
+            <p className="text-center xl:ml-2 w-28 xl:w-28 lg:w-24 md:w-20 sm:w-16 m:w-12 min-w-[36px] font-pretendard-semibold text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap">
               스테이지 주제
-            </span>
+            </p>
           )}
-        </p>
-
+        </div>
         <p
           className={`text-center min-w-[36px] font-semibold font-['ft-activica-strong'] text-[24px] xl:text-[20px] lg:text-[16px] md:text-[12px] sm:text-[10px] m:text-[9px] text-nowrap ${
             menuParam === "thanks" ? "text-black" : "text-black/40"
