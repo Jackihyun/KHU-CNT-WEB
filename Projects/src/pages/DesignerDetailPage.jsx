@@ -3,7 +3,7 @@ import { DesignerData } from "../data/Designers";
 import ImageLoader from "../components/ImageLoader";
 import Skeleton from "../components/Skeleton";
 import Footer from "../components/Footer";
-import classNames from 'classnames';
+import classNames from "classnames";
 import DesignerA from "../assets/DesignerA.png";
 import DesignerB from "../assets/DesignerB.png";
 import DesignerC from "../assets/DesignerC.png";
@@ -14,34 +14,33 @@ import DesignerG from "../assets/DesignerG.png";
 
 const getImageTag = (tag) => {
   switch (tag) {
-    case 'A':
+    case "A":
       return DesignerA;
-    case 'B':
+    case "B":
       return DesignerB;
-    case 'C':
+    case "C":
       return DesignerC;
-    case 'D':
+    case "D":
       return DesignerD;
-    case 'E':
+    case "E":
       return DesignerE;
-    case 'F':
+    case "F":
       return DesignerF;
-    case 'G':
+    case "G":
       return DesignerG;
     default:
       return null;
-  }};
+  }
+};
 
 const getImageClass = (tag) => {
-  return classNames('absolute bottom-0 right-0 h-auto', {
-    'w-1/3': ['A', 'E', 'F'].includes(tag),
-    'w-1/4': ['B', 'C', 'D', 'G'].includes(tag),
+  return classNames("absolute bottom-0 right-0 h-auto", {
+    "w-1/3": ["A", "E", "F"].includes(tag),
+    "w-1/4": ["B", "C", "D", "G"].includes(tag),
   });
 };
 
-
 function DesignerDetailPage() {
-  
   const { name } = useParams();
   const designer = DesignerData.find(
     (d) => d.name === decodeURIComponent(name)
@@ -53,25 +52,28 @@ function DesignerDetailPage() {
   }
 
   const is3lookDesigner = (designer) => {
-    return designer.name === "이지우" || designer.name === "하정문";  
+    return designer.name === "이지우" || designer.name === "하정문";
   };
 
-  const hideDesignerName = ["강사우", "김민철", "왕혜영","유가동","이석준","이소망","이유나","한수민"];
+  const hideDesignerName = [
+    "강사우",
+    "김민철",
+    "왕혜영",
+    "유가동",
+    "이석준",
+    "이소망",
+    "한수민",
+  ];
   const hideQna = hideDesignerName.includes(designer.name);
 
   const imageSrc = getImageTag(designer.tag);
   const imageClass = getImageClass(designer.tag);
 
-
   return (
     <div className="flex flex-col justify-between flex-1 ">
       <div className="flex flex-col justify-center items-center bg-[#CD6629] relative">
         {imageSrc && (
-        <img
-          src={imageSrc}
-          alt="designerImage"
-          className={imageClass}
-          />
+          <img src={imageSrc} alt="designerImage" className={imageClass} />
         )}
         <p className="mt-[80px] xl:mt-[80px] lg:mt-[70px] md:mt-[60px] sm:mt-[50px] m:mt-[40px] pt-[50px] text-[9vw] text-center text-[#fbf9f8] font-['ft-activica-strong'] text-nowrap">
           {designer.ename}
@@ -109,18 +111,20 @@ function DesignerDetailPage() {
               <br />
               <br />
             </p>
-            {!hideQna && ( 
-              <>            <p className="font-pretendard-semibold text-[18px] xl:text-[18px] lg:text-[16px] md:text-[15px] sm:text-[13px] m:text-[12px]">
-              Q. {designer.qna}
-              <br />
-              <br />
-            </p>
-            <p className="font-pretendard-regular text-[18px] xl:text-[18px] lg:text-[16px] md:text-[15px] sm:text-[13px] m:text-[12px] whitespace-pre-wrap">
-              A. {designer.point}
-              <br />
-              <br />
-            </p>
-            </>
+            {!hideQna && (
+              <>
+                {" "}
+                <p className="font-pretendard-semibold text-[18px] xl:text-[18px] lg:text-[16px] md:text-[15px] sm:text-[13px] m:text-[12px]">
+                  Q. {designer.qna}
+                  <br />
+                  <br />
+                </p>
+                <p className="font-pretendard-regular text-[18px] xl:text-[18px] lg:text-[16px] md:text-[15px] sm:text-[13px] m:text-[12px] whitespace-pre-wrap">
+                  A. {designer.point}
+                  <br />
+                  <br />
+                </p>
+              </>
             )}
           </div>
         </div>
@@ -196,7 +200,7 @@ function DesignerDetailPage() {
             </div>
           </div>
         </div>
-         {is3lookDesigner(designer) && (
+        {is3lookDesigner(designer) && (
           <div className="mb-[100px]">
             <p className="text-[28px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[21px] m:text-[20px] mb-[30px] font-['ft-activica-strong']">
               LOOK 3

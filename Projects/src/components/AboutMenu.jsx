@@ -24,7 +24,7 @@ function AboutMenu() {
 
   return (
     <div>
-      <div className="flex items-center justify-between px-1 xl:px-1 lg:px-1 md:px-[6px] sm:px-[10px] m:px-[7px]">
+      <div className="flex items-center justify-between px-1 xl:px-1 lg:px-0 md:px-[2px] sm:px-[10px] m:px-[7px]">
         <AboutButton
           isActive={menuParam === "stage"}
           onClick={() => handleMenuButtonClick("stage")}

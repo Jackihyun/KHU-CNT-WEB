@@ -20,7 +20,7 @@ function AboutMenuThanks() {
           졸업작품준비위원회
         </p>
         <img src={CommityPhoto} alt="졸준위사진" />
-        <div className="grid grid-cols-3 w-full gap-4 mt-[5%] mb-[20px] text-[18px] xl:text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px] m:text-[12px]">
+        <div className="grid grid-cols-3 w-full gap-4 mt-[5%] mb-[20px] text-[18px] xl:text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px] m:text-[11px]">
           <div className="">
             <div className="font-pretendard-semibold text-nowrap mb-5 xl:mb-4 lg:mb-3 md:mb-2 sm:mb-[5px] m:mb-1">
               졸업작품준비위원장
