@@ -5,16 +5,20 @@ import { db } from "../firebase";
 import Alert from "./Alert";
 
 const colorPalette = [
-  "#FFCDD2",
-  "#F8BBD0",
-  "#E1BEE7",
-  "#D1C4E9",
-  "#C5CAE9",
-  "#BBDEFB",
-  "#B3E5FC",
-  "#B2EBF2",
-  "#B2DFDB",
-  "#C8E6C9",
+  // "#FFCDD2",
+  // "#F8BBD0",
+  // "#E1BEE7",
+  // "#D1C4E9",
+  // "#C5CAE9",
+  // "#BBDEFB",
+  // "#B3E5FC",
+  // "#B2EBF2",
+  // "#B2DFDB",
+  // "#C8E6C9",
+  "#CD6629",
+  "#F7805C",
+  "#FF9D8E",
+  "#FFBEC2",
 ];
 
 function GuestForm() {
@@ -72,7 +76,7 @@ function GuestForm() {
         className="w-full h-24 p-3 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-blue-300 text-[16px] xl:text-[16px] lg:text-[14px] md:text-[14px] sm:text-[12px] m:text-[12px] font-pretendard-regular"
       />
       <div className="mb-4">
-        <h3 className="text-md font-regular text-[16px] xl:text-[16px] lg:text-[14px] md:text-[14px] sm:text-[12px] m:text-[12px] font-pretendard-regular p-3">
+        <h3 className="text-md text-center text-[16px] xl:text-[16px] lg:text-[14px] md:text-[14px] sm:text-[12px] m:text-[12px] font-pretendard-regular p-3">
           배경색 선택
         </h3>
         <div className="flex flex-wrap gap-2 p-3">

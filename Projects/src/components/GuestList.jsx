@@ -9,15 +9,21 @@ function GuestList() {
   const animationRef = useRef(null);
 
   useEffect(() => {
-    const q = query(collection(db, "feedback"), orderBy("timestamp", "desc"));
-    const unsubscribe = onSnapshot(q, (querySnapshot) => {
-      const feedbackArray = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setFeedbacks(feedbackArray);
-    });
-    return () => unsubscribe();
+    const cachedFeedbacks = sessionStorage.getItem("feedbacks");
+    if (cachedFeedbacks) {
+      setFeedbacks(JSON.parse(cachedFeedbacks));
+    } else {
+      const q = query(collection(db, "feedback"), orderBy("timestamp", "desc"));
+      const unsubscribe = onSnapshot(q, (querySnapshot) => {
+        const feedbackArray = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setFeedbacks(feedbackArray);
+        sessionStorage.setItem("feedbacks", JSON.stringify(feedbackArray));
+      });
+      return () => unsubscribe();
+    }
   }, []);
 
   useEffect(() => {
