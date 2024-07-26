@@ -18,6 +18,7 @@ import Header from "./components/Header";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 import { Analytics } from "@vercel/analytics/react";
 import DesignerDetailPage from "./pages/DesignerDetailPage";
+import GuestPage from "./pages/GuestPage";
 
 function App() {
   const location = useLocation();
@@ -43,6 +44,7 @@ function App() {
               <Route path="/whiteproj." element={<WhiteprojectPage />} />
               <Route path="/teams/:teamId" element={<TeamIntro />} />
               <Route path="/invite" element={<Invite />} />
+              <Route path="/guestbook" element={<GuestPage />} />
             </Routes>
           </CSSTransition>
         </SwitchTransition>

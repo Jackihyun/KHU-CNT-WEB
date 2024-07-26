@@ -93,9 +93,9 @@ function Header() {
           {menuItems}
         </div>
         <div>
-          <Link to={"/invite"}>
-            <p className="font-[ft-activica-strong] hidden leading-none text-black border-b-2 border-black text-[22px] cursor-pointer ">
-              INVITATION
+          <Link to={"/guestbook"}>
+            <p className="font-[ft-activica-strong] md:hidden sm:hidden m:hidden leading-none text-black border-b-2 border-black text-[22px] cursor-pointer ">
+              Guest-Book
             </p>
           </Link>
         </div>

@@ -12,9 +12,7 @@
   font-family: "ft-activica-strong";
   font-weight: normal;
   src: url("./fonts/ft-activica-strong.woff") format("woff");
-  
 }
-
 
 @font-face {
   font-family: "Pretendard-Regular";
@@ -48,12 +46,11 @@
   font-style: normal;
 }
 
-
 .remove-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
-.sticky-container{
+.sticky-container {
   position: relative;
 }
 
@@ -62,3 +59,6 @@
   top: 0;
 }
 
+.scroll {
+  transition: transform 0.1s linear;
+}
