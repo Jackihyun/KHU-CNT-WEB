@@ -75,19 +75,19 @@ function DesignerDetailPage() {
         {imageSrc && (
           <img src={imageSrc} alt="designerImage" className={imageClass} />
         )}
-        <p className="mt-[80px] xl:mt-[80px] lg:mt-[70px] md:mt-[60px] sm:mt-[50px] m:mt-[40px] pt-[50px] text-[9vw] text-center text-[#fbf9f8] font-['ft-activica-strong'] text-nowrap">
+        <p className="mt-[80px] xl:mt-[80px] lg:mt-[70px] md:mt-[60px] sm:mt-[40px] m:mt-[30px] pt-[50px] text-[9vw] text-center text-[#fbf9f8] font-['ft-activica-strong'] text-nowrap">
           {designer.ename}
         </p>
-        <p className="w-full text-[40px] xl:text-[40px] lg:text-[30px] md:text-[30px] font-pretendard-medium text-center mt-[4vw] mb-[1%] text-[#fbf9f8] sm:text-[10px] m:text-[5px]">
+        <p className="w-full text-[40px] xl:text-[40px] lg:text-[30px] md:text-[30px] font-pretendard-medium text-center mt-[4vw] mb-[1%] text-[#fbf9f8] sm:text-[11px] m:text-[10px]">
           {designer.name}
         </p>
-        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[6px] font-pretendard-regular text-center mb-[1%] text-[#FBF9F8]">
+        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[9px] m:text-[8px] font-pretendard-regular text-center mb-[1%] text-[#FBF9F8]">
           {designer.team}
         </p>
-        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[6px]  font-pretendard-regular text-center  text-[#FBF9F8] sm:text-lg m:text-md">
+        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[9px] m:text-[8px]  font-pretendard-regular text-center  text-[#FBF9F8]">
           {designer.email}
         </p>
-        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[10px] sm:text-[8px] m:text-[6px]  font-pretendard-regular text-center mb-[5%] text-[#FBF9F8] sm:text-lg m:text-md">
+        <p className="w-full text-[14px] xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[9px] m:text-[8px]  font-pretendard-regular text-center mb-[5%] text-[#FBF9F8]">
           instagram {designer.insta}
         </p>
       </div>
