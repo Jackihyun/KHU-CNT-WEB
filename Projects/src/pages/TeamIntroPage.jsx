@@ -757,7 +757,7 @@ function TeamIntroPage() {
             onClick={() => scrollToStage(stage1Ref)}
           >
             <span className="hover:underline">Stage1. {team.stage1.name} </span>:{" "}
-            <span className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px">
+            <span className="font-pretendard-regular text-[24px] md:text-[18px] sm:text-[14px] m:text-[10px]">
               {team.stage1.intro}
             </span>
           </p>
